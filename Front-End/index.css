@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: brown;
+}
+
+#inputNome {
+    width: 250px;
+    height: 40px;
+    border-radius: 0 10px 0 10px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.3);
+    border: none;
+}
+
+button {
+    height: 40px;
+    width: 60px;
+    border: none;
+    background-color: brown;
+    color: white;
+    border-radius: 0 10px 0 10px;
+    cursor: pointer;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background-color: rgb(169, 96, 96);
+}
+
+label{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+label,
+p {
+    color: aliceblue;
+    font-size: 40px;
+}
+
+h1 {
+    color: aliceblue;
+    margin-bottom: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(213, 138, 138, 0.509);
+    width: 450px;
+    height: 300px;
+    border-radius: 20px;
+}
