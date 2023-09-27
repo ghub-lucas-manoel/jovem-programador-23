@@ -1,20 +1,18 @@
 body{
     margin: 0px;
     padding: 0px;
-    width: auto;
-    background-color: rgb(29, 27, 27);
+    width: 90.87%;
 }
 header {
     height: 100px;
-    width: 96.3%;
+    width: 105.02%;
     background-color: #ab3390;
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 25%;
-    padding: 10px;
-    padding-right: 25px;
-    padding-left: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 5%;
 }
 #modaAtivaLogo {
     background-color: white;
@@ -31,6 +29,7 @@ img {
 button {
     height: 36px;
     border-radius: 10px;
+    cursor: pointer;
 }
 input {
     height:  30px;
@@ -43,16 +42,95 @@ input {
 }
 #fotoPerfil:hover {
     background-color: white;
+    cursor: pointer;
 }
-#conteudoPrincipal {
-    margin-left: auto;
-    margin-right: auto;
-    background-color: rgb(255, 255, 255);
-    width: 800px;
-    height: 770px;
+#burguer {
+    height: 84px;
+    background-color: #ab3390;
     display: block;
-    border-radius: 20px;
-    align-items: center;
+    color: white;
     text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 35px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 50px;
+}
+#burguer:hover {
+    background-color: white;
+    color: #ab3390;
+}
+menu {
+    display: none;
+    margin-left: -50px;
+    margin-top: -16px;
+    position: absolute;
+}
+ul {
+    list-style-type: none;
+}
+li > a {
+    margin-left: -30px;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(87,87,87);
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    width: 109px;
+    height: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+}
+li > a:hover {
+    color: white;
+    background-color: rgb(47,47,47);
+    cursor: pointer;
+}
+.container {
+    width: 110.05%;
+    height: 100%;
+    background-color: rgb(29, 27, 27);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}    
+#conteudoPrincipal {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    min-height: 700px;
+    border-radius: 20px;
     padding: 20px;
+}
+h1 {
+    text-align: center;
+}
+footer {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    width: 50.05%;
+    align-items: center;
+    padding: 20px;
+    padding-right: 30%;
+    padding-left: 30%;
+}
+footer > div {
+    text-align: center;
+    margin-right: 10px;
+}
+.meio
+{
+    margin-right: 20%;
+}
+.rodapeImg {
+    height: 30px;
+    display: inline-block;
+    align-items: center;
 }
