@@ -1,0 +1,58 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+    background-color: rgb(29, 27, 27);
+}
+header {
+    height: 100px;
+    width: 96.3%;
+    background-color: #ab3390;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 25%;
+    padding: 10px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+#modaAtivaLogo {
+    background-color: white;
+    border-radius: 30px;
+    padding-bottom: 10px;
+}
+img {
+    height: 70px;
+    display: block;
+}
+#barraDePesquisa {
+    display: block;
+}
+button {
+    height: 36px;
+    border-radius: 10px;
+}
+input {
+    height:  30px;
+    font-size: 1em;
+    border-radius: 10px;
+}
+#fotoPerfil {
+    height: 60px;
+    border-radius: 30px;
+}
+#fotoPerfil:hover {
+    background-color: white;
+}
+#conteudoPrincipal {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(255, 255, 255);
+    width: 800px;
+    height: 770px;
+    display: block;
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
