@@ -4,22 +4,72 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="index.css" />
-        <title>Pesquisar - Moda Ativa</title>
+        <title>Página Inicial</title>
     </head>
     <body>
-        <div class="div">
-            Moda Ativa
-            <br />
+        <header>
+            <div class="menu" id="imgMenu">
+                <img id="menAberto" src="_imagens/retangulos-de-menu.png" />
+            </div>
 
-            <label class="label">Faça sua pesquisa</label>
+            <nav class="menu" id="menuHamb">
+                <ul class="menuList" id="list">
+                    <li>
+                        <a href="#" onclick="mostrarMensagem('Página Inicial')"
+                            >Página Inicial</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#" onclick="mostrarMensagem('Moda Ativa Kids')"
+                            >Moda Ativa Kids</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#" onclick="mostrarMensagem('Sugestões')"
+                            >Sugestões</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="#"
+                            onclick="mostrarMensagem('Trabalhe Conosco')"
+                            >Trabalhe Conosco</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#" onclick="mostrarMensagem('SAC')">Sac</a>
+                    </li>
+                </ul>
+            </nav>
 
-            <br />
-            <input id="pesquisado" type="text" />
-            <button onclick="mostrarPesquisa()" class="btn">Pesquisar</button>
-        </div>
+            <div class="logo">
+                <img src="_imagens/logoModaAtiva.jpg" />
+            </div>
 
-        <label class="lPesquisa" id="pesquisaFeita"></label>
+            <input
+                type="text"
+                placeholder="Faça sua Pesquisa"
+                class="search"
+                id="procurar"
+            />
+            <button type="submit" onclick="mostrarPesquisa()">
+                <img src="_imagens/lupa.png" id="lupaPesquisar" />
+            </button>
+            <div class="usuario">
+                <img src="_imagens/perfil-de-usuario.png" />
+            </div>
+        </header>
 
+        <section>
+            <label class="lPesquisa" id="pesquisaFeita"></label>
+
+            <label id="mensagem"></label>
+        </section>
+
+        <footer>
+            <p>(49)3251-4300</p>
+            <p>Rua Correia Pinto 79, Lages, SC, Brasil</p>
+        </footer>
         <script src="index.js"></script>
     </body>
 </html>
