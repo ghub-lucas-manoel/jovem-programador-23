@@ -4,7 +4,7 @@ body{
     width: 90.87%;
 }
 header {
-    height: 100px;
+    height: 10vh;
     width: 105.02%;
     background-color: #ab3390;
     display: inline-flex;
@@ -14,52 +14,78 @@ header {
     padding-bottom: 10px;
     padding-right: 5%;
 }
+nav {
+    position: relative;
+    align-items: center;
+    padding: 10px;
+    display: inline;
+    height: 30px;
+}
 #modaAtivaLogo {
     background-color: white;
     border-radius: 30px;
     padding-bottom: 10px;
+    margin-left: -20vw;
+    width: 180px;
 }
 img {
-    height: 70px;
     display: block;
 }
 #barraDePesquisa {
-    display: block;
+    display: inline;
 }
 button {
+    position: absolute;
     height: 36px;
     border-radius: 10px;
     cursor: pointer;
+    right: -35px;
+}
+button:hover {
+    background-color: rgb(61, 61, 61);
+    color: white;
+    height: 40px;
+    width: 50px;
+    border-radius: 12px;
+    top: 7px;
+    right: -50px;
 }
 input {
     height:  30px;
     font-size: 1em;
     border-radius: 10px;
+    padding-top: -20px;
 }
 #fotoPerfil {
-    height: 60px;
-    border-radius: 30px;
+    height: 80px;
+    border-radius: 40px;
+    display: block;
+    margin-right: -3vw;
+    margin-left: 14vw;
 }
 #fotoPerfil:hover {
     background-color: white;
     cursor: pointer;
 }
 #burguer {
-    height: 84px;
+    height: 7.5vh;
     background-color: #ab3390;
     display: block;
     color: white;
     text-align: center;
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 35px;
+    padding-top: 4vh;
     cursor: pointer;
-    width: 100%;
+    width: 9vh;
     font-size: 50px;
 }
 #burguer:hover {
     background-color: white;
     color: #ab3390;
+}
+#iconBusca {
+    display: none;
 }
 menu {
     display: none;
@@ -73,14 +99,15 @@ ul {
 li > a {
     margin-left: -30px;
     display: block;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
     text-decoration: none;
     text-align: center;
     background-color: rgb(87,87,87);
     text-decoration: none;
     color: white;
-    padding: 10px;
-    width: 109px;
+    width: 11.9vh;
     height: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bolder;
@@ -92,7 +119,7 @@ li > a:hover {
 }
 .container {
     width: 110.05%;
-    height: 100%;
+    height: 83vh;
     background-color: rgb(29, 27, 27);
     display: flex;
     flex-direction: row;
@@ -103,8 +130,8 @@ li > a:hover {
     margin-top: 20px;
     margin-bottom: 20px;
     background-color: rgb(255, 255, 255);
-    width: 80%;
-    min-height: 700px;
+    min-width: 80%;
+    height: 60vh;
     border-radius: 20px;
     padding: 20px;
 }
@@ -133,4 +160,57 @@ footer > div {
     height: 30px;
     display: inline-block;
     align-items: center;
+}
+@media screen and (max-width: 2100px) {
+    #modaAtivaLogo {
+        margin-left: -10vw;
+    }
+}
+@media screen and (max-width: 1200px){
+    #fotoPerfil {
+        margin-left: 7vw;
+    }
+}
+@media screen and (max-width: 1000px){
+    #fotoPerfil {
+        margin-left: -3vw;
+    }
+}
+@media screen and (max-width: 800px){
+    #fotoPerfil {
+        display: none;
+    }
+    footer {
+        padding-left: 30px;
+        padding-right: 20px;
+        width: 100%
+    }
+    #modaAtivaLogo {
+        width: 100px;
+        margin-left: 3vw;
+    }
+}
+@media screen and (max-width: 700px) {
+    button {
+        height: 30px;
+        top: 10px;
+    }
+    header {
+        justify-content: start;
+    }
+    button:hover {
+        height: 35px;
+        width: 45px;
+        right: -40px;
+        top: 7px;
+    }
+    input {
+        height: 25px;
+        font-size: 0.8em;
+        width: 120px;
+        display: block;
+    }
+    nav {
+        margin-left: 3vh;
+    }
 }
