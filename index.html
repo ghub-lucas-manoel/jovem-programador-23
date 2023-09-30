@@ -4,13 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-4.6.2-dist/css/bootstrap.min.css">
+    <script src="bootstrap-4.6.2-dist/js/bootstrap.min.js"></script>
     <script src="index.js"></script>
-    <title>Hello Word</title>
+    <title>Casarão Eventos Lages</title>
+
+    
+   
 </head>
 <body>
-    <label> Digite seu nome: </label>
-    <input id="inputNome" type="text">
-    <button onclick="exibeNome()">Enviar</button>
-    <p>Olá, <label id="nomeDigitado"></label></p>
-</body>
-</html>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Casarão Eventos Lages</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#" onclick="navegar('inicio')">Início</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#" onclick="navegar('servicos')">Serviços</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#" onclick="navegar('contato')">Contato</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#" onclick="navegar('calendario')">Calendário</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="conteudo">
+            <div id="pagina-inicio">
+                <h1>Bem-vindo ao Casarão Eventos Lages</h1>
+                <p>Aqui, realizamos os eventos dos seus sonhos.</p>
+                <p>Entre em contato para reservas e informações:</p>
+                <p>Telefone: (49) 99102-2222</p>
+                <p>Email: casaraoeventos@gmail.com</p>
+            </div>
+            <div id="pagina-servicos" style="display: none;">
+                <h1>Serviços</h1>
+                <p>Conteúdo da Página Serviços.</p>
+            </div>
+            <div id="pagina-contato" style="display: none;">
+                <h1>Contato</h1>
+                <p>Conteúdo da Página Contato.</p>
+            </div>
+            <div id="pagina-calendario" style="display: none;">
+                <h1>Calendário</h1>
+                <p>Conteúdo da Página Calendário.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark">
+        <small>@2023  Casarão Eventos Lages. Todos os direitos reservados.</small>
+    </footer>
+   
+
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
