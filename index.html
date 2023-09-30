@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zago Planner</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="imagens/zago-planner.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav class="nav-menu">
+            <input type="checkbox" id="falsa-checkbox">
+
+            <div class="menu-simbolo">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul>
+                <li class="cor-menu"></li>
+                <li class="cor-menu"></li>
+                <li class="cor-menu"></li>
+                <li class="cor-menu"></li>
+                <li class="cor-menu"></li>
+                <li class="listrado"><a href="paginas/sobre-nos.html"target="_self">SOBRE NÓS</a></li>
+                <li class="listrado2"><a href="paginas/manual-do-usuario.html"target="_self">MANUAL DO USUÁRIO</a></li>
+                <li class="listrado"><a href="paginas/parcerias.html"target="_self">PARCERIAS</a></li>
+                <li class="listrado2"><a href="https://www.zagocasaeconstrucao.com.br/"target="_blank">IR PARA ZAGO</a></li>
+                <li class="listrado"><a href="paginas/suporte.html" target="_self">SUPORTE</a></li>
+                <li class="listrado2"><a href="paginas/criar-projeto.html"target="_self">CRIAR PROJETO</a></li>
+                <li class="listrado"><a href="paginas/meus-projetos.html"target="_self">MEUS PROJETOS</a></li>
+                <li class="listrado2"><a href="paginas/outros-projetos.html"target="_self">OUTROS PROJETOS</a></li>
+                <li class="listrado"><a href="paginas/produtos-zago.html"target="_self">PRODUTOS ZAGO</a></li>
+                <li class="listrado2"><a href="paginas/pesquisa.html"target="_self">PESQUISA</a></li>
+                <li class="resto"></li>
+            </ul>
+        </nav>
+        <div id="zago-planner">
+            <a href="index.html" target="_self">
+                <h1 id="zago">ZAGO </h1>
+                <h1 id="planner">PLANNER</h1>
+            </a>
+        </div>
+        <div id="div-usuario">
+            <a href="#" onclick="ExibirMenuLogin()"><img src="imagens/usuario-de-perfil.png" alt="Perfil Usuário"></a>
+            <div class="menu-login">
+                <ul>
+                    <li><a href="paginas/login.html" target="_self">SAIR</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="container1">
+            <section id="criar-projeto">
+                <h1 class="funcoes">CRIAR PROJETO</h1>
+                <div class="div-funcao"><a href="paginas/criar-projeto.html" target="_self">+</a></div>
+            </section>
+            <div id="container3">
+                <section id="outros-projetos">
+                    <div class="div-funcao"><a href="paginas/outros-projetos.html" target="_self"><img src="imagens/outros-projetos-icon.png" alt="outros projetos"></a></div>
+                    <h1 class="funcoes">OUTROS PROJETOS</h1>
+                </section>
+                <section id="meus-projetos">
+                    <div class="div-funcao"><a href="paginas/meus-projetos.html" target="_self"><img src="imagens/meus-projetos-icon.png" alt="meus projetos"></a></div>
+                    <h1 class="funcoes">MEUS PROJETOS</h1>
+                </section>
+            </div>
+        </div>
+        <div id="container2">
+            <section id="produtos-zago">
+                <h1 class="funcoes">PRODUTOS ZAGO</h1>
+                <div class="div-funcao"><a href="paginas/produtos-zago.html" target="_self"><img src="imagens/produtos-zago-icon.png" alt="produtos zago"></a></div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <script src="index.js"></script>
+    </footer>
+</body>
+</html>

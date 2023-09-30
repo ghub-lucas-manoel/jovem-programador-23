@@ -1,0 +1,552 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Libre+Franklin:wght@700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+}
+
+:root {
+    --cor-titulo-zago-1: #fff;
+    --cor-titulo-zag--2: #FF3131;
+    --cor-header: #4270b4;
+    --cor-fundo-site: #201F1F;
+    --cor-section-pesquisa: #353434;
+    --cor-sombra: rgba(0, 0, 0, 0.74);
+    --botao-pesquisa: #4270b4;
+    --botao-pesquisa-hover: #245eb4;
+    --transparente: #ffffff00;
+    --cor-menu: #363535;
+    --cor-menu-listrado: #201F1F;
+    --cor-fundo-menu-hamburguer-amostra: #242830;
+    --cor-body : #161616;
+    --cor-funcao-principal: #38B6FF;
+}
+
+body {
+    background-color: var(--cor-body);
+    width: 100vw;
+    height: 20vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Header */
+
+header {
+    background-color: var(--cor-header);
+    height: 100px;
+    position: relative;
+    display: flex;
+}
+
+header > div#zago-planner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 320px;
+}
+
+header > div#zago-planner a {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1#zago {
+    color: var(--cor-titulo-zago-1);
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 2.3em;
+}
+
+h1#planner {
+    color: var(--cor-titulo-zag--2);
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 2.3em;
+}
+
+div#div-usuario {
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    right: 20px;
+}
+
+div#div-usuario img {
+    width: 50px;
+    filter: invert(100%);
+    transition: all ease .3s;
+}
+
+div#div-usuario img:hover
+{
+    width: 55px;
+}
+
+.menu-login {
+    display: none;
+    position: absolute;
+    top: 90px;
+    right: 0px;
+    width: 100px;
+    height: 50px;
+    background-color: var(--cor-body);
+    border: 2px solid var(--cor-titulo-zago-1);
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.menu-login ul li {
+    text-align: center;
+    transition: all ease 0.3s;
+}
+
+.menu-login ul li a {
+    font-family: 'League Gothic', sans-serif;
+    color: var(--cor-titulo-zago-1);
+    font-size: 20px;
+}
+
+.menu-login ul li:hover {
+    cursor: pointer;
+    background: var(--cor-menu);
+}
+
+/* Menu */
+
+.nav-menu {
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.nav-menu .menu-simbolo {
+    position: absolute;
+    z-index: 999;
+    width: 35px;
+    height: 35px;
+}
+
+.nav-menu .menu-simbolo span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    margin-bottom: 10px;
+    background-color: var(--cor-titulo-zago-1);
+    border-radius: 3px;
+    transition: all ease 0.2s;
+}
+
+#falsa-checkbox {
+    position: absolute;
+    z-index: 1000;
+    width: 35px;
+    height: 35px;
+    opacity: 0;
+}
+
+input#falsa-checkbox:checked ~ .menu-simbolo span:nth-child(1) {
+    transform-origin: 0% 0%;
+    transform: rotate(45deg) scaleX(1.25);
+}
+
+input#falsa-checkbox:checked ~ .menu-simbolo span:nth-child(2) {
+    background-color: var(--transparente);
+}
+
+input#falsa-checkbox:checked ~ .menu-simbolo span:nth-child(3) {
+    transform-origin: 0% 100%;
+    transform: rotate(-45deg) scaleX(1.25);
+}
+
+.nav-menu ul {
+    padding-top: 30px;
+    position: absolute;
+    z-index: 998;
+    left: 0;
+    top: 0;
+    width: 250px;
+    background-color: var(--cor-fundo-menu-hamburguer-amostra);
+    height: calc(38.2vh - 10px);
+    padding-top: 10px;
+    margin-left: -250px;
+    transition: all ease .2s;
+}
+
+input#falsa-checkbox:checked ~ ul {
+    margin-left: 0;
+}
+
+.nav-menu ul li {
+    padding: 10px  30px;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: var(--cor-titulo-zago-1);
+    transition: all ease 0.3s;
+    font-size: 30px;
+    font-family: 'League Gothic', sans-serif;
+}
+
+.nav-menu ul li a:hover {
+    text-decoration: none;
+    color: #d6d5d5;
+    font-size: 32px;
+}
+
+.listrado {
+    background-color: var(--cor-menu-listrado);
+}
+
+.cor-menu {
+    background-color: var(--cor-fundo-menu-hamburguer-amostra);
+}
+
+.resto {
+    background-color: var(--cor-menu);
+    height: 100%;
+    width: 100%;
+}
+
+.listrado2 {
+    background-color: var(--cor-menu);
+}
+
+/* Main */
+
+main {
+    max-width: 65vw;
+    min-width: 900px;
+    height: calc(100vh - 100px);
+    background-color: var(--cor-fundo-site);
+    margin: 0 auto;
+    display: flex;
+    padding-bottom: 30px;
+}
+
+h1.funcoes {
+    color: var(--cor-titulo-zago-1);
+    font-family: 'League Gothic', sans-serif;
+    font-weight: 300;
+}
+
+div#container1 {
+    width: 65%;
+}
+
+section h1 {
+    text-align: center;
+    font-size: 4.5vh;
+}
+
+section#criar-projeto {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+section#criar-projeto div {
+    width: 80%;
+    height: 17vh;
+    margin: 0 auto;
+    font-size: 17vh;
+    text-align: center;
+    border-radius: 30px;
+    transition: all ease 0.3s;
+}
+
+section#criar-projeto div:hover {
+    width: 85%;
+    height: 20vh;
+    margin: 0 auto;
+    font-size: 20vh;
+    cursor: pointer;
+    border-radius: 33px;
+}
+
+section#criar-projeto h1 {
+    margin-top: 30px;
+}
+
+div.div-funcao {
+    background-color: var(--cor-funcao-principal);
+    box-shadow: 5px 5px 10px var(--cor-sombra);
+}
+
+div#container3 {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0 auto;
+    height: 60%;
+}
+
+div#container3 section {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+div#container3 section div {
+    width: 90%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 auto;
+    border-radius: 30px;
+    transition: all ease 0.3s;
+}
+
+div#container3 section div:hover {
+    cursor: pointer;
+    width: 95%;
+    height: 42vh;
+    border-radius: 33px;
+}
+
+div#container2 {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+div#container2 section {
+    width: 90%;
+    height: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+section#produtos-zago div {
+    width: 85%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 auto;
+    border-radius: 30px;
+    transition: all ease 0.3s;
+}
+
+div.div-funcao a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+div.div-funcao a img {
+    margin: 0 auto;
+    width: 80%;
+}
+
+section#produtos-zago div:hover {
+    width: 93.5%;
+    height: 80%;
+    cursor: pointer;
+    border-radius: 33px;
+}
+
+/* Outras Páginas */
+
+h1#titulo-pagina {
+    font-size: 40px;
+    color: var(--cor-titulo-zago-1);
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+div#pesquisa {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    background-color: var(--botao-pesquisa);
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 100px;
+    justify-content: space-between;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 5px 5px 10px var(--cor-sombra);
+}
+
+div#pesquisa input {
+    background-color: var(--cor-fundo-site);
+    border-radius: 15px;
+    font-size: 14px;
+    width: 300px;
+    height: 30px;
+    padding: 5px;
+    color: var(--cor-titulo-zago-1);
+}
+
+div#botao-pesquisa {
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+
+button#pesquisar {
+    background-color: var(--botao-pesquisa);
+    color: var(--cor-titulo-zago-1);
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 20px;
+    box-shadow: 3px 3px 7px var(--cor-sombra);
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transition: all ease 0.2s;
+    transform: translate(-50%, -40%);
+}
+
+section.resultado-pesquisa {
+    background-color: var(--cor-section-pesquisa);
+    width: 600px;
+    min-height: 100px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px var(--cor-sombra);
+}
+
+section.resultado-pesquisa h2 {
+    color: var(--cor-titulo-zago-1);
+    font-weight: bold;
+    text-align: center;
+    margin: 10px;
+}
+
+label#resultado {
+    margin: 0px 10%;
+    width: 80%;
+    color: var(--cor-titulo-zago-1);
+    margin-bottom: 30px;
+}
+
+button#pesquisar:hover
+{
+    background-color: var(--botao-pesquisa-hover);
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+}
+
+@media (max-width: 900px) {
+    main {
+        flex-direction: column;
+        width: 80%;
+        min-width: 700px;
+        height: 100vh;
+    }
+
+    div#container1 h1, div#container2 h1 {
+        font-size: 30px;
+    }
+
+    div#container1, div#container2 {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    div#container1 {
+        height: 60%;
+    }
+
+    section#criar-projeto {
+        justify-content: space-around;
+        height: 40%;
+    }
+
+    section#criar-projeto div {
+        height: 60%;
+        font-size: 120px;
+        transition: all ease 0.3s;
+    }
+
+    section#criar-projeto div:hover {
+        height: 65%;
+        font-size: 128px;
+    }
+
+    section#criar-projeto h1 {
+        height: 30%;
+        margin-top: 15px;
+    }
+
+    div#container3 {
+        height: 65%;
+    }
+
+    div#container3 section {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    div#container3 section div {
+        height: 70%;
+        transition: all ease 0.3s;
+    }
+
+    div#container3 section div:hover {
+        height: 75%;
+    }
+
+    div#container2 {
+        height: 35%;
+    }
+
+    div#container2 section {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    section#produtos-zago a img {
+        width: 170px;
+        height: auto;
+    }
+}
+
+@media (max-width: 700px) {
+    main {
+        flex-direction: column;
+        width: 100%;
+        min-width: 100%;
+        height: 100vh;
+    }
+
+    section.resultado-pesquisa {
+        width: 80%;
+    }
+
+}
