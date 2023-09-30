@@ -5,12 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="index.js"></script>
-    <title>Hello Word</title>
+    <title>Casarão Eventos Lages</title>
+
+    
+   
 </head>
 <body>
-    <label> Digite seu nome: </label>
-    <input id="inputNome" type="text">
-    <button onclick="exibeNome()">Enviar</button>
-    <p>Olá, <label id="nomeDigitado"></label></p>
+    
+    <div id="menu">
+        <button class="active" data-pagina="inicio" onclick="navegar('inicio')">Início</button>
+        <button data-pagina="servicos" onclick="navegar('servicos')">Serviços</button>
+        <button data-pagina="contato" onclick="navegar('contato')">Contato</button>
+        <button data-pagina="calendario" onclick="navegar('calendario')">Calendário</button>
+    </div>
+
+    
+    <div id="conteudo">
+        <h1>Casarão Eventos Lages</h1>
+        <div id="pagina-inicio">
+            <p>Seja bem-vindo ao Casarão Eventos Lages. Aqui, realizamos os eventos dos seus sonhos.</p>
+            <p>Entre em contato para reservas e informações:</p>
+            <p>Telefone: (49) 99102-2222</p>
+            <p>Email: casaraoeventos@gmail.com</p>
+        </div>
+        <div id="pagina-servicos" style="display: none;">
+            <h1>Serviços</h1>
+            <p>Conteúdo da Página Serviços.</p>
+        </div>
+        <div id="pagina-contato" style="display: none;">
+            <h1>Contato</h1>
+            <p>Conteúdo da Página Contato.</p>
+        </div>
+        <div id="pagina-calendario" style="display: none;">
+            <h1>Calendário</h1>
+            <p>Conteúdo da Página Calendário.</p>
+        </div>
+    </div>
+
+    
 </body>
 </html>
