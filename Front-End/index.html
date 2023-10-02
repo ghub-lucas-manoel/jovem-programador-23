@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="utf-8">
-        <title>Hello World</title>
-        <link rel="stylesheet" href="./index.css">
-        <script src="index.js"></script>
-    </head>
-    <body>
-        <h1>Seja Bem-Vindo a nossa pagina!</h1>
-        <div class="container">
-            <label>Digite seu nome:</label><br>
-            <div class="inputs">
-            <input type="text" id="inputNome">
-            <button onclick="exibeNome()">Enviar</button>
-            </div>
-            <p>Olá, <label id="nomeDigitado"></label></p>
-        </div>
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <title>Hello World</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <h1>Seja Bem-Vindo à página do Cazarão eventos!</h1>
+    <div class="container">
+        <label>Nos conheça melhor!</label><br>
+        <a href="SobreNos.html"><button onclick="exibeSobreNos()" id="exibeSobreNos">Sobre nós</button></a>
+        <a href="./infraestrutura.html"><button onclick="exibeInfraestrutura()" id="exibeInfraestrutura">Infraestrutura</button></a>
+        <a href="./Contato.html"><button onclick="exibeContato()" id="exibeContato">Contato</button></a>
+        <a href="./Calendario.html"><button onclick="exibeCalendario()" id="exibeCalendario">Calendario de Eventos</button></a>
+        <a href="./Reserva.html"><button onclick="exibeReservar()" id="exibeReservar">Reservar Local</button></a>
+    </div>
+</body>
+
 </html>
