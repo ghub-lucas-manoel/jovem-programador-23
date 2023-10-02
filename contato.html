@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja de Materiais de Construção</title>
+    <title>Contato - Loja de Materiais de Construção</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -21,20 +21,17 @@
     </nav>
 
     <main>
-        <section id="destaque">
-            <h2>Produtos em Destaque</h2>
-            <div class="produto">
-                <img src="produto1.jpg" alt="Produto 1">
-                <h3>Produto 1</h3>
-                <p>Descrição do Produto 1</p>
-                <button class="comprar">Comprar</button>
-            </div>
-            <div class="produto">
-                <img src="produto2.jpg" alt="Produto 2">
-                <h3>Produto 2</h3>
-                <p>Descrição do Produto 2</p>
-                <button class="comprar">Comprar</button>
-            </div>
+        <section>
+            <h2>Entre em Contato</h2>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required><br><br>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br><br>
+                <input type="submit" value="Enviar">
+            </form>
         </section>
     </main>
 
