@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zago Planner</title>
-    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="../style.css">
     <link rel="shortcut icon" href="../imagens/zago-planner.ico" type="image/x-icon">
 </head>
-<body>
+<body class="body">
     <header>
         <nav class="nav-menu">
             <input type="checkbox" id="falsa-checkbox">
@@ -36,13 +37,13 @@
             </ul>
         </nav>
         <div id="zago-planner">
-            <a href="../index.html" target="_self">
+            <a href="../index.html" target="_self" class="text-decoration-none">
                 <h1 id="zago">ZAGO </h1>
                 <h1 id="planner">PLANNER</h1>
             </a>
         </div>
     </header>
-    <main>
+    <main class="main-pesquisa">
         <h1 id="titulo-pagina">Pesquisa</h1>
         <div id="pesquisa">
             <input id="texto-pesquisa" type="text" placeholder="O que você deseja pesquisar?">
@@ -54,9 +55,11 @@
             <h2 id="titulo-resultado"></h2>
             <label id= "resultado" for="texto-pesquisa"></label>
         </section>
+
+        <iframe src="pesquisa-atividade.html" frameborder="5" id="iframe-pesquisa-atividade"></iframe>
     </main>
     <footer>
-        <script src="../index.js"></script>
+        <script src="../script.js"></script>
     </footer>
 </body>
 </html>

@@ -32,3 +32,24 @@ function Pesquisar()
 
     resultadoImpresso.innerHTML = pesquisa;
 }
+
+function ExibirNome()
+{
+    var resultadoImpresso = document.getElementById("nomeDigitado");
+
+    resultadoImpresso.classList.remove("label-resultado");
+
+    var span = document.getElementById("span-pesquisa");
+
+    span.style.color="white";
+
+    resultadoImpresso.innerHTML = "";
+
+    var pesquisa = document.getElementById("inputNome").value;
+
+    resultadoImpresso.style.color="white";
+
+    resultadoImpresso.classList.add("label-resultado");
+
+    resultadoImpresso.innerHTML = pesquisa;
+}

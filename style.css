@@ -6,7 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    list-style: none;
+    text-decoration: none;
 }
 
 :root {
@@ -26,17 +26,16 @@
     --cor-funcao-principal: #38B6FF;
 }
 
-body {
+body.body {
     background-color: var(--cor-body);
     width: 100vw;
-    height: 20vh;
+    height: 100vh;
     overflow-x: hidden;
     overflow-y: hidden;
 }
 
-a {
+a.text-decoration-none:hover {
     text-decoration: none;
-    color: black;
 }
 
 /* Header */
@@ -46,6 +45,10 @@ header {
     height: 100px;
     position: relative;
     display: flex;
+}
+
+header.header-principal {
+    margin-top: -30px;
 }
 
 header > div#zago-planner {
@@ -130,6 +133,10 @@ div#div-usuario img:hover
     margin-top: 30px;
 }
 
+.margin-top-25px {
+    margin-top: 25px;
+}
+
 .nav-menu .menu-simbolo {
     position: absolute;
     z-index: 999;
@@ -177,7 +184,7 @@ input#falsa-checkbox:checked ~ .menu-simbolo span:nth-child(3) {
     top: 0;
     width: 250px;
     background-color: var(--cor-fundo-menu-hamburguer-amostra);
-    height: calc(38.2vh - 10px);
+    height: 100vh;
     padding-top: 10px;
     margin-left: -250px;
     transition: all ease .2s;
@@ -211,6 +218,7 @@ input#falsa-checkbox:checked ~ ul {
 
 .cor-menu {
     background-color: var(--cor-fundo-menu-hamburguer-amostra);
+    height: 0px;
 }
 
 .resto {
@@ -228,17 +236,21 @@ input#falsa-checkbox:checked ~ ul {
 main {
     max-width: 65vw;
     min-width: 900px;
-    height: calc(100vh - 100px);
     background-color: var(--cor-fundo-site);
     margin: 0 auto;
-    display: flex;
     padding-bottom: 30px;
+    height: calc(100vh - 100px);
+}
+
+main.main-flex {
+    display: flex;
 }
 
 h1.funcoes {
     color: var(--cor-titulo-zago-1);
     font-family: 'League Gothic', sans-serif;
     font-weight: 300;
+    height: auto;
 }
 
 div#container1 {
@@ -267,11 +279,23 @@ section#criar-projeto div {
     transition: all ease 0.3s;
 }
 
+a.criar-projeto-link {
+    text-decoration: none;
+    color: black;
+    font-size: 17vh;
+}
+
+a.criar-projeto-link:hover {
+    text-decoration: none;
+    color: black;
+    font-size: 20vh;
+    transition: all ease 0.3s;
+}
+
 section#criar-projeto div:hover {
     width: 85%;
     height: 20vh;
     margin: 0 auto;
-    font-size: 20vh;
     cursor: pointer;
     border-radius: 33px;
 }
@@ -373,7 +397,7 @@ h1#titulo-pagina {
     font-size: 40px;
     color: var(--cor-titulo-zago-1);
     text-align: center;
-    margin-top: 20px;
+    padding-top: 20px;
     width: 100%;
 }
 
@@ -392,7 +416,7 @@ div#pesquisa {
     box-shadow: 5px 5px 10px var(--cor-sombra);
 }
 
-div#pesquisa input {
+div#pesquisa input#texto-pesquisa {
     background-color: var(--cor-fundo-site);
     border-radius: 15px;
     font-size: 14px;
@@ -460,16 +484,102 @@ button#pesquisar:hover
     font-size: 16px;
 }
 
+.nav-pesquisa nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    background-color: rgb(68, 68, 68);
+}
+
+.nav-pesquisa nav > a {
+    margin-top: 40px;
+}
+
+.nav-pesquisa nav > form {
+    margin-top: 40px;
+}
+
+.nav-pesquisa ul {
+    list-style: none;
+}
+
+main.main-pesquisa div#pesquisa {
+    display: none;
+}
+
+main.main-pesquisa {
+    color: white;
+}
+
+footer.footer-pesquisa {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%);
+    margin: 0 auto;
+    color: white;
+    background-color: #9C9C9C;
+}
+
+footer.footer-pesquisa div {
+    text-align: center;
+    width: 100%;
+}
+
+#section1 {
+    background-color: #00E6FF;
+}
+
+#section2 {
+    background-color: #F5F4DC;
+}
+
+#section3 {
+    background-color: #5097A0;
+}
+
+#section4 {
+    background-color: #8B898B;
+}
+
+#cabecalho {
+    color: white;
+}
+
+main.main-pesquisa section.resultados div {
+    justify-content: center;
+    display: flex;
+}
+
+main.main-pesquisa section.secao-menu {
+    height: 20vh;
+}
+
+iframe#iframe-pesquisa-atividade {
+    width: 80%;
+    height: 80%;
+    margin-left: 10%
+}
+
 @media (max-width: 900px) {
     main {
-        flex-direction: column;
         width: 80%;
         min-width: 700px;
         height: 100vh;
+        padding-bottom: 0px;
+    }
+
+    main.main-flex {
+        display: flex;
+        flex-direction: column;
+        height: calc(100vh - 100px);
+        justify-content: space-between;
     }
 
     div#container1 h1, div#container2 h1 {
         font-size: 30px;
+
     }
 
     div#container1, div#container2 {
@@ -478,7 +588,8 @@ button#pesquisar:hover
     }
 
     div#container1 {
-        height: 60%;
+        height: 65%;
+        justify-content: space-between;
     }
 
     section#criar-projeto {
@@ -498,12 +609,12 @@ button#pesquisar:hover
     }
 
     section#criar-projeto h1 {
-        height: 30%;
+        height: 20px;
         margin-top: 15px;
     }
 
     div#container3 {
-        height: 65%;
+        height: 60%;
     }
 
     div#container3 section {
@@ -534,6 +645,10 @@ button#pesquisar:hover
     section#produtos-zago a img {
         width: 170px;
         height: auto;
+    }
+
+    iframe#iframe-pesquisa-atividade {
+        height: 70%;
     }
 }
 
