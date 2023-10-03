@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zago Planner</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Zago Planner</h1>
+    </header>
+    <div class="container">
+        <nav class="menu">
+            <ul>
+                <li><a href="?page=Manual%20do%20Usuário" id="manualBtn" target="_blank">Manual do Usuário</a></li>
+                <li><a href="?page=Meus%20Projetos" id="MeusProjetosBtn" target="_blank">Meus Projetos</a></li>
+                <li><a href="?page=Criar%20Projeto" id="criarProjetoBtn" target="_blank">Criar Projeto</a></li>
+                <li><a href="?page=Produtos%20Zago" id="produtosZagoBtn" target="_blank">Produtos Zago</a></li>
+                <li><a href="?page=Parceria" id="parceriaBtn" target="_blank">Parceria</a></li>
+                <li><a href="?page=Suporte" id="suporteBtn" target="_blank">Suporte</a></li>
+                <li><a href="?page=Sobre%20Nós" id="sobreNosBtn" target="_blank">Sobre Nós</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div id="content" class="page-content">
+                <!-- O conteúdo da tela será exibido aqui -->
+            </div>
+        </main>
+    </div>
+    <div class="search-container">
+        <input type="text" id="projectSearchInput" placeholder="Pesquisar projetos">
+        <button id="projectSearchButton">Buscar</button>
+    </div>
+    <div id="projectSearchResults">
+        <!-- Os resultados da pesquisa de projetos serão exibidos aqui -->
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
+
