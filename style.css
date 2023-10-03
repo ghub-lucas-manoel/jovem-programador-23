@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif, sans-serif;
+    font-size: 1em;
+   
+}
+
+  body {
+    background-color: rgb(65, 165, 65);
+  }
+  
+  h1 {
+    font-family: Tahoma;
+    color: gray;
+    text-align: center;
+    font-size: 90px;
+  }
+  
+  p {
+    font-family: tahoma;
+    font-size: 30px;
+    color: darkgray;
+  }
