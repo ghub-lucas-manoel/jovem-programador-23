@@ -4,23 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
     <script src="index.js"></script>
     <title>Moda Ativa</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div id = "menu">
-            <i id="burguer" class="material-icons" onclick="mostrarMenu()">menu</i>
-        </div>
-        <a href="index.html"><img src="moda-ativa-logo.png" alt="logoModaAtiva" id ="modaAtivaLogo"></a>
-        <nav>
-            <div id= "barraDePesquisa">
-                <input type="text" id="pesquisarPalavra" placeholder="Faça sua pesquisa">
-                <button onclick="exibirPesquisa()" id = "botaoPesquisar"><i class="material-icons">search</i></button>
+        <nav class="navbar navbar-expand-lg p-0">
+            <div id = "menu" class="navbar-nav">
+                <i id="burguer" class="material-icons" onclick="mostrarMenu()">menu</i>
             </div>
+            <a href="index.html"><img src="moda-ativa-logo.png" alt="logoModaAtiva" id ="modaAtivaLogo" class="ml-1"></a>
+            <form class="form-inline ml-3">
+                <div class="form-group" id="barraDePesquisa">
+                    <input type="text" id="pesquisarPalavra" placeholder="Faça sua pesquisa" class="form-control m-0">
+                    <button onclick="exibirPesquisa()" id = "botaoPesquisar" class="rounded-circle ml-2"><i class="material-icons">search</i></button>
+                </div>
+            </form>
+            <a href="cadastro.html" id="link-perfil"><img src="https://th.bing.com/th/id/R.f29406735baf0861647a78ae9c4bf5af?rik=GKTBhov2iZge9Q&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_206976.png&ehk=gCH45Zmryw3yqyqG%2fhd8WDQ53zwYfmC8K9OIkNHP%2fNU%3d&risl=&pid=ImgRaw&r=0" alt="fotoDePerfil" id = "fotoPerfil"></a>
         </nav>
-        <a href="cadastro.html"><img src="https://th.bing.com/th/id/R.f29406735baf0861647a78ae9c4bf5af?rik=GKTBhov2iZge9Q&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_206976.png&ehk=gCH45Zmryw3yqyqG%2fhd8WDQ53zwYfmC8K9OIkNHP%2fNU%3d&risl=&pid=ImgRaw&r=0" alt="fotoDePerfil" id = "fotoPerfil"></a>
+        
     </header>
     <menu id = "menuOculto">
         <ul>
@@ -32,17 +37,23 @@
             <li><a href="cadastro.html">Cadastro</a></li>
         </ul>
     </menu>
-    <div class = "container">
+    <div class = "fundo">
         <div id = "conteudoPrincipal">
             <h1>Trabalhe Conosco</h1>
-            <p><label id="palavraDigitada"></label></p>
+            <span>Você digitou: </span><label id="palavraDigitada"></label>
         </div>
     </div>
     <footer>
-        <div><img src="https://i.pinimg.com/originals/a8/68/67/a868678ed693a95ca673c20fdaebeaa4.png" alt="ícone de telefone" class = "rodapeImg"></div>
-        <div class="meio">(49) 3251-4300</div>
-        <div><img src="https://cdn-icons-png.flaticon.com/512/0/619.png" alt="ícone de localização" class = "rodapeImg"></div>
-        <div>Correia Pinto 79, Lages, SC, BraSil</div>
+        <div class="rodape">
+            <small id="numero">
+                <img src="https://i.pinimg.com/originals/a8/68/67/a868678ed693a95ca673c20fdaebeaa4.png" alt="ícone de telefone" class = "rodapeImg">
+                (49) 3251-4300
+            </small>
+            <small id="localizacao">
+                <img src="https://cdn-icons-png.flaticon.com/512/0/619.png" alt="ícone de localização" class = "rodapeImg">
+                Correia Pinto 79, Lages, SC, Brasil
+            </small>
+        </div>
     </footer>
 </body>
 </html>

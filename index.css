@@ -1,84 +1,81 @@
 body{
     margin: 0px;
     padding: 0px;
-    width: 90.87%;
+    width: 100vw;
+    height: 100vh;
 }
 header {
     height: 10vh;
-    width: 105.02%;
+    width: 100vw;
     background-color: #ab3390;
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 5%;
+    padding: 0px;
 }
 nav {
     position: relative;
     align-items: center;
-    padding: 10px;
     display: inline;
-    height: 30px;
+    height: 10vh;
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
 }
 #modaAtivaLogo {
     background-color: white;
     border-radius: 30px;
     padding-bottom: 10px;
     margin-left: -20vw;
-    width: 180px;
+    height: 9vh;
 }
 img {
     display: block;
 }
+form {
+    height: 10vh;
+    margin-right: 20px;
+}
 #barraDePesquisa {
-    display: inline;
+    height: 10vh;
+    display: inline-flex;
+    margin-left: 15vw;
 }
 button {
-    position: absolute;
-    height: 36px;
-    border-radius: 10px;
-    cursor: pointer;
-    right: -35px;
+    height: 40px;
+    width: 40px;
 }
 button:hover {
     background-color: rgb(61, 61, 61);
     color: white;
-    height: 40px;
-    width: 50px;
-    border-radius: 12px;
-    top: 7px;
-    right: -50px;
-}
-input {
-    height:  30px;
-    font-size: 1em;
-    border-radius: 10px;
-    padding-top: -20px;
 }
 #fotoPerfil {
-    height: 80px;
+    height: 9vh;
     border-radius: 40px;
     display: block;
-    margin-right: -3vw;
-    margin-left: 14vw;
+    margin-right: 5px;
+}
+#link-perfil {
+    margin-left: 35vw;
+    float: right;
 }
 #fotoPerfil:hover {
-    background-color: white;
+    filter: invert(100%);
     cursor: pointer;
 }
 #burguer {
-    height: 7.5vh;
+    height:10vh;
     background-color: #ab3390;
-    display: block;
+    display: flex;
     color: white;
     text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 4vh;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-right: 15vw;
     cursor: pointer;
-    width: 9vh;
+    width: 100px;
     font-size: 50px;
+    align-items: center;
 }
 #burguer:hover {
     background-color: white;
@@ -90,7 +87,7 @@ input {
 menu {
     display: none;
     margin-left: -50px;
-    margin-top: -16px;
+    margin-top: 0px;
     position: absolute;
 }
 ul {
@@ -101,25 +98,25 @@ li > a {
     display: block;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 15px;
     text-decoration: none;
     text-align: center;
     background-color: rgb(87,87,87);
     text-decoration: none;
     color: white;
-    width: 11.9vh;
-    height: 30px;
+    width: 100px;
+    height: 5vhpx;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bolder;
+    font-size: 1em;
 }
 li > a:hover {
     color: white;
     background-color: rgb(47,47,47);
     cursor: pointer;
 }
-.container {
-    width: 110.05%;
-    height: 83vh;
+.fundo {
+    width: 100%;
+    height: 80vh;
     background-color: rgb(29, 27, 27);
     display: flex;
     flex-direction: row;
@@ -130,7 +127,7 @@ li > a:hover {
     margin-top: 20px;
     margin-bottom: 20px;
     background-color: rgb(255, 255, 255);
-    min-width: 80%;
+    width: 80vw;
     height: 60vh;
     border-radius: 20px;
     padding: 20px;
@@ -140,17 +137,23 @@ h1 {
 }
 footer {
     background-color: white;
-    display: flex;
-    justify-content: center;
-    width: 50.05%;
-    align-items: center;
-    padding: 20px;
-    padding-right: 30%;
-    padding-left: 30%;
-}
-footer > div {
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    height: 10vh;
+    width: 100%;
     text-align: center;
-    margin-right: 10px;
+}
+#rodape {
+    background-color: rgb(255, 255, 255);
+    width: auto;
+    height: auto;
+    padding: 20px;
+}
+#numero {
+    margin-right: 3vw;
+}
+#localizacao {
+    margin-left: 3vw;
 }
 .meio
 {
@@ -161,38 +164,67 @@ footer > div {
     display: inline-block;
     align-items: center;
 }
-@media screen and (max-width: 2100px) {
-    #modaAtivaLogo {
-        margin-left: -10vw;
+@media screen and (max-width: 1500px) {
+    #link-perfil {
+        margin-left: 30vw;
+    }
+    #barraDePesquisa {
+        margin-left: 10vw;
     }
 }
-@media screen and (max-width: 1200px){
-    #fotoPerfil {
-        margin-left: 7vw;
+@media screen and (max-width: 1350px) {
+    #link-perfil {
+        margin-left: 25vw;
+    } 
+}
+@media screen and (max-width: 1250px) {
+    #link-perfil {
+        margin-left: 20vw;
+    }
+    #burguer{
+        margin-right: 12vw;
     }
 }
-@media screen and (max-width: 1000px){
-    #fotoPerfil {
-        margin-left: -3vw;
+@media screen and (max-width: 1100px) {
+    #link-perfil {
+        margin-left: 18vw;
+    } 
+}
+@media screen and (max-width: 990px) {
+    #link-perfil {
+        margin-left: 20vw;
     }
+    #barraDePesquisa {
+        margin-left: 6vw;
+    }
+    #burguer{
+        margin-right: 6vw;
+    }
+}
+@media screen and (max-width: 880px) {
+    #link-perfil {
+        margin-left: 1vw;
+    }
+    #barraDePesquisa {
+        margin-left: 2vw;
+    }
+    #burguer{
+        margin-right: 5vw;
+    }
+
 }
 @media screen and (max-width: 800px){
-    #fotoPerfil {
+    #link-perfil {
         display: none;
     }
-    footer {
-        padding-left: 30px;
-        padding-right: 20px;
-        width: 100%
-    }
-    #modaAtivaLogo {
-        width: 100px;
-        margin-left: 3vw;
+    #barraDePesquisa {
+        margin-left: 10vw;
     }
 }
 @media screen and (max-width: 700px) {
     button {
-        height: 30px;
+        height: 40px;
+        width: 40px;
         top: 10px;
     }
     header {
@@ -210,7 +242,20 @@ footer > div {
         width: 120px;
         display: block;
     }
-    nav {
-        margin-left: 3vh;
+    #modaAtivaLogo {
+        display: none;
+    }
+}
+@media screen and (max-width: 690px){
+    #barraDePesquisa {
+        height: 10vh;
+    }
+}
+@media screen and (max-width: 572px){
+    #burguer{
+        margin-right: 1vw;
+    }
+    #barraDePesquisa {
+        height: 3vh;
     }
 }
