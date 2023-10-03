@@ -3,39 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zago Planner</title>
+    <title>Zago Planner - Meus Projetos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <header>
+    <header class="bg-primary text-white text-center py-3">
         <h1>Zago Planner</h1>
     </header>
-    <div class="container">
-        <nav class="menu">
-            <ul>
-                <li><a href="?page=Manual%20do%20Usuário" id="manualBtn" target="_blank">Manual do Usuário</a></li>
-                <li><a href="?page=Meus%20Projetos" id="MeusProjetosBtn" target="_blank">Meus Projetos</a></li>
-                <li><a href="?page=Criar%20Projeto" id="criarProjetoBtn" target="_blank">Criar Projeto</a></li>
-                <li><a href="?page=Produtos%20Zago" id="produtosZagoBtn" target="_blank">Produtos Zago</a></li>
-                <li><a href="?page=Parceria" id="parceriaBtn" target="_blank">Parceria</a></li>
-                <li><a href="?page=Suporte" id="suporteBtn" target="_blank">Suporte</a></li>
-                <li><a href="?page=Sobre%20Nós" id="sobreNosBtn" target="_blank">Sobre Nós</a></li>
-            </ul>
-        </nav>
-        <main>
-            <div id="content" class="page-content">
-                <!-- O conteúdo da tela será exibido aqui -->
-            </div>
-        </main>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Menu lateral -->
+            <nav class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
+                <div class="position-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="?page=Manual%20do%20Usuário" target="_blank">Manual do Usuário</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="?page=Criar%20Projeto" target="_blank">Criar Projeto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="?page=Produtos%20Zago" target="_blank">Produtos Zago</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="?page=Parceria" target="_blank">Parceria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="?page=Suporte" target="_blank">Suporte</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="?page=Sobre%20Nós" target="_blank">Sobre Nós</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="?page=Meus%20Projetos" target="_blank">Meus Projetos</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Conteúdo da página -->
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <div id="content" class="page-content text-center">
+                    <h2 class="mb-4">Meus Projetos</h2>
+                    <p class="lead">Aqui você pode visualizar e gerenciar seus projetos.</p>
+                </div>
+                <div class="search-container mt-4">
+                    <input type="text" id="projectSearchInput" class="form-control" placeholder="Pesquisar projetos">
+                    <button id="projectSearchButton" class="btn btn-primary mt-2">Buscar</button>
+                </div>
+                <div id="projectSearchResults" class="mt-4">
+                    <!-- Os resultados da pesquisa de projetos serão exibidos aqui -->
+                </div>
+            </main>
+        </div>
     </div>
-    <div class="search-container">
-        <input type="text" id="projectSearchInput" placeholder="Pesquisar projetos">
-        <button id="projectSearchButton">Buscar</button>
-    </div>
-    <div id="projectSearchResults">
-        <!-- Os resultados da pesquisa de projetos serão exibidos aqui -->
-    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
+
 

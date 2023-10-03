@@ -1,70 +1,22 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0; /* Cor de fundo da página */
-}
-
-header {
-    background-color: #1013af;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-}
-
-/* Estilos para o título "Zago Planner" */
-header h1 {
-    color: red; /* Cor do título vermelha */
-}
-
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 20px;
-}
-
-.menu {
-    width: 200px;
-    background-color: #210dda;
-    color: white;
-    padding: 20px;
-}
-
-.menu ul {
-    list-style: none;
-    padding: 0;
-}
-
-.menu ul li {
-    margin-bottom: 10px;
-}
-
-.menu a {
-    text-decoration: none;
-    color: white;
-}
-
-.menu a:hover {
-    text-decoration: underline;
-    color: red; /* Cor do texto vermelha ao passar o mouse */
-}
-
-/* Estilos para a barra de pesquisa de projetos */
+/* Estilos para centralizar a barra de pesquisa */
 .search-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    height: 15vh; /* Isso define a altura da área de conteúdo para a altura da janela do navegador */
     text-align: center;
 }
 
+/* Estilos para o campo de pesquisa */
 input[type="text"] {
     padding: 10px;
     width: 300px;
-    border: none;
-    border-radius: 5px;
-    color: rgb(15, 9, 9); /* Cor do texto vermelha */
+    border: center;
+    border-radius: 10px;
+    color: rgb(14, 10, 10); /* Cor do texto vermelha */
+    justify-content: center;
+    align-items: center;
 }
 
 button {
@@ -74,47 +26,4 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
-
-/* Estilos para os resultados da pesquisa de projetos */
-#projectSearchResults {
-    margin-top: 20px;
-    background-color: #f0f0f0; /* Fundo cinza claro */
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* Estilos para os resultados da pesquisa */
-.result-item {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: left;
-    background-color: white; /* Fundo branco para os resultados */
-}
-
-.result-item h3 {
-    margin-top: 0;
-    color: #007BFF; /* Cor do título azul */
-}
-
-.result-item p {
-    margin: 10px 0;
-    color: #555;
-}
-
-/* Estilos para centralizar a descrição e o botão de pesquisa nas páginas */
-.page-content {
-    text-align: center;
-    margin-top: 20px;
-}
-
-/* Estilos para centralizar o botão de pesquisa nas páginas */
-.page-content .search-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
