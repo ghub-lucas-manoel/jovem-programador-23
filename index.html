@@ -1,59 +1,81 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
+        <!--Metadados-->
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="index.css" />
+        <!--Links (CSS, Bootstrap)-->
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="style.css" />
         <title>Página Inicial</title>
     </head>
     <body>
         <header>
-            <div class="menu" id="imgMenu">
-                <img id="menAberto" src="_imagens/retangulos-de-menu.png" />
+            <div class="dropdown">
+                <a
+                    class="btn btn-secondary dropdown-toggle"
+                    href="#"
+                    role="button"
+                    id="dropdownMenuLink"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                >
+                    Menu
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a
+                        class="dropdown-item"
+                        href="#"
+                        onclick="mostrarMensagem('Página Inicial')"
+                        >Página Inicial</a
+                    >
+                    <a
+                        class="dropdown-item"
+                        href="#"
+                        onclick="mostrarMensagem('Moda Ativa Kids')"
+                        >Moda Ativa Kids</a
+                    >
+                    <a
+                        class="dropdown-item"
+                        href="#"
+                        onclick="mostrarMensagem('Sugestões')"
+                        >Sugestões</a
+                    >
+                    <a
+                        class="dropdown-item"
+                        href="#"
+                        onclick="mostrarMensagem('Trabalhe Conosco')"
+                        >Trabalhe Conosco</a
+                    >
+                    <a
+                        class="dropdown-item"
+                        href="#"
+                        onclick="mostrarMensagem('SAC')"
+                        >SAC</a
+                    >
+                </div>
             </div>
 
-            <nav class="menu" id="menuHamb">
-                <ul class="menuList" id="list">
-                    <li>
-                        <a href="#" onclick="mostrarMensagem('Página Inicial')"
-                            >Página Inicial</a
-                        >
-                    </li>
-                    <li>
-                        <a href="#" onclick="mostrarMensagem('Moda Ativa Kids')"
-                            >Moda Ativa Kids</a
-                        >
-                    </li>
-                    <li>
-                        <a href="#" onclick="mostrarMensagem('Sugestões')"
-                            >Sugestões</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="#"
-                            onclick="mostrarMensagem('Trabalhe Conosco')"
-                            >Trabalhe Conosco</a
-                        >
-                    </li>
-                    <li>
-                        <a href="#" onclick="mostrarMensagem('SAC')">Sac</a>
-                    </li>
-                </ul>
-            </nav>
+            <div id="mensagem"></div>
 
             <div class="logo">
                 <img src="_imagens/logoModaAtiva.jpg" />
             </div>
-
-            <input
-                type="text"
-                placeholder="Faça sua Pesquisa"
-                class="search"
-                id="procurar"
-            />
-            <button type="submit" onclick="mostrarPesquisa()">
-                <img src="_imagens/lupa.png" id="lupaPesquisar" />
+            <form class="form-inline">
+                <input
+                    type="search"
+                    placeholder="Pesquisar"
+                    class="search form-control mr-sm-2"
+                    id="procurar"
+                />
+            </form>
+            <button
+                class="btn btn-light"
+                type="submit"
+                onclick="mostrarPesquisa()"
+            >
+                Pesquisar
             </button>
             <div class="usuario">
                 <img src="_imagens/perfil-de-usuario.png" />
@@ -66,10 +88,17 @@
             <label id="mensagem"></label>
         </section>
 
-        <footer>
-            <p>(49)3251-4300</p>
-            <p>Rua Correia Pinto 79, Lages, SC, Brasil</p>
+        <footer class="footer mt-auto py-3">
+            <div class="container">
+                <span class="text-muted">(49)3251-4300</span>
+                <span class="text-muted"
+                    >Rua Correia Pinto 79, Lages, SC, Brasil</span
+                >
+            </div>
         </footer>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
         <script src="index.js"></script>
     </body>
 </html>

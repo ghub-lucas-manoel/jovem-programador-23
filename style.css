@@ -15,40 +15,6 @@ header {
     padding: 10px 20px;
 }
 
-.menuList {
-    list-style: none;
-    position: relative;
-    right: 8rem;
-    padding: 2px;
-    display: none;
-    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-    opacity: 0;
-    transform: translateY(-10px);
-}
-.menuList.visible {
-    display: block;
-    opacity: 1;
-    transform: translateY(0);
-}
-.menu ul li {
-    box-sizing: border-box;
-    border: 1px solid rgb(167, 7, 79);
-    padding: 3px;
-    display: inline-block;
-    margin: 3px;
-    margin-right: 5px;
-    cursor: pointer;
-    transition: background-color 1s;
-}
-.menu ul li:last-child {
-    margin-right: 0;
-}
-.menu ul li:hover {
-    background-color: rgb(194, 27, 102);
-    color: aliceblue;
-}
-
-.menu,
 .logo,
 .usuario {
     flex: 1;
@@ -67,15 +33,6 @@ header {
 .usuario img {
     max-width: 100%;
     width: 50px;
-    height: auto;
-}
-.menu {
-    cursor: pointer;
-    text-align: left;
-}
-.menu img {
-    max-width: 100%;
-    width: 35px;
     height: auto;
 }
 
@@ -105,11 +62,6 @@ button img {
     transform: translate(-50%, -50%);
     font-size: 2rem;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
 }
 
 #mensagem {
