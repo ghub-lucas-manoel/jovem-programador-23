@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     linksNavegacao.forEach(function(link) {
         link.addEventListener('click', function(event) {
-            event.preventDefault(); // Evita que a página recarregue ao clicar no link
+            event.preventDefault(); 
             const destino = this.getAttribute('href');
             carregarPagina(destino);
         });
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 conteudoAtual.parentNode.replaceChild(novaMain, conteudoAtual);
 
-                // Atualiza os links de navegação na nova página
+                
                 const novosLinks = novoConteudo.querySelectorAll('nav a');
 
                 novosLinks.forEach(function(link) {

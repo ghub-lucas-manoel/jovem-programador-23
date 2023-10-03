@@ -4,35 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Nós - Loja de Materiais de Construção</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    <header>
-        <h1>Loja de Materiais de Construção</h1>
+    <header class="bg-primary text-white text-center py-5">
+        <h1 class="display-4">Loja de Materiais de Construção</h1>
     </header>
     
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="produtos.html">Produtos</a></li>
-            <li><a href="sobre.html">Sobre Nós</a></li>
-            <li><a href="contato.html">Contato</a></li>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="produtos.html">Produtos</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="sobre.html">Sobre Nós</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contato.html">Contato</a>
+            </li>
         </ul>
     </nav>
 
-    <main>
+    <main class="container my-5">
         <section>
-            <h2>Sobre Nós</h2>
-            <p>Texto sobre a sua empresa e o que a torna especial.</p>
+            <h1 class="text-center mb-4">Sobre Nós</h1>
+            <h2 class="text-center mb-4">Bem-vindo à Nossa Loja de Materiais de Construção</h2>
+            <p>Na nossa loja, a construção dos seus sonhos é nossa prioridade. Com anos de experiência no mercado, somos apaixonados por fornecer os melhores 
+            materiais e soluções para os nossos clientes.
+        </p>
         </section>
     </main>
 
-    
-    <footer>
-        <p>&copy; Zago Planner com você
-        </p>
+    <footer class="text-center py-3">
+        <p>&copy; Zago Planner com você</p>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
