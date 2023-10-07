@@ -103,11 +103,15 @@ div#div-usuario img:hover
     top: 90px;
     right: 0px;
     width: 100px;
-    height: 50px;
+    height: 34px;
     background-color: var(--cor-body);
     border: 2px solid var(--cor-titulo-zago-1);
-    flex-direction: column;
     justify-content: space-around;
+}
+
+.menu-login ul {
+    list-style: none;
+    width: 100%;
 }
 
 .menu-login ul li {
@@ -131,6 +135,7 @@ div#div-usuario img:hover
 .nav-menu {
     margin-left: 30px;
     margin-top: 30px;
+    padding: 0px;
 }
 
 .margin-top-25px {
@@ -160,6 +165,10 @@ div#div-usuario img:hover
     width: 35px;
     height: 35px;
     opacity: 0;
+}
+
+#falsa-checkbox:hover {
+    cursor: pointer;
 }
 
 input#falsa-checkbox:checked ~ .menu-simbolo span:nth-child(1) {
@@ -212,7 +221,7 @@ input#falsa-checkbox:checked ~ ul {
     font-size: 32px;
 }
 
-.listrado {
+ul.list-group li.listrado {
     background-color: var(--cor-menu-listrado);
 }
 
@@ -227,7 +236,7 @@ input#falsa-checkbox:checked ~ ul {
     width: 100%;
 }
 
-.listrado2 {
+ul.list-group li.listrado2 {
     background-color: var(--cor-menu);
 }
 
