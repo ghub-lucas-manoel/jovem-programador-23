@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 15vh; /* Isso define a altura da área de conteúdo para a altura da janela do navegador */
+    height: 15vh; 
     text-align: center;
 }
 
@@ -21,9 +21,28 @@ input[type="text"] {
 
 button {
     padding: 10px 15px;
-    background-color: red; /* Cor de fundo vermelha */
+    background-color: rgb(39, 175, 96); /* Cor de fundo vermelha */
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
+
+.bg-custom-sidebar {
+    background-color: #ffffff; /* Substitua pela cor desejada (laranja neste exemplo) */
+    color: rgb(237, 240, 241);}
+
+footer {
+    
+   
+    position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333; /* Cor de fundo do footer */
+        color: white; /* Cor do texto do footer */
+        
+       
+    padding: 10px; /* Espaçamento interno do footer */
+    }
+    
