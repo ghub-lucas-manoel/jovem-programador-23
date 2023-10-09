@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 body {
-    background-color: aliceblue;
+    background: url("_imagens/yellow-bg.jpg") no-repeat;
+    background-position: 50% 25%;
 }
 header {
     background-color: rgb(255, 255, 255);
