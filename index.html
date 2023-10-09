@@ -1,66 +1,124 @@
 <!DOCTYPE html>
-<html lang="pt-br">*/
+<html lang="pt-br">
     <head>
-      <meta charset="UTF-8">
-      <link rel="stylesheet" href="css/bootstrap.min.css"/>
-      <link rel="stylesheet" href="style.css"/>
-      <script src="js/bootstrap.min.js"></script>
-      <script src="index.js"></script>
-      <title>'Olá'</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="style.css"/>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="index.js"></script>
+        <title>'Olá'</title>
+      
         </head>
-        <header>
-          <nav id="cabecalho" class="navbar navbar-expand-lg navbar-dark bg-dark stick-top">
-            <a class="mr-3 navegacao-index">Home</a>
-            <ul class=" navbar-nav mr-auto">
-              <li class="nav-item mr-2">
-                <a href="#" >Kids</a>
-               </li>
-               <li class="nav-item mr-2">
-                 <a href="#" >Trabalhe Conosco</a>
-                </li>
-                <li class="nav-item mr-2">
-                 <a href="#" >Sac</a>
-                </li>
-                <li class="nav-item mr-2">
-                 <a href="#" >Contato</a>
-                </li>
-               </ul> 
-               <form class="form-inline">
-                    <div class="form-group">
-                      <input type="text" placeholder="O que esta procurando?"  id="inputNome"   class="form-control mr-1 ml-1"/>
-                      <button class="btn" onclick="exibirNome();">Pesquisar</button>
+        <body>
+          <header>
+                   <nav id="cabecalho"  class="navbar navbar-expand-lg navbar-dark bg-dark stick-top">
+                     <a class="mr-1 navegacao-index navbar-brand">Ativa Bazar</a>
+                     <ul class=" navbar-nav mr-auto">
+                       <li class="nav-item mr-2">
+                         <a href="#" >Pagina Principal</a>
+                        </li>
+                        <li class="nav-item mr-2">
+                          <a href="#" >Ativa Kids</a>
+                         </li>
+                         <li class="nav-item mr-2">
+                          <a href="#" >Trabalhe Conosco</a>
+                         </li>
+                         <li class="nav-item mr-2">
+                          <a href="#" >Sac <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                          </svg></a>
+                         </li>
+                        </ul> 
+                        <form class="form-inline">
+                             <div class="form-group">
+                               <input type="text" placeholder="Busque por seu produto."  id="inputNome"   class="form-control mr-5 ml-5"/>
+                               <button class="btn btn-warning" onclick="exibirNome();">Pesquisar</button>
+                              </div>
+                            </form>
+                     </nav>
+           </header>
+           
+        <main class="h-100">
+          
+             
+<section id="section1">
+  <div class="container h-100">
+    <div id="conteudoSection1" class="col-9 bg-dark h-100">
+                     
+                      
+             <h1 class="display-3 font-weight-bold"> Ativa Bazar</h1>
+             <h4>O melhor da loja Moda Ativa, e Moda Ativa kids, está aqui acompanhe nossa programação de final de ano, horarios diferenciados para melhor atende-lo.</h4><label id="nomeDigitado"></label>
+             <button class="btn btn-outline-sucess" type="">
+            </div>      
+              </section>
+              <section id="section2">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-5">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="116" height="16" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                      </svg>
+                    </div>
+                    <div class="col-8 align-self-foot" class="container pt-5 pb-5">                      
+                      <h1>Clique nesse link e confira as melhores promoções</h1>
+                    </section>
+              <section id="section3" class="bg-dark">
+                <div class="container pt-5 pb-5">
+                  <h1>Conheça Sobre Nós:</h1>
+                       <div class="row">
+                            <div class="col-12">
+                               <div class="card-deck">
+                                  <div class="card">
+                                    <h4 class="card-header">Nosso Inicio</h4>
+                                      <div class="card-body">
+                                        <p>Nossa história começa com a vinda do fundador, filho de Libaneses, encontrou a cidade de Lages como berço de seu comércio onde iniciou suas atividades varegistas à mais de 20 anos atrás.</p>
+                                       </div>
+                                      </div>
+                                                                  
+                                        <div class="card">
+                                    <h4 class="card-header">Venha para a gigante do centro, e encontre presente para todas as idades.</h4>
+                                    <i class="bi bi-amd"></i>
+                                      <div class="card-body">
+                                         <p><div class="column">Confira o que de melhor temos na linha esportiva, para o seu pai aventureiro, ou o seu avô que adora caminhadas.
+                                        </div></p>
+                                        </div>
+                                        </div>                                                                              
+                                        <div class="card">
+                                    <h4 class="card-header">Premio Destaque empresarial, ACIL.</h4>
+                                      <div class="card-body">
+                                        <p>Alcançamos o conceito 5 na avaliação da ACIL, continuando assim entre as melhores. Por isso, todos os nossos colaboradores, fazem um treinamento técnicos e reuniões frequentes para que o resultado alcançado pela instituição que é baseado na satisfação do cliente, seja sempre alcançado.</p>
+                                       </div>
+                            </div>
+                        </div>
                       </div>
-                 </form>
-            </nav>
-  </header>
+                    <section id="section4">
+                  <div class="container pt-5 pb-5">
 
-  <body>
-    <header>
-   </header>
-  <section>
-    <h1>Roupas</h1>
-       <span>Você digitou: </span><label id="nomeDigitado"></label>
-     </section>
-     <section>
-       <h1>Calçados</h1>
-       </section>
-     <section>
-       <h1>Moda Infantil</h1>
-       </section>
-     <section>
-       <h1>Moda Adulto</h1>
-       </section>
-</body>
+               <h2 class="font-weight-bold">Fale conosco via e-mail, deixe a sua observação sobre a loja algum produto que gostaria que tivessemos em nossa loja.</h2>
+               <h6 class="font-weight-bold">Não esqueça de acompanhar as novidades e descontos em nossas redes sociais.</h6>
 
-<footer>
-  <div><img src="imagens/ativa.jpg" alt="logodaloja" class = "rodapeImg"></div>
-  <div class="meio">(49) 3251-4300</div>
-
-  <div class="container">
-  <small>@2023 Ativa Bazar Modas. All rights reserved.</small>
-  <small>Lages SC</small>
-  </div>
-</footer>                          
- </body>
-<script src="index.js"></script>
+                  <br>
+                    <div class="card-deck">
+                      <div class="card p-3">
+                        <form action="">
+                            <div class="form-group">
+                              <input type="text" placeholder="Digite Seu Nome"  id="inputNome"   class="form-control mr-1 ml-1"/>
+                            </div>                              
+                              <div class="form-group">
+                                <input type="text" placeholder="Digite Seu Contato +55 (xx) + (x xxxx - xxxx) "  id="inputNome"   class="form-control mr-1 ml-1"/>
+                              </div>                              
+                                <div class="form-group">
+                                  <input type="text" placeholder="Digite Seu E-mail Aqui."  id="inputNome"   class="form-control mr-1 ml-1"/>
+                                  <button class="btn btn-warning" onclick="exibirNome();">Enviar</button>
+                                  </div>                           
+                                <footer class="bg-dark">
+                                  <small>@2023 Ativa Bazar All rights reserved. Siga-nos no Instagram: <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                                  </svg>
+                                  </small>
+                                </footer>                              
+                              </section>
+                            </main>                      
+              </body>
+        <script src="index.js"></script>
 </html>

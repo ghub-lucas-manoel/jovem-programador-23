@@ -1,22 +1,36 @@
+html,
 body {
-    font-family: Arial, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif, sans-serif;
-    font-size: 1em;
-   
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color:rgb(241, 105, 41);
+}
+  footer {
+    color: rgb(255, 255, 255);
+  }
+
+#cabecalho {
+   color:rgb(255, 255, 255);
+
+
 }
 
-  body {
-    background-color: rgb(65, 165, 65);
-  }
-  
-  h1 {
-    font-family: Tahoma;
-    color: gray;
-    text-align: center;
-    font-size: 90px;
-  }
-  
-  p {
-    font-family: tahoma;
-    font-size: 30px;
-    color: darkgray;
-  }
+#section1 {
+    background: url('img/shop.jpg') no-repeat;
+    background-position: 75% 75%;
+     color:rgb(177, 85, 32);
+     height: 70%;
+     display: flex;
+     align-items: center;
+
+     #conteudoSection1 {
+      display: flex;
+      align-items: center;
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-amd" viewBox="0 0 16 16">
+  <path d="m.334 0 4.358 4.359h7.15v7.15l4.358 4.358V0H.334ZM.2 9.72l4.487-4.488v6.281h6.28L6.48 16H.2V9.72Z"/>
+</svg>
+      
+    
+    }
+    }
