@@ -3,21 +3,66 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Hello World</title>
-    <link rel="stylesheet" href="./index.css">
-    <script src="index.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+
+    <script src="js/bootstrap.min.js"></script>
+    <title>Jovem Programador</title>
 </head>
 
 <body>
-    <h1>Seja Bem-Vindo à página do Cazarão eventos!</h1>
-    <div class="container">
-        <label>Nos conheça melhor!</label><br>
-        <a href="SobreNos.html"><button onclick="exibeSobreNos()" id="exibeSobreNos">Sobre nós</button></a>
-        <a href="./infraestrutura.html"><button onclick="exibeInfraestrutura()" id="exibeInfraestrutura">Infraestrutura</button></a>
-        <a href="./Contato.html"><button onclick="exibeContato()" id="exibeContato">Contato</button></a>
-        <a href="./Calendario.html"><button onclick="exibeCalendario()" id="exibeCalendario">Calendario de Eventos</button></a>
-        <a href="./Reserva.html"><button onclick="exibeReservar()" id="exibeReservar">Reservar Local</button></a>
-    </div>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark ml-0 mr-0 p-3 sticky-top">
+            <a class="mr-3 navegacao-index">Cazarão Eventos</a>
+            <ul class="navbar-nav mr-2 navegacao-index">
+                <li class="nav-item">
+                    <a href="./SobreNos.html">Sobre Nós</a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a href="./infraestrutura.html">Infraestrutura</a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a href="./Contato.html">Contato</a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a href="./Calendario.html">Calendario de Eventos</a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a href="./Reserva.html">Reserva</a>
+                </li>
+            </ul>
+            <form class="form-inline">
+                <div class="form-group">
+                    <input type="text" placeholder="O que está procurando?" id="inputNome"
+                        class="form-control mr-2 ml-1" />
+                    <button class="btn" onclick="exibirNome();">Pesquisar</button>
+                </div>
+            </form>
+        </nav>
+    </header>
+    <section id="section1" class="text-center container">
+        <h1>Sobre Nós</h1>
+    </section>
+    <section id="section2" class="text-center container">
+        <h1>Infraestrutura</h1>
+    </section>
+    <section id="section3" class="text-center container">
+        <h1>Contato</h1>
+    </section>
+    <section id="section4" class="text-center container">
+        <h1>Calendario de Eventos</h1>
+    </section>
+    <section id="section5" class="text-center container">
+        <h1>Reserva</h1>
+    </section>
+    <footer>
+        <div class="container text-center">
+            <small>@2023 Equipe Jovem Programador. Todos os direitos Reservados</small>
+        </div>
+
+    </footer>
 </body>
+
+<script src="index.js"></script>
 
 </html>
