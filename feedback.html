@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!--Metadados-->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--Links (CSS, Bootstrap)-->
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Feedbacks</title>
+    </head>
+    <body>
+        <header>
+            <div class="dropdown">
+                <a
+                    class="btn btn-secondary dropdown-toggle"
+                    href="#"
+                    role="button"
+                    id="dropdownMenuLink"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                >
+                    Menu
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="index.html"
+                        >Página Inicial</a
+                    >
+                    <a class="dropdown-item" href="#">Moda Ativa Kids</a>
+                    <a class="dropdown-item" href="feedback.html">Feedback</a>
+                    <a class="dropdown-item" href="#">Trabalhe Conosco</a>
+                    <a class="dropdown-item" href="#">SAC</a>
+                </div>
+            </div>
+
+            <div id="mensagem"></div>
+
+            <div class="logo">
+                <img src="_imagens/logoModaAtiva.jpg" />
+            </div>
+            <form class="form-inline">
+                <input
+                    type="search"
+                    placeholder="Pesquisar"
+                    class="search form-control mr-sm-2"
+                    id="procurar"
+                />
+            </form>
+            <button
+                class="btn btn-light"
+                type="submit"
+                onclick="mostrarPesquisa()"
+            >
+                Pesquisar
+            </button>
+            <div class="usuario">
+                <img src="_imagens/perfil-de-usuario.png" />
+            </div>
+        </header>
+
+        <section id="carrossel">
+            <div
+                id="aspectos-carrossel"
+                class="carousel slide"
+                data-ride="carousel"
+            >
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <article id="feedback">
+                            <div class="container">
+                                <div class="text-center">
+                                    <h2 class="mt-5 mb-5">
+                                        Veja o que Nossos Clientes dizem!
+                                    </h2>
+                                    <div class="text-center">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <img
+                                                    height="150px"
+                                                    width="150px"
+                                                    class="rounded-circle mb-2"
+                                                    class="d-block w-25"
+                                                    src="_imagens/aurora.jpg"
+                                                    alt="Retrato de uma Mulher Ruiva"
+                                                />
+                                                <h3>Aurora Hughes</h3>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet
+                                                    consectetur, adipisicing
+                                                    elit. Alias a non aperiam
+                                                    animi. Rem totam iste
+                                                    delectus modi explicabo quam
+                                                    accusamus, dolorem corporis
+                                                    laudantium maxime, expedita
+                                                    nemo illum unde saepe.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="carousel-item">
+                        <article id="feedback">
+                            <div class="container">
+                                <div class="text-center">
+                                    <h2 class="mt-5 mb-5">
+                                        Veja o que Nossos Clientes dizem!
+                                    </h2>
+                                    <div class="text-center">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <img
+                                                    height="150px"
+                                                    width="150px"
+                                                    class="rounded-circle mb-2"
+                                                    class="d-block w-25"
+                                                    src="_imagens/hakoon.jpg"
+                                                    alt="Retrato de um Homem com barba grande"
+                                                />
+                                                <h3>Hakoon Myhra</h3>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet
+                                                    consectetur adipisicing
+                                                    elit. Ea assumenda rem
+                                                    eligendi magnam sunt illo
+                                                    minima laboriosam in?
+                                                    Repellat ut et reiciendis.
+                                                    Culpa tenetur necessitatibus
+                                                    temporibus pariatur ex in
+                                                    labore!
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="carousel-item">
+                        <article id="feedback">
+                            <div class="container">
+                                <div class="text-center">
+                                    <h2 class="mt-5 mb-5">
+                                        Veja o que Nossos Clientes dizem!
+                                    </h2>
+                                    <div class="text-center">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <img
+                                                    height="150px"
+                                                    width="150px"
+                                                    class="rounded-circle mb-2"
+                                                    class="d-block w-25"
+                                                    src="_imagens/germanK.jpg"
+                                                    alt="Retrato de um homem segurando uma Xícara de café"
+                                                />
+                                                <h3>German Kennedy</h3>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet
+                                                    consectetur, adipisicing
+                                                    elit. Consequatur id
+                                                    necessitatibus quas et nulla
+                                                    quos quae consectetur
+                                                    doloremque praesentium,
+                                                    labore consequuntur in?
+                                                    Dolorem veniam accusantium
+                                                    dolores odio quos officiis
+                                                    ab.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <a
+                    href="#aspectos-carrossel"
+                    class="carousel-control-prev"
+                    role="button"
+                    data-slide="prev"
+                >
+                    <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                    ></span
+                ></a>
+                <a
+                    href="#aspectos-carrossel"
+                    class="carousel-control-next"
+                    role="button"
+                    data-slide="next"
+                >
+                    <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                    ></span
+                ></a>
+            </div>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
