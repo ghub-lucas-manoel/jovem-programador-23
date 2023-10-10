@@ -1,48 +1,56 @@
-/* Estilos para centralizar a barra de pesquisa */
-.search-container {
+
+    
+
+
+
+
+html,
+body {
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 15vh; 
-    text-align: center;
 }
 
-/* Estilos para o campo de pesquisa */
-input[type="text"] {
-    padding: 10px;
-    width: 300px;
-    border: center;
-    border-radius: 10px;
-    color: rgb(14, 10, 10); /* Cor do texto vermelha */
-    justify-content: center;
-    align-items: center;
-}
-
-button {
-    padding: 10px 15px;
-    background-color: rgb(39, 175, 96); /* Cor de fundo vermelha */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.bg-custom-sidebar {
-    background-color: #ffffff; /* Substitua pela cor desejada (laranja neste exemplo) */
-    color: rgb(237, 240, 241);}
 
 footer {
-    
-   
-    position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        background-color: #333; /* Cor de fundo do footer */
-        color: white; /* Cor do texto do footer */
-        
-       
-    padding: 10px; /* Espaçamento interno do footer */
+    margin-top: auto;
+}
+
+
+#cabecalho {
+    color: white;
+}
+
+
+#apresentacao {
+    background: url('img/desk-coworking.jpg') no-repeat;
+    background-position: 75% 75%;
+    color: white;
+    height: 70%;
+    display: flex;
+    align-items: center;
+
+
+    #conteudoSection1 {
+        display: flex;
+        align-items: center;
     }
-    
+}
+
+
+#inscricao {
+    background: url('img/happy-friendsd.jpg') no-repeat;
+    background-size: cover;
+    background-position: 75% 60%;
+
+
+    .container {
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+    }
+}
+
+
+footer {
+    color: white;
+}
