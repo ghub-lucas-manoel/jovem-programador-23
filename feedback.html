@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+    <title>Moda Ativa</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg p-0">
+            <div id="menu" class="navbar-nav">
+                <i id="burguer" class="material-icons" onclick="mostrarMenu()">menu</i>
+            </div>
+            <a href="index.html"><img src="moda-ativa-logo.png" alt="logoModaAtiva" id="modaAtivaLogo" class="ml-1"></a>
+            <form class="form-inline ml-3">
+                <div class="form-group" id="barraDePesquisa">
+                    <input type="text" id="pesquisarPalavra" placeholder="Faça sua pesquisa" class="form-control m-0">
+                    <button type="button" onclick="exibirPesquisa()" id="botaoPesquisar" class="rounded-circle ml-2"><i
+                            class="material-icons">search</i></button>
+                </div>
+            </form>
+            <a href="cadastro.html" id="link-perfil"><img
+                    src="https://th.bing.com/th/id/R.f29406735baf0861647a78ae9c4bf5af?rik=GKTBhov2iZge9Q&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_206976.png&ehk=gCH45Zmryw3yqyqG%2fhd8WDQ53zwYfmC8K9OIkNHP%2fNU%3d&risl=&pid=ImgRaw&r=0"
+                    alt="fotoDePerfil" id="fotoPerfil"></a>
+        </nav>
+
+    </header>
+    <menu id="menuOculto">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="kids.html">Kids</a></li>
+            <li><a href="sugestoes.html">Sugestões</a></li>
+            <li><a href="tbconosco.html">Trabalhe Conosco</a></li>
+            <li><a href="sac.html">SAC</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </menu>
+    <div class="fundo h-auto">
+        <main id="conteudoPrincipal" class="h-auto">
+            <section>
+                <form class="form-inline m-5">
+                    <h2 class="text-center pl-3 pr-3 pb-3">
+                        Compartilhe sua Experiência com os Produtos da Moda Ativa
+                    </h2>
+                    <div class="form-group d-block mr-auto ml-auto">
+                        <input type="text" id="pesquisarPalavra" placeholder="Escreva seu comentário" class="form-control m-0">
+                        <button type="button" id="adicioneUmComentario" class="rounded-circle ml-2"><i
+                                class="material-icons">search</i></button>
+                    </div>
+                </form>
+                <h3 class="pl-3 pr-3 pb-5 pt-5 text-center">Confira as experiências de outros clientes com os produtos da Moda Ativa</h3>
+                <div class="container card-deck d-block">
+                    <div class="card">
+                        <div class="card-header d-inline-flex">
+                            <img height="80px" class="rounded-circle" src="perfis/goku123.png">
+                            <h2 class="d-flex flex-column justify-content-center align-items-center pl-4">Goku123</h2>
+                        </div>
+                        <div class="card-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Esse mollitia et molestias eaque eligendi commodi,
+                                dicta soluta possimus quidem, ratione corrupti unde
+                                deserunt odit, voluptates obcaecati nesciunt velit
+                                molestiae dolor!</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header d-inline-flex">
+                            <img height="80px" class="rounded-circle" src="perfis/otaku.png">
+                            <h2 class="d-flex flex-column justify-content-center align-items-center pl-4">OTAKU</h2>
+                        </div>
+                        <div class="card-body">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing
+                                elit. Cumque quasi numquam ratione minima illum accusamus
+                                odio. Porro ad debitis vitae corporis suscipit culpa reiciendis
+                                animi adipisci. Dignissimos odit quos id.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header d-inline-flex">
+                            <img height="80px" class="rounded-circle" src="perfis/curintia.png">
+                            <h2 class="d-flex flex-column justify-content-center align-items-center pl-4">Curintia</h2>
+                        </div>
+                        <div class="card-body">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Omnis voluptatum enim aperiam placeat eos, quae ducimus
+                                exercitationem asperiores atque, est id ut laboriosam
+                                possimus animi? Dignissimos, sed ducimus! Voluptatem,
+                                officia?</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header d-inline-flex">
+                            <img height="80px" class="rounded-circle" src="perfis/panda-louco.png">
+                            <h2 class="d-flex flex-column justify-content-center align-items-center pl-4">Panda
+                                Louco</h2>
+                        </div>
+                        <div class="card-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Blanditiis expedita dolor maiores eaque dolore suscipit
+                                et consectetur mollitia laboriosam minima, maxime
+                                inventore fugit, veniam aliquid facilis culpa
+                                voluptatibus, doloremque qui!</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header d-inline-flex">
+                            <img height="80px" class="rounded-circle" src="perfis/punpun.jpeg">
+                            <h2 class="d-flex flex-column justify-content-center align-items-center pl-4">Punpun
+                            </h2>
+                        </div>
+                        <div class="card-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Amet architecto voluptatem ab aperiam ipsum, veritatis
+                                quas harum, eveniet dicta eius provident! Repudiandae
+                                quibusdam natus, atque voluptates perferendis odit
+                                corporis quis.</p>
+                        </div>
+                    </div>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <div class="rodape">
+            <small id="numero">
+                <img src="https://i.pinimg.com/originals/a8/68/67/a868678ed693a95ca673c20fdaebeaa4.png"
+                    alt="ícone de telefone" class="rodapeImg">
+                (49) 3251-4300
+            </small>
+            <small id="localizacao">
+                <img src="https://cdn-icons-png.flaticon.com/512/0/619.png" alt="ícone de localização"
+                    class="rodapeImg">
+                Correia Pinto 79, Lages, SC, Brasil
+            </small>
+        </div>
+    </footer>
+</body>
+
+</html>
