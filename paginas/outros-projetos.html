@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="../imagens/zago-planner.ico" type="image/x-icon">
 </head>
 <body class="body">
-    <header>
+    <header class="pt-1">
         <nav class="nav-menu navbar-expand-lg navbar-light bg-light">
             <input type="checkbox" id="falsa-checkbox">
 
@@ -42,7 +42,7 @@
                 <h1 id="planner">PLANNER</h1>
             </a>
         </div>
-        <div id="div-usuario">
+        <div id="div-usuario" class="h-auto">
             <a href="#" onclick="ExibirMenuLogin()"><img src="../imagens/usuario-de-perfil.png" alt="Perfil Usuário"></a>
             <div class="menu-login">
                 <ul>
@@ -53,9 +53,46 @@
     </header>
     <main>
         <h1 id="titulo-pagina">Outros Projetos</h1>
+
+        <section id="editado-recentemente">
+            <div class="container">
+                <link rel="stylesheet" href="../css/bootstrap.min.css">
+                <h2 class="mt-5 mb-5 text-center">PROJETOS EDITADOS RECENTEMENTE</h2>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="text-center">
+                            <img height="150px" width="150px" class="rounded-circle mb-2" src="../imagens/banheiro.jpg" alt="Banheiro Reformado">
+                            <h3>Banheiro Reformado</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, sint odio! Quia, consequuntur. Consectetur ullam, iusto enim accusamus similique ab facilis. Dolorum dolorem quas expedita eligendi sapiente accusantium quaerat laboriosam!</p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="text-center">
+                            <img height="150px" width="150px" class="rounded-circle mb-2" src="../imagens/quarto.jpg" alt="Quarto dos Sonhos">
+                            <h3>Quarto dos Sonhos</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum distinctio eligendi dignissimos necessitatibus id asperiores odio veniam porro aliquam qui ipsum nobis perferendis ducimus quidem, cum quas recusandae molestias fuga?</p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="text-center">
+                            <img height="150px" width="150px" class="rounded-circle mb-2" src="../imagens/cozinha.jpg" alt="Cozinha Perfeita">
+                            <h3>Cozinha Perfeita</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptate minus corrupti quis, quo cupiditate incidunt itaque illum dolore deserunt inventore maxime obcaecati exercitationem eos fuga deleniti ratione autem perferendis.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
         <script src="../script.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
     </footer>
 </body>
 </html>

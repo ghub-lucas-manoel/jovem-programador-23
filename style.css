@@ -571,6 +571,10 @@ iframe#iframe-pesquisa-atividade {
     margin-left: 10%
 }
 
+#editado-recentemente {
+    color: var(--cor-titulo-zago-1);
+}
+
 @media (max-width: 900px) {
     main {
         width: 80%;
