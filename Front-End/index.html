@@ -3,66 +3,259 @@
 
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
-
-    <script src="js/bootstrap.min.js"></script>
-    <title>Jovem Programador</title>
+    <title>Cazarão Eventos</title>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark ml-0 mr-0 p-3 sticky-top">
-            <a class="mr-3 navegacao-index">Cazarão Eventos</a>
-            <ul class="navbar-nav mr-2 navegacao-index">
-                <li class="nav-item">
-                    <a href="./SobreNos.html">Sobre Nós</a>
-                </li>
-                <li class="nav-item mr-2">
-                    <a href="./infraestrutura.html">Infraestrutura</a>
-                </li>
-                <li class="nav-item mr-2">
-                    <a href="./Contato.html">Contato</a>
-                </li>
-                <li class="nav-item mr-2">
-                    <a href="./Calendario.html">Calendario de Eventos</a>
-                </li>
-                <li class="nav-item mr-2">
-                    <a href="./Reserva.html">Reserva</a>
-                </li>
-            </ul>
-            <form class="form-inline">
-                <div class="form-group">
-                    <input type="text" placeholder="O que está procurando?" id="inputNome"
-                        class="form-control mr-2 ml-1" />
-                    <button class="btn" onclick="exibirNome();">Pesquisar</button>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="../IMG/logo-cazarao-removebg-preview.png" alt=""></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="#sobreNos">Sobre Nós</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#infraestrutura">Infraestrutura</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contatos">Contatos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#calendarioEventos">Calendario de Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#reserva">Reserva</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="button-header btn-outline" type="submit">Pesquisar</button>
+                    </form>
                 </div>
-            </form>
+            </div>
         </nav>
+        <img class="img-banner" src="../IMG/banner-cazarao (2).png">
     </header>
-    <section id="section1" class="text-center container">
-        <h1>Sobre Nós</h1>
+    <section id="section1" class="text-center container section1">
+        <div class="container">
+            <div class="row">
+                <div class="form-group col-12 text-center mt-5">
+                    <h1 class="mb-5" id="sobreNos">Sobre Nós</h1>
+                </div>
+                <div>
+                    <p class="text-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde optio quasi
+                        suscipit? Velit dicta hic repellendus tempora, similique nihil quos eligendi quaerat,
+                        consequatur unde dolorum ipsa dignissimos ipsam provident architecto.</p>
+                </div>
     </section>
     <section id="section2" class="text-center container">
-        <h1>Infraestrutura</h1>
+        <div class="container">
+            <div class="col-12 text-center mb-3">
+                <h1 id="infraestrutura">Infraestrutura</h1>
+            </div>
+            <div class="row">
+                <div class="col-6 text-center mt-3 p-5 infra-class">
+                    <h3 class="text-color mb-5">Nossa infraestrutura é composta por:</h3>
+                    <p class="text-color">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut aspernatur harum
+                        suscipit iure
+                        incidunt
+                        in
+                        dolore minus enim cumque amet atque voluptate officia cum eveniet blanditiis praesentium, quod
+                        sed
+                        animi? Lorem ipsum, dolor sit amet consectetur adipisicing elit. eaque?</p>
+                </div>
+                <div class="col-6 p-5">
+
+                    <div id="carouselExampleIndicatorsOne" class="carousel slide">
+
+                        <!-- inicio indicadores carrosel-->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicatorsOne" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicatorsOne" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicatorsOne" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+
+                        <!-- inicio slide carrosel -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="img-carrossel-one"
+                                    src="../IMG/img-eventos/265407349_938121693778900_6572007911469673084_n.jpg"
+                                    alt="0">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-carrossel-one"
+                                    src="../IMG/img-eventos/327884979_879882899930291_6290438103843089833_n.jpg"
+                                    alt="1">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-carrossel-one"
+                                    src="../IMG/img-eventos/316239895_548875157247837_2405763389647205280_n.jpg"
+                                    alt="2">
+                            </div>
+                        </div>
+                        <!-- Botões carrossel -->
+                        <button class="carousel-control-prev" type="button"
+                            data-bs-target="#carouselExampleIndicatorsOne" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button"
+                            data-bs-target="#carouselExampleIndicatorsOne" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden"></span>
+                        </button>
+                    </div>
+
+                </div>
     </section>
-    <section id="section3" class="text-center container">
-        <h1>Contato</h1>
+    <section id="section3" class="text-center container mt-5">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 id="contatos">Contatos</h1>
+                <div class="form-group mt-5">
+                    <div class="col-12 mb-3"><a href="" class="contatos-link"><i class="fab fa-facebook-square fa-lg" style="color: #ffffff;"></i>
+                            &nbsp; Facebook.com/CasaraoEventos</a></div>
+                    <div class="col-12 mb-3"><a href="" class="contatos-link"><i class="fab fa-twitter-square fa-lg" style="color: #ffffff;"></i>
+                            &nbsp; Twitter.com/CasaraoEventos</a></div>
+                    <div class="col-12 mb-3"><a href="" class="contatos-link"><i class="fab fa-instagram-square fa-lg" style="color: #ffffff;"></i>
+                            &nbsp; Instagram.com/CasaraoEventos</a></div>
+                    <div class="col-12 mb-3"><a href="" class="contatos-link"><i class="fab fa-linkedin fa-lg" style="color: #ffffff;"></i> &nbsp;
+                            Linkedin.com//CasaraoEventos</a></div>
+                    <div class="col-12 mb-3"><a href="" class="contatos-link"><i class="fas fa-envelope fa-lg" style="color: #ffffff;"></i> &nbsp;
+                            Contato@casaraoeventos.com.br</a></div>
+                    <div class="col-12 mb-3"><a href="" class="contatos-link"><i class="fab fa-whatsapp-square fa-lg" style="color: #ffffff;"></i>
+                            &nbsp; (49) 9 9999-9999 </a></div>
+
+                </div>
     </section>
     <section id="section4" class="text-center container">
-        <h1>Calendario de Eventos</h1>
+        <h1 id="calendarioEventos">Calendario de Eventos</h1>
     </section>
     <section id="section5" class="text-center container">
-        <h1>Reserva</h1>
+        <div class="row">
+            <div class="col-12 text-center mb-3">
+                <h1 id="reserva">Reserva</h1>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Nome:</span>
+                <input type="text" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-default">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text">CPF</span>
+                <input type="text" class="form-control" placeholder="xxx.xxx.xxx-xx" aria-label="Username">
+                <span class="input-group-text">Data:</span>
+                <input type="date" class="form-control" placeholder="Server" aria-label="Server">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text">Celular 01:</span>
+                <input type="text" class="form-control" placeholder="(xx) x xxxx-xxxx" aria-label="Username">
+                <span class="input-group-text">Celular 02:</span>
+                <input type="number" class="form-control" placeholder="(xx) x xxxx-xxxx" aria-label="Server">
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-12 mt-3 mb-3">
+                <h3 class="text-color">
+                    Serviços Extras:
+                </h3>
+            </div>
+            <div class="col-2 text-center">
+                <div class="card" style="width: 10rem;">
+                    <img src="../IMG/img-serviços/images (1).jfif" class="card-img-top imgs-card" alt="">
+                    <div class="card-body ml-0 mr-0">
+                        <h5 class="card-title">Segurança</h5>
+                        <p class="card-text">R$XX,XX</p>
+                        <a href="#" class="btn button-card">Adicionar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card" style="width: 10rem; ">
+                    <img src="../IMG/img-serviços/images.jfif" class="card-img-top imgs-card" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Iluminação</h5>
+                        <p class="card-text">R$XX,XX</p>
+                        <a href="#" class="btn  button-card">Adicionar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card" style="width: 10rem;">
+                    <img src="../IMG/img-serviços/decoração-de-mesa-de-aniversário-simples-com-balões-e-flores-pinterest-p-a0084.jpg"
+                        class="card-img-top imgs-card" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Decoração</h5>
+                        <p class="card-text">R$XX,XX</p>
+                        <a href="#" class="btn  button-card">Adicionar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card" style="width: 10rem;">
+                    <img src="../IMG/img-serviços/2.jpeg" class="card-img-top imgs-card" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Bebidas</h5>
+                        <p class="card-text">R$XX,XX</p>
+                        <a href="#" class="btn  button-card">Adicionar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card" style="width: 10rem;">
+                    <img src="../IMG/img-serviços/1-animacao-infantil.jpg" class="card-img-top imgs-card" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Animação</h5>
+                        <p class="card-text">R$XX,XX</p>
+                        <a href="#" class="btn  button-card">Adicionar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card" style="width: 10rem;">
+                    <img src="../IMG/img-serviços/cropped-Ensaio.jpg" class="card-img-top imgs-card" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Musicos</h5>
+                        <p class="card-text">R$XX,XX</p>
+                        <a href="#" class="btn  button-card">Adicionar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-group mb-5 mt-5 text-center col-12 ">
+                <span class="input-group-text">Total:</span>
+                <span class="input-group-text">R$0.00</span>
+                <button class="btn btn-conc-reserva">Concluir Reserva</button>
+            </div>
+        </div>
     </section>
-    <footer>
-        <div class="container text-center">
+    <footer class="mt-5">
+        <div class="container text-center mt-5">
             <small>@2023 Equipe Jovem Programador. Todos os direitos Reservados</small>
         </div>
 
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
-
-<script src="index.js"></script>
 
 </html>
