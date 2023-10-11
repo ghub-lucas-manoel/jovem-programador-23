@@ -3,6 +3,7 @@ body{
     padding: 0px;
     width: 100vw;
     height: 100vh;
+    overflow-x: hidden;
 }
 header {
     height: 10vh;
@@ -14,7 +15,7 @@ header {
     padding: 0px;
 }
 nav {
-    position: relative;
+
     align-items: center;
     display: inline;
     height: 10vh;
@@ -26,20 +27,18 @@ nav {
     background-color: white;
     border-radius: 30px;
     padding-bottom: 10px;
-    margin-left: -20vw;
     height: 9vh;
 }
 img {
     display: block;
 }
-form {
+nav>form {
     height: 10vh;
     margin-right: 20px;
 }
 #barraDePesquisa {
     height: 10vh;
     display: inline-flex;
-    margin-left: 15vw;
 }
 button {
     height: 40px;
@@ -53,10 +52,8 @@ button:hover {
     height: 9vh;
     border-radius: 40px;
     display: block;
-    margin-right: 5px;
 }
 #link-perfil {
-    margin-left: 35vw;
     float: right;
 }
 #fotoPerfil:hover {
@@ -71,7 +68,6 @@ button:hover {
     text-align: center;
     padding-left: 25px;
     padding-right: 25px;
-    margin-right: 15vw;
     cursor: pointer;
     width: 100px;
     font-size: 50px;
@@ -86,7 +82,6 @@ button:hover {
 }
 menu {
     display: none;
-    margin-left: -50px;
     margin-top: 0px;
     position: absolute;
 }
@@ -94,7 +89,7 @@ ul {
     list-style-type: none;
 }
 li > a {
-    margin-left: -30px;
+    margin-left: -80px;
     display: block;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -164,98 +159,61 @@ footer {
     display: inline-block;
     align-items: center;
 }
-@media screen and (max-width: 1500px) {
-    #link-perfil {
-        margin-left: 30vw;
-    }
-    #barraDePesquisa {
-        margin-left: 10vw;
-    }
-}
-@media screen and (max-width: 1350px) {
-    #link-perfil {
-        margin-left: 25vw;
-    } 
-}
-@media screen and (max-width: 1250px) {
-    #link-perfil {
-        margin-left: 20vw;
-    }
-    #burguer{
-        margin-right: 12vw;
-    }
-}
-@media screen and (max-width: 1100px) {
-    #link-perfil {
-        margin-left: 18vw;
-    } 
-}
-@media screen and (max-width: 990px) {
-    #link-perfil {
-        margin-left: 20vw;
-    }
-    #barraDePesquisa {
-        margin-left: 6vw;
-    }
-    #burguer{
-        margin-right: 6vw;
-    }
-}
-@media screen and (max-width: 880px) {
-    #link-perfil {
-        margin-left: 1vw;
-    }
-    #barraDePesquisa {
-        margin-left: 2vw;
-    }
-    #burguer{
-        margin-right: 5vw;
-    }
 
+@media screen and (max-width:992px) {
+    #div-fantasma {
+        display: none;
+    }
+    #link-logo {
+        width: 20vw;
+    }
+    #menu {
+        width: 10vw;
+    }
+    #link-perfil {
+        width: 10vw;
+    }
 }
-@media screen and (max-width: 800px){
+
+@media screen and (max-width:750px) {
+    #link-logo {
+        display: none;
+    }
+    #menu {
+        width: 1vw;
+    }
+}
+
+@media screen and (max-width:600px) {
+    #formulario {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:576px) {
+    #pesquisa {
+        position: absolute;
+        max-width: 50%;
+        min-width: 50%;
+        left: 50%;
+        top: 3vh;
+        transform: translateX(-50%);
+    }
+}
+
+@media screen and (max-width:300px) {
     #link-perfil {
         display: none;
     }
-    #barraDePesquisa {
-        margin-left: 10vw;
+    #pesquisa {
+        position: absolute;
+        max-width: 60%;
+        min-width: 60%;
+        left: 70%;
+        top: 3vh;
+        transform: translateX(-50%);
     }
-}
-@media screen and (max-width: 700px) {
-    button {
-        height: 40px;
-        width: 40px;
-        top: 10px;
-    }
-    header {
-        justify-content: start;
-    }
-    button:hover {
-        height: 35px;
-        width: 45px;
-        right: -40px;
-        top: 7px;
-    }
-    input {
-        height: 25px;
-        font-size: 0.8em;
-        width: 120px;
-        display: block;
-    }
-    #modaAtivaLogo {
+    #feedback img {
         display: none;
-    }
-}
-@media screen and (max-width: 690px){
-    #barraDePesquisa {
-        height: 10vh;
-    }
-}
-@media screen and (max-width: 572px){
-    #burguer{
-        margin-right: 1vw;
-    }
-    #barraDePesquisa {
-        height: 3vh;
     }
 }

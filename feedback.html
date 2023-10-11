@@ -13,22 +13,24 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg p-0">
-            <div id="menu" class="navbar-nav">
+    <header class="pl-0 pr-lg-5 col-12">
+        <nav class="navbar navbar-expand-lg p-0 col-12 align-content-between">
+            <div id="menu" class="navbar-nav col-lg-2">
                 <i id="burguer" class="material-icons" onclick="mostrarMenu()">menu</i>
             </div>
-            <a href="index.html"><img src="moda-ativa-logo.png" alt="logoModaAtiva" id="modaAtivaLogo" class="ml-1"></a>
-            <form class="form-inline ml-3">
-                <div class="form-group" id="barraDePesquisa">
+            <a href="index.html" id="link-logo" class="col-lg-3"><img src="moda-ativa-logo.png" alt="logoModaAtiva" id="modaAtivaLogo" class="ml-1"></a>
+            <form id="pesquisa" class="form-inline d-flex text-center col-4">
+                <div class="form-group my-auto" id="barraDePesquisa">
                     <input type="text" id="pesquisarPalavra" placeholder="Faça sua pesquisa" class="form-control m-0">
                     <button type="button" onclick="exibirPesquisa()" id="botaoPesquisar" class="rounded-circle ml-2"><i
                             class="material-icons">search</i></button>
                 </div>
             </form>
-            <a href="cadastro.html" id="link-perfil"><img
+            <div id="div-fantasma" class="col-lg-2"></div>
+            
+            <a href="cadastro.html" id="link-perfil" class="col-lg-1 col-md-1 float-right align-content-end"><img
                     src="https://th.bing.com/th/id/R.f29406735baf0861647a78ae9c4bf5af?rik=GKTBhov2iZge9Q&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_206976.png&ehk=gCH45Zmryw3yqyqG%2fhd8WDQ53zwYfmC8K9OIkNHP%2fNU%3d&risl=&pid=ImgRaw&r=0"
-                    alt="fotoDePerfil" id="fotoPerfil"></a>
+                    class="float-right" alt="fotoDePerfil" id="fotoPerfil"></a>
         </nav>
 
     </header>
@@ -45,23 +47,23 @@
     </menu>
     <div class="fundo h-auto">
         <main id="conteudoPrincipal" class="h-auto">
-            <section>
+            <section id="feedback">
+                <h2 class="text-center pl-3 pr-3 d-block">
+                    Compartilhe sua Experiência com os Produtos da Moda Ativa
+                </h2>
                 <form class="form-inline m-5">
-                    <h2 class="text-center pl-3 pr-3 pb-3">
-                        Compartilhe sua Experiência com os Produtos da Moda Ativa
-                    </h2>
-                    <div class="form-group d-block mr-auto ml-auto">
-                        <input type="text" id="pesquisarPalavra" placeholder="Escreva seu comentário" class="form-control m-0">
+                    <div class="form-group d-block mx-sm-auto d-flex">
+                        <input type="text" id="pesquisarPalavra" placeholder="Escreva seu comentário" class="form-control">
                         <button type="button" id="adicioneUmComentario" class="rounded-circle ml-2"><i
                                 class="material-icons">search</i></button>
                     </div>
                 </form>
-                <h3 class="pl-3 pr-3 pb-5 pt-5 text-center">Confira as experiências de outros clientes com os produtos da Moda Ativa</h3>
+                <h3 class="pl-3 pr-3 pb-5 text-center">Confira as experiências de outros clientes com os produtos da Moda Ativa</h3>
                 <div class="container card-deck d-block">
                     <div class="card">
                         <div class="card-header d-inline-flex">
                             <img height="80px" class="rounded-circle" src="perfis/goku123.png">
-                            <h2 class="d-flex flex-column justify-content-center align-items-center pl-4">Goku123</h2>
+                            <h2 class="d-flex flex-column justify-content-center align-items-center pl-1 pl-sm-4">Goku123</h2>
                         </div>
                         <div class="card-body">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -74,7 +76,7 @@
                     <div class="card">
                         <div class="card-header d-inline-flex">
                             <img height="80px" class="rounded-circle" src="perfis/otaku.png">
-                            <h2 class="d-flex flex-column justify-content-center align-items-center pl-4">OTAKU</h2>
+                            <h2 class="d-flex flex-column justify-content-center align-items-center pl-1 pl-sm-4">OTAKU</h2>
                         </div>
                         <div class="card-body">
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing
@@ -86,7 +88,7 @@
                     <div class="card">
                         <div class="card-header d-inline-flex">
                             <img height="80px" class="rounded-circle" src="perfis/curintia.png">
-                            <h2 class="d-flex flex-column justify-content-center align-items-center pl-4">Curintia</h2>
+                            <h2 class="d-flex flex-column justify-content-center align-items-center pl-1 pl-sm-4">Curintia</h2>
                         </div>
                         <div class="card-body">
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -99,7 +101,7 @@
                     <div class="card">
                         <div class="card-header d-inline-flex">
                             <img height="80px" class="rounded-circle" src="perfis/panda-louco.png">
-                            <h2 class="d-flex flex-column justify-content-center align-items-center pl-4">Panda
+                            <h2 class="d-flex flex-column justify-content-center align-items-center pl-1 pl-sm-4">Panda
                                 Louco</h2>
                         </div>
                         <div class="card-body">
@@ -113,7 +115,7 @@
                     <div class="card">
                         <div class="card-header d-inline-flex">
                             <img height="80px" class="rounded-circle" src="perfis/punpun.jpeg">
-                            <h2 class="d-flex flex-column justify-content-center align-items-center pl-4">Punpun
+                            <h2 class="d-flex flex-column justify-content-center align-items-center pl-1 pl-sm-4">Punpun
                             </h2>
                         </div>
                         <div class="card-body">

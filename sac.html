@@ -11,23 +11,28 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg p-0">
-            <div id = "menu" class="navbar-nav">
+    <header class="pl-0 pr-lg-5 col-12">
+        <nav class="navbar navbar-expand-lg p-0 col-12 align-content-between">
+            <div id="menu" class="navbar-nav col-lg-2">
                 <i id="burguer" class="material-icons" onclick="mostrarMenu()">menu</i>
             </div>
-            <a href="index.html"><img src="moda-ativa-logo.png" alt="logoModaAtiva" id ="modaAtivaLogo" class="ml-1"></a>
-            <form class="form-inline ml-3">
-                <div class="form-group" id="barraDePesquisa">
+            <a href="index.html" id="link-logo" class="col-lg-3"><img src="moda-ativa-logo.png" alt="logoModaAtiva" id="modaAtivaLogo" class="ml-1"></a>
+            <form id="pesquisa" class="form-inline d-flex text-center col-4">
+                <div class="form-group my-auto" id="barraDePesquisa">
                     <input type="text" id="pesquisarPalavra" placeholder="Faça sua pesquisa" class="form-control m-0">
-                    <button type="button" onclick="exibirPesquisa()" id = "botaoPesquisar" class="rounded-circle ml-2"><i class="material-icons">search</i></button>
+                    <button type="button" onclick="exibirPesquisa()" id="botaoPesquisar" class="rounded-circle ml-2"><i
+                            class="material-icons">search</i></button>
                 </div>
             </form>
-            <a href="cadastro.html" id="link-perfil"><img src="https://th.bing.com/th/id/R.f29406735baf0861647a78ae9c4bf5af?rik=GKTBhov2iZge9Q&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_206976.png&ehk=gCH45Zmryw3yqyqG%2fhd8WDQ53zwYfmC8K9OIkNHP%2fNU%3d&risl=&pid=ImgRaw&r=0" alt="fotoDePerfil" id = "fotoPerfil"></a>
+            <div id="div-fantasma" class="col-lg-2"></div>
+            
+            <a href="cadastro.html" id="link-perfil" class="col-lg-1 col-md-1 float-right align-content-end"><img
+                    src="https://th.bing.com/th/id/R.f29406735baf0861647a78ae9c4bf5af?rik=GKTBhov2iZge9Q&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_206976.png&ehk=gCH45Zmryw3yqyqG%2fhd8WDQ53zwYfmC8K9OIkNHP%2fNU%3d&risl=&pid=ImgRaw&r=0"
+                    class="float-right" alt="fotoDePerfil" id="fotoPerfil"></a>
         </nav>
-        
+
     </header>
-    <menu id = "menuOculto">
+    <menu id="menuOculto">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="kids.html">Kids</a></li>
