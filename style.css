@@ -665,7 +665,19 @@ iframe#iframe-pesquisa-atividade {
     }
 }
 
+@media (max-height: 600px)
+{
+    body {
+        overflow-y: visible;
+    }
+}
+
 @media (max-width: 700px) {
+
+    h1#titulo-pagina {
+        font-size: 8vw;
+    }
+
     main {
         flex-direction: column;
         width: 100%;
@@ -677,4 +689,226 @@ iframe#iframe-pesquisa-atividade {
         width: 80%;
     }
 
+}
+
+@media (max-width: 540px)
+{
+    section#produtos-zago a img {
+        height: 90%;
+        width: auto;
+    }
+
+    /* Página Outros Projetos */
+
+    body#outros-projetos-body {
+        overflow-y: visible;
+        height: 100%;
+    }
+
+    main {
+        height: 100%;
+    }
+}
+
+@media (max-width: 440px)
+{
+    header > div#zago-planner a {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    h1#zago {
+        margin-right: 10px;
+    }
+
+    header > div#zago-planner a {
+        font-size: 70%;
+    }
+
+    header > div#zago-planner {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 360px)
+{
+    div#container3 {
+        padding: 0;
+    }
+
+    div#container3 h1 {
+        font-size: 140%;
+    }
+}
+
+@media (max-width: 300px)
+{
+    /* Body */
+
+    body.body {
+        position: fixed;
+    }
+
+    /* Header */
+
+    #zago-planner {
+        width: auto;
+        height: auto;
+    }
+
+    header > div#zago-planner > a {
+        font-size: 50%;
+        justify-content: center;
+    }
+
+    div#div-usuario {
+        right: 5px;
+    }
+
+    div#div-usuario img {
+        height: 40px;
+        width: 40px;
+    }
+
+    div#div-usuario img:hover {
+        height: 44px;
+        width: 44px;
+    }
+
+    h1#zago {
+        margin-right: 5px;
+    }
+
+    /* Main */
+
+    main.main-flex {
+        justify-content: unset;
+    }
+
+    div.funcao {
+        margin: 0;
+    }
+
+    section a {
+        height: 100%;
+    }
+
+    /* Container 1 */
+
+    section#criar-projeto h1 {
+        margin-top: 0px;
+    }
+
+    section#criar-projeto {
+        height: 33%;
+    }
+
+    section#criar-projeto div {
+        height: 70%;
+        margin-top: 15px;
+    }
+
+    section#criar-projeto {
+        flex-direction: column-reverse;
+    }
+
+    div#container1 {
+        height: 75%;
+    }
+
+    div#container1 h1, div#container2 h1 {
+        font-size: 130%;
+    }
+
+    /* Container 2 */
+
+    div#container2 {
+        height: 25%;
+    }
+
+    section#outros-projetos a img {
+        height: auto;
+        width: 50%;
+    }
+
+    section#meus-projetos a img {
+        height: auto;
+        width: 50%;
+    }
+
+    /* Container 3 */
+
+    div#container3 {
+        display: flex;
+        flex-direction: column;
+        height: 66%;
+        padding: 0px;
+    }
+
+    div#container3 div {
+        height: 50%;
+    }
+
+    div#container3 section {
+        width: 100%;
+    }
+
+    section#produtos-zago a img {
+        height: 90%;
+        width: auto;
+    }
+
+    section#produtos-zago div {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    /* Menu Oculto */
+    .nav-menu .menu-simbolo {
+        width: 30px;
+        height: 30px;
+        left: 15px;
+    }
+
+    #falsa-checkbox {
+        width: 30px;
+        height: 30px;
+        left: 15px;
+    }
+
+    .nav-menu .menu-simbolo span {
+        width: 30px;
+        height: 4px;
+    }
+
+    .margin-top-25px {
+        margin-top: 30px;
+    }
+
+    input#falsa-checkbox:checked ~ .menu-simbolo span:nth-child(1) {
+        transform-origin: 0% 0%;
+        transform: rotate(45deg) scaleX(1.35);
+    }
+    
+    input#falsa-checkbox:checked ~ .menu-simbolo span:nth-child(2) {
+        background-color: var(--transparente);
+    }
+    
+    input#falsa-checkbox:checked ~ .menu-simbolo span:nth-child(3) {
+        transform-origin: 0% 100%;
+        transform: rotate(-45deg) scaleX(1.35);
+    }
+
+    .nav-menu ul {
+        width: 65%;
+    }
+
+    .nav-menu ul li a {
+        font-size: 110%;
+    }
+
+    .nav-menu ul li a:hover {
+        font-size: 130%;
+    }
 }
