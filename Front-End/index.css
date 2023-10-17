@@ -20,20 +20,115 @@ body {
     border: 1px solid rgb(255, 255, 255);
 }
 
-.button-header:hover{
+.button-header:hover {
     background-color: rgb(127, 119, 64);
     border: none;
 }
 
-.img-banner{
+.banner-animation {
+    position: relative;
+    margin-bottom: 4%;
+}
+
+.img-banner {
     width: 100%;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(./img-casarão-original-removebg-preview\ \(1\).png);
+    overflow: hidden;
+}
+
+section .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-image: url(../IMG/wave\ \(3\).png);
+    background-size: 1500px 100px;
+}
+
+section .wave.wave1 {
+    animation: animated 40s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+
+@keyframes animated {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+section .wave.wave2 {
+    animation: animated2 35s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+
+@keyframes animated2 {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+section .wave.wave3 {
+    animation: animated3 25s linear infinite;
+    z-index: 998;
+    opacity: 0.3;
+    animation-delay: -2s;
+    bottom: 15px;
+}
+
+@keyframes animated3 {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+section .wave.wave4 {
+    animation: animated4 30s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 20px;
+}
+
+@keyframes animated4 {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
 }
 
 .navegacao-index {
     font-size: 30px;
 }
 
-a{
+a {
     font-size: 16px;
     margin-left: 20px;
     color: aliceblue;
@@ -81,7 +176,7 @@ h1 {
     height: 20px;
 }
 
-.text-color{
+.text-color {
     color: rgba(237, 236, 236, 0.713);
 }
 
@@ -96,15 +191,15 @@ h1 {
     border-radius: 0 10px 0 10px;
 }
 
-.imgs-card{
+.imgs-card {
     height: 100px;
 }
 
-.input-name{
+.input-name {
     width: 400px;
 }
 
 .btn-conc-reserva {
     color: aliceblue;
-    background-color: #7f7740;    
+    background-color: #7f7740;
 }
