@@ -10,29 +10,26 @@
 
 <body>
     <header>
-        <nav id="cabecalho" class="navbar navbar-expand navbar-dark bg-dark sticky-top">
+        <nav id="cabecalho" class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColapsavel"
+                aria-controls="navbar-toggler" aria-expanded="false" aria-label="Botão sanduíche">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <a class="mr-3 navegacao-index navbar-brand">Jovem Programador</a>
-            <ul class="navbar-nav mr-auto navegacao-index">
-                <li class="nav-item mr-2">
-                    <a class="nav-link" href="#">Início</a>
-                </li>
-                <li class="nav-item mr-2">
-                    <a class="nav-link" href="#">Sobre o curso</a>
-                </li>
-                <li class="nav-item mr-2">
-                    <a class="nav-link" href="#">Contato</a>
-                </li>
-                <li class="nav-item mr-2">
-                    <a class="nav-link" href="#">Suporte</a>
-                </li>
-            </ul>
-            <form class="form-inline">
-                <div class="form-group">
-                    <input type="text" placeholder="O que está procurando?" id="inputNome"
-                        class="form-control mr-1 ml-1" />
-                    <button class="btn" onclick="exibirNome();">Pesquisar</button>
-                </div>
-            </form>
+            <div id="navbarColapsavel" class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto navegacao-index">
+                    <li class="nav-item mr-2">
+                        <a class="nav-link" href="#apresentacao">Início</a>
+                    </li>
+                    <li class="nav-item mr-2">
+                        <a class="nav-link" href="#carrossel">Sobre o curso</a>
+                    </li>
+                    <li class="nav-item mr-2">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                </ul>
+            </div>
+            <a href="#inscricao" class="btn btn-success btn-lg" type="button">Quero me inscrever</a>
         </nav>
     </header>
 
@@ -47,7 +44,8 @@
                                 deleniti molestias culpa saepe labore at architecto laborum quidem, eum odio eos, vero
                                 voluptates ab numquam quam.</h4><label id="nomeDigitado"></label>
                             <br>
-                            <button class="btn btn-outline-success" type="button">Quero me inscrever</button>
+                            <a href="#inscricao" class="btn btn-outline-success btn-lg" type="button">Quero me
+                                inscrever</a>
                         </div>
                     </div>
                 </div>
@@ -203,7 +201,8 @@
                             <div class="form-group">
                                 <input type="text" class="form-control" placeholder="Digite o seu telefone">
                             </div>
-                            <button class="btn btn-success" type="button">Enviar meus dados</button>
+                            <button id="botaoEnviarDados" class="btn btn-success" type="button">Enviar meus
+                                dados</button>
                         </form>
                     </div>
                 </div>
@@ -221,8 +220,15 @@
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("8wruW_5N3r_qzFEIt");
+        })();
+    </script>
+    <script src="index.js"></script>
 </body>
 
-<script src="index.js"></script>
 
 </html>
