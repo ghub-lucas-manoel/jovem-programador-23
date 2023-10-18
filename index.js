@@ -1,22 +1,21 @@
 
 $("#botaoEnviarDados").on("click", () => {
-
-
-    var dadosPessoas = {
-        nome: "Lucas Manoel",
-        idade: 20,
-        cidade: "Chapeté",
-        dinheiroNoBanco: 1000.05,
-        temCarro: true,
-        tipoSanguineo: "AB+"
-    }
-
-    return console.log(dadosPessoas);
-
     const serviceID = "service_i77z57q";
     const templateID = "template_2fvt7v5";
-    // const templateParams = 
+    const templateParams = {
+        nomeCompleto: $("#inputNome").val(),
+        email: $("#inputEmail").val(),
+        telefone: $("#inputTelefone").val()
+    }
 
-    return emailjs.send(serviceID, templateID, templateParams);
-    
+    return emailjs.send(serviceID, templateID, templateParams)
+        .then((obj, params) => {
+            $("#inputNome").val("");
+            $("#inputEmail").val("");
+            $("#inputTelefone").val("");
+            alert("Seus dados foram enviados com sucesso. A equipe responsável fará o contato assim que possível.");
+        })
+        .catch((err) => {
+            alert("Houve um erro inesperado e seus dados não puderam ser enviados. Por favor, tente novamente mais tarde.");
+        });    
 });

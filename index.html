@@ -10,7 +10,7 @@
 
 <body>
     <header>
-        <nav id="cabecalho" class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+        <nav id="cabecalho" class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColapsavel"
                 aria-controls="navbar-toggler" aria-expanded="false" aria-label="Botão sanduíche">
                 <span class="navbar-toggler-icon"></span>
@@ -36,7 +36,7 @@
     <main class="h-100">
         <section id="apresentacao">
             <div class="container h-100">
-                <div class="row h-100">
+                <div class="row h-100 pt-5">
                     <div id="conteudoSection1" class="col-8 h-100">
                         <div class="align-middle py-4 my-auto">
                             <h1 class="display-4 font-weight-bold">CURSO JOVEM PROGRAMADOR</h1>
@@ -53,9 +53,9 @@
         </section>
         <section id="mapa-brasil">
             <div class="container">
-                <div class="row">
-                    <div class="col-4">
-                        <img src="img/brazil-map.png" alt="Mapa do Brasil">
+                <div class="row py-5">
+                    <div class="col-4 my-auto">
+                        <img class="img-fluid" src="img/brazil-map.png" alt="Mapa do Brasil">
                     </div>
                     <div class="col-8 align-self-center">
                         <h2 class="font-weight-bold">SOMOS A ESCOLA QUE MAIS CRESCE NO BRASIL</h2>
@@ -193,13 +193,13 @@
                     <div class="card p-3">
                         <form action="">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Digite o seu nome completo">
+                                <input id="inputNome" type="text" class="form-control" placeholder="Digite o seu nome completo">
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Digite o seu email">
+                                <input id="inputEmail" type="text" class="form-control" placeholder="Digite o seu email">
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Digite o seu telefone">
+                                <input id="inputTelefone" type="text" class="form-control" placeholder="Digite o seu telefone">
                             </div>
                             <button id="botaoEnviarDados" class="btn btn-success" type="button">Enviar meus
                                 dados</button>
