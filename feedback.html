@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="js/bootstrap.min.js"></script>
-    <script src="index.js"></script>
     <title>Moda Ativa</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
@@ -53,9 +51,9 @@
                 </h2>
                 <form class="form-inline m-5">
                     <div class="form-group d-block mx-sm-auto d-flex">
-                        <input type="text" id="pesquisarPalavra" placeholder="Escreva seu comentário" class="form-control">
-                        <button type="button" id="adicioneUmComentario" class="rounded-circle ml-2"><i
-                                class="material-icons">search</i></button>
+                        <input type="text" id="inputComentario" placeholder="Escreva seu comentário" class="form-control">
+                        <button type="button" onclick="comentar()" class="rounded-circle ml-2 py-1"><i
+                                class="material-icons" style="font-size: 1.8em;">send</i></button>
                     </div>
                 </form>
                 <h3 class="pl-3 pr-3 pb-5 text-center">Confira as experiências de outros clientes com os produtos da Moda Ativa</h3>
@@ -143,6 +141,22 @@
             </small>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("Supi9bIx1QekrzUfN");
+       })();
+    </script>
+    <script src="index.js"></script>
 </body>
 
 </html>
