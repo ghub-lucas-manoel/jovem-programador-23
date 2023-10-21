@@ -197,6 +197,9 @@ h1 {
     height: 600px;
 }
 
+#section5 {
+    height: 700px;
+}
 
 .container:last-child {
     height: 20px;
@@ -228,4 +231,8 @@ h1 {
 .btn-conc-reserva {
     color: aliceblue;
     background-color: #7f7740;
+}
+
+footer{
+    height: 100px;
 }
