@@ -124,6 +124,32 @@ section .wave.wave4 {
     }
 }
 
+
+.header {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.header .img-banner {
+    width: 100%;
+    height: auto;
+}
+
+.header .section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../IMG/img-casarão-original-removebg-preview\ \(1\).png) no-repeat center center;
+    background-size: cover;
+    z-index: -1; 
+}
+
+
+
 .navegacao-index {
     font-size: 30px;
 }
@@ -152,12 +178,12 @@ h1 {
 
 #section3 {
     width: 100rem;
-    height: 650px;
+    height: 550px;
 }
 
 .contatos-link {
 
-    font-size: 40px;
+    font-size: 30px;
     margin-left: 10px;
 
 }
