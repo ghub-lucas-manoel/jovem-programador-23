@@ -185,8 +185,9 @@ section .wave.wave4 {
 
 /*Estilização seção reserva*/
 #secaoReserva {
-    height: 700px;
+    height: 750px;
 }
+
 .input-name {
     width: 400px;
 }
@@ -206,35 +207,44 @@ section .wave.wave4 {
 .imgs-card {
     height: 100px;
 }
+
+
+/*Estilização dos serviços extras e cards.*/
+.title-secao{
+    display: flex;
+    justify-content: center;
+}
+
+.servicos-extras{
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.cards-itens{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.card-1, .card-2, .card-3, .card-4, .card-5, .card-6 {
+    width: 180px !important;
+    height: 260px !important;
+    margin-right: 30px !important;
+}
+
+.container .totalizador{
+    width: 500px;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+}
+
 .btn-conc-reserva {
     color: aliceblue;
     background-color: #7f7740;
 }
 
-/*Estilização rodape*/
+/*Estilização rodape.*/
 #rodape{
     height: 100px;
-}
-
-
-/*Configurações de responsividade*/
-@media screen and (max-width : 900px) {
-    #secaoSobreNos{
-        height: auto;
-    }
-    #secaoInfraestrutura{
-        height: auto;
-    }
-    #secaoContatos{
-        height: auto;
-    }
-    #secaoCalendario{
-        height: auto;
-    }
-    #secaoReserva{
-        height: auto;
-    }
-    #redape{
-        height: auto;
-    }
 }
