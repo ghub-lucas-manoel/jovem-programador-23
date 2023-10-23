@@ -1,0 +1,250 @@
+/*Estilização de todo o corpo do site e gerais.*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+}
+h1 {
+    color: aliceblue;
+    font-size: 50px;
+}
+.container {
+    width: 100rem;
+    height: 600px;
+}
+.text-color {
+    color: rgba(237, 236, 236, 0.713);
+}
+
+/*Estilização barra de navegação.*/
+.button-header {
+    height: 40px;
+    width: 280px;
+    border: none;
+    background-color: rgb(9, 9, 9);
+    color: white;
+    border-radius: 0 10px 0 10px;
+    cursor: pointer;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgb(255, 255, 255);
+}
+.button-header:hover {
+    background-color: rgb(127, 119, 64);
+    border: none;
+}
+.navegacao-index {
+    font-size: 30px;
+}
+a {
+    font-size: 16px;
+    margin-left: 20px;
+    color: aliceblue;
+    text-decoration: none;
+}
+a:hover {
+    color: #7f7740;
+}
+
+/*Estilização do banner*/
+.banner-animation {
+    position: relative;
+    margin-bottom: 4%;
+}
+.header .img-banner {
+    width: 100%;
+    height: auto;
+}
+.header {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.header .section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../IMG/img-casarão-original-removebg-preview\ \(1\).png) no-repeat center center;
+    background-size: cover;
+    z-index: -1; 
+}
+
+/*Estilização das ondas em transição*/
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(./img-casarão-original-removebg-preview\ \(1\).png);
+    overflow: hidden;
+}
+section .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-image: url(../IMG/wave\ \(3\).png);
+    background-size: 1500px 100px;
+}
+section .wave.wave1 {
+    animation: animated 40s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+@keyframes animated {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
+}
+section .wave.wave2 {
+    animation: animated2 35s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+@keyframes animated2 {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
+}
+section .wave.wave3 {
+    animation: animated3 25s linear infinite;
+    z-index: 998;
+    opacity: 0.3;
+    animation-delay: -2s;
+    bottom: 15px;
+}
+@keyframes animated3 {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
+}
+section .wave.wave4 {
+    animation: animated4 30s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 20px;
+}
+@keyframes animated4 {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+/*Estilização seção sobre nos*/
+#secaoSobreNos {
+    width: 100rem;
+    height: 350px;
+}
+
+/*Estilização seção infraestrutura*/
+.img-carrossel-one {
+    width: 600px;
+}
+
+/*Estilização seção contatos*/
+#secaoContatos {
+    width: 100rem;
+    height: 550px;
+}
+.contatos-link {
+
+    font-size: 30px;
+    margin-left: 10px;
+
+}
+
+/*Estilização Calendario de eventos*/
+/*Não foi iniciado o codigo do calendario, aguardando estilização.*/
+
+/*Estilização seção reserva*/
+#secaoReserva {
+    height: 750px;
+}
+
+.input-name {
+    width: 400px;
+}
+.container:last-child {
+    height: 20px;
+}
+.button-card {
+    width: 100px;
+    height: 35px;
+    background-color: #7f7740;
+    padding: 5px;
+    margin-left: 0;
+    margin-right: 0;
+    color: aliceblue;
+    border-radius: 0 10px 0 10px;
+}
+.imgs-card {
+    height: 100px;
+}
+
+
+/*Estilização dos serviços extras e cards.*/
+.title-secao{
+    display: flex;
+    justify-content: center;
+}
+
+.servicos-extras{
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.cards-itens{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.card-1, .card-2, .card-3, .card-4, .card-5, .card-6 {
+    width: 180px !important;
+    height: 260px !important;
+    margin-right: 30px !important;
+}
+
+.container .totalizador{
+    width: 500px;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-conc-reserva {
+    color: aliceblue;
+    background-color: #7f7740;
+}
+
+/*Estilização rodape.*/
+#rodape{
+    height: 100px;
+}
