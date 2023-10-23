@@ -183,6 +183,11 @@ section .wave.wave4 {
 /*Estilização Calendario de eventos*/
 /*Não foi iniciado o codigo do calendario, aguardando estilização.*/
 
+/* Feedbacks */
+#feedbacks {
+    height: 1200px;
+}
+
 /*Estilização seção reserva*/
 #secaoReserva {
     height: 750px;
