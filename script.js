@@ -1,6 +1,6 @@
 var perfilClicado = false;
 
-function ExibirMenuLogin()
+function exibirMenuLogin()
 {
     var menu = document.querySelector("div.menu-login");
 
@@ -15,41 +15,23 @@ function ExibirMenuLogin()
     }
 }
 
-function Pesquisar()
-{
-    var sectionResultado = document.getElementById("section-resultado");
-    sectionResultado.classList.remove("resultado-pesquisa");
+$("#botaoEnviarDados").on("click", () => {//() => {} função anônima
 
-    var pesquisa = document.getElementById("texto-pesquisa");
-    var pesquisa = pesquisa.value.toLowerCase();
-
-
-    var resultadoImpresso = document.getElementById("resultado");
-    
-    sectionResultado.classList.add("resultado-pesquisa");
-
-    document.getElementById("titulo-resultado").innerHTML = "Resultado:";
-
-    resultadoImpresso.innerHTML = pesquisa;
-}
-
-function ExibirNome()
-{
-    var resultadoImpresso = document.getElementById("nomeDigitado");
-
-    resultadoImpresso.classList.remove("label-resultado");
-
-    var span = document.getElementById("span-pesquisa");
-
-    span.style.color="white";
-
-    resultadoImpresso.innerHTML = "";
-
-    var pesquisa = document.getElementById("inputNome").value;
-
-    resultadoImpresso.style.color="white";
-
-    resultadoImpresso.classList.add("label-resultado");
-
-    resultadoImpresso.innerHTML = pesquisa;
-}
+    const serviceID = "service_sebuy0b";
+    const templateID = "template_h122i8n";
+    const templateParams = {
+        nomeUsuario : $("#nome-usuario").val(),
+        emailUsuario : $("#email-usuario").val(),
+        telefoneUsuario : $("#telefone-usuario").val()
+    }
+    return emailjs.send(serviceID, templateID, templateParams)
+        .then((obj, params) => {
+            $("#nome-usuario").val("");
+            $("#email-usuario").val("");
+            $("#telefone-usuario").val("");
+            alert("Seu comentário foi enviado com sucesso. A equipe responsável embreve irá liberá-lo para ser exibido na página.")
+        })
+        .catch((err) => {
+            alert("Houve um erro inesperado e seu comentário não pode ser enviados. Por favor, tente novamente mais tarde.")
+        });
+});

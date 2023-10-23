@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+<head id="html-produtos">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zago Planner</title>
     <link rel="stylesheet" href="../css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="../style.css">
     <link rel="shortcut icon" href="../imagens/zago-planner.ico" type="image/x-icon">
+
+    <style>
+        header {
+            margin-top: -30px;
+        }
+        #falsa-checkbox {
+            margin-top: 25px;
+        }
+        .nav-menu .menu-simbolo {
+            margin-top: 25px;
+        }
+    </style>
 </head>
-<body class="body">
+<body id="body-produtos" class="body">
     <header>
         <nav class="nav-menu navbar-expand-lg navbar-light bg-light">
             <input type="checkbox" id="falsa-checkbox">
@@ -19,11 +31,7 @@
                 <span></span>
             </div>
             <ul class="list-group">
-                <li class="cor-menu"></li>
-                <li class="cor-menu"></li>
-                <li class="cor-menu"></li>
-                <li class="cor-menu"></li>
-                <li class="cor-menu"></li>
+                <li id="cor-menu"></li>
                 <li class="listrado list-group-item"><a href="sobre-nos.html"target="_self">SOBRE NÓS</a></li>
                 <li class="listrado2 list-group-item"><a href="manual-do-usuario.html"target="_self">MANUAL DO USUÁRIO</a></li>
                 <li class="listrado list-group-item"><a href="parcerias.html"target="_self">PARCERIAS</a></li>
@@ -43,7 +51,7 @@
             </a>
         </div>
         <div id="div-usuario">
-            <a href="#" onclick="ExibirMenuLogin()"><img src="../imagens/usuario-de-perfil.png" alt="Perfil Usuário"></a>
+            <a href="#" onclick="exibirMenuLogin()"><img src="../imagens/usuario-de-perfil.png" alt="Perfil Usuário"></a>
             <div class="menu-login">
                 <ul>
                     <li><a href="login.html" target="_self" class="text-decoration-none">SAIR</a></li>
@@ -51,8 +59,51 @@
             </div>
         </div>
     </header>
-    <main>
+    <main id="main-produtos">
         <h1 id="titulo-pagina">Produtos Zago</h1>
+        <section id="secao-produtos">
+            <link rel="stylesheet" href="../css/bootstrap.min.css">
+            <div class="row col-12 linha-produto">
+                <div class="container div-produto">
+                    <img class="card-img imagem-produto mx-auto" src="https://global.cdn.magazord.com.br/zagocasaeconstrucao/img/2023/01/produto/1361/285216-delta-turbi-max-preto.jpg?ims=fit-in/420x420/filters:fill(white)" alt="produto 1">
+                    <h3 class="nome-produto text-center">Nome Produto</h3>
+                    <button class="btn btn-info botao-produto">Visualizar</button>
+                    <a class="link-produto btn botao-produto btn-dark" target="_blank" href="https://www.zagocasaeconstrucao.com.br/ventilador-oscilante-de-mesa-venti-delta-turbi-max-preto">Comprar</a>
+                </div>
+                <div class="container div-produto">
+                    <img class="card-img imagem-produto mx-auto" src="https://global.cdn.magazord.com.br/zagocasaeconstrucao/img/2023/03/produto/1603/282515-ducai-black-amb.png?ims=fit-in/420x420/filters:fill(white)" alt="produto 1">
+                    <h3 class="nome-produto text-center">Nome Produto</h3>
+                    <button class="btn-info botao-produto">Visualizar</button>
+                    <a class="link-produto btn botao-produto btn-dark" target="_blank" href="https://www.zagocasaeconstrucao.com.br/chuveiro-eletronico-zagonel-ducali-preto">Comprar</a>
+                </div>
+                <div class="container div-produto">
+                    <img class="card-img imagem-produto mx-auto" src="https://global.cdn.magazord.com.br/zagocasaeconstrucao/img/2022/07/produto/751/104668-abajur-pottery-bege.jpg?ims=fit-in/420x420/filters:fill(white)" alt="produto 1">
+                    <h3 class="nome-produto text-center">Nome Produto</h3>
+                    <button class="btn-info botao-produto">Visualizar</button>
+                    <a class="link-produto btn botao-produto btn-dark" target="_blank" href="https://www.zagocasaeconstrucao.com.br/abajur-de-ceramica-taschibra-pottery-32cm-bege-">Comprar</a>
+                </div>
+            </div>
+            <div class="row col-12 linha-produto">
+                <div class="container div-produto">
+                    <img class="card-img imagem-produto mx-auto" src="https://global.cdn.magazord.com.br/zagocasaeconstrucao/img/2023/01/produto/1361/285216-delta-turbi-max-preto.jpg?ims=fit-in/420x420/filters:fill(white)" alt="produto 1">
+                    <h3 class="nome-produto text-center">Nome Produto</h3>
+                    <button class="btn-info botao-produto">Visualizar</button>
+                    <a class="link-produto btn botao-produto btn-dark" target="_blank" href="https://www.zagocasaeconstrucao.com.br/ventilador-oscilante-de-mesa-venti-delta-turbi-max-preto">Comprar</a>
+                </div>
+                <div class="container div-produto">
+                    <img class="card-img imagem-produto mx-auto" src="https://global.cdn.magazord.com.br/zagocasaeconstrucao/img/2023/03/produto/1603/282515-ducai-black-amb.png?ims=fit-in/420x420/filters:fill(white)" alt="produto 1">
+                    <h3 class="nome-produto text-center">Nome Produto</h3>
+                    <button class="btn-info botao-produto">Visualizar</button>
+                    <a class="link-produto btn botao-produto btn-dark" target="_blank" href="https://www.zagocasaeconstrucao.com.br/chuveiro-eletronico-zagonel-ducali-preto">Comprar</a>
+                </div>
+                <div class="container div-produto">
+                    <img class="card-img imagem-produto mx-auto" src="https://global.cdn.magazord.com.br/zagocasaeconstrucao/img/2022/07/produto/751/104668-abajur-pottery-bege.jpg?ims=fit-in/420x420/filters:fill(white)" alt="produto 1">
+                    <h3 class="nome-produto text-center">Nome Produto</h3>
+                    <button class="btn-info botao-produto">Visualizar</button>
+                    <a class="link-produto btn botao-produto btn-dark" target="_blank" href="https://www.zagocasaeconstrucao.com.br/abajur-de-ceramica-taschibra-pottery-32cm-bege-">Comprar</a>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <script src="../script.js"></script>
