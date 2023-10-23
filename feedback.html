@@ -203,8 +203,64 @@
             </div>
         </section>
 
+        <section id="feedback">
+            <div class="container p-5">
+                <h2 class="font-weight-bold">Envie seu feedback para nós!</h2>
+
+                <br />
+                <div class="card-deck">
+                    <div class="card p-3">
+                        <form action="">
+                            <div class="form-group">
+                                <input
+                                    id="inputNome"
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Digite seu nome aqui"
+                                />
+                            </div>
+                            <div class="form-group">
+                                <input
+                                    id="inputTelefone"
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Digite o seu telefone"
+                                />
+                            </div>
+                            <div class="form-group">
+                                <input
+                                    id="inputFeedback"
+                                    type="text"
+                                    size="155"
+                                    class="form-control"
+                                    placeholder="Digite seu Feedback aqui"
+                                />
+                            </div>
+
+                            <button
+                                id="botaoEnviarFeedback"
+                                class="btn btn-success"
+                                type="button"
+                            >
+                                Enviar Feedback
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+        ></script>
+        <script type="text/javascript">
+            (function () {
+                emailjs.init("lA4s70wPZnll6e1SQ");
+            })();
+        </script>
         <script src="index.js"></script>
     </body>
 </html>
