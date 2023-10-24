@@ -139,13 +139,48 @@
         </div>
     </section>
 
+    <section id="supportForm" class="mt-4">
+        <h2 class="mb-4">Entre em contato com o suporte</h2>
+        <form id="supportFormContent">
+            <div class="mb-3">
+                <label for="inputNome" class="form-label">Nome Completo</label>
+                <input type="text" class="form-control" id="inputNome">
+            </div>
+            <div class="mb-3">
+                <label for="inputEmail" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="inputEmail">
+            </div>
+            <div class="mb-3">
+                <label for="inputTelefone" class="form-label">Telefone</label>
+                <input type="tel" class="form-control" id="inputTelefone">
+            </div>
+            <div class="mb-3">
+                <label for="inputAssunto" class="form-label">Assunto</label>
+                <textarea type="text" class="form-control" id="inputAssunto" rows="4"></textarea>
+            </div>
+            <button type="button" id="botaoEnviarDados" class="btn btn-primary">Enviar</button>
+        </form>
+    </section>
 
 
     <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2023 Zago Planner</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("vfB35HaVktS1925kU");
+        })();
+    </script>
     <script src="index.js"></script>
 </body>
 
