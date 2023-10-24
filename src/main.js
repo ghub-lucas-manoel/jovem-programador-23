@@ -8,13 +8,24 @@ function sendFeedback(event) {
         content: $('#feedback-content').val()
     };
 
-    emailjs.send(serviceId, templateId, templateParams)
-        .then(function (response) {
+    return emailjs.send(serviceId, templateId, templateParams)
+        .then((obj, params) => {
             $('#feedback-author').val('');
             $('#feedback-content').val('');
-            alert('Feedback enviado com Sucesso!');
-        }, function (error) {
-            alert('O envio do feedback falhou, tente novamente mais tarde');
+
+            $('#modal-header').children('h5').text('Sucesso');
+            $('#modal-body').children('p').text('deu certo');
+            $('#modal-footer').children('button').removeClass('btn-danger').addClass('btn-success');
+            return;
+        })
+        .catch((err) => {
+            $('#modal-header').children('h5').text('Falha');
+            $('#modal-body').children('p').text('deu Ruim');
+            $('#modal-footer').children('button').removeClass('btn-sucess').addClass('btn-danger');
+            return;
+        })
+        .finally(() => {
+            return $('#feedbackModal').modal();
         });
 }
 
