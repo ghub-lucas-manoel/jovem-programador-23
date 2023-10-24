@@ -17,7 +17,7 @@ h1 {
     height: 600px;
 }
 .text-color {
-    color: rgba(237, 236, 236, 0.713);
+    color: rgba(237, 236, 236, 0.816);
 }
 
 /*Estilização barra de navegação.*/
@@ -177,8 +177,16 @@ section .wave.wave4 {
 
     font-size: 30px;
     margin-left: 10px;
-
 }
+
+/*Estilização seção Feedbacks*/
+#secaoFeedbacks{
+    height: 1300px;
+}
+#botaoEnviarFeedback{
+    width: 200px;
+}
+
 
 /*Estilização Calendario de eventos*/
 /*Não foi iniciado o codigo do calendario, aguardando estilização.*/
@@ -187,7 +195,6 @@ section .wave.wave4 {
 #secaoReserva {
     height: 750px;
 }
-
 .input-name {
     width: 400px;
 }
@@ -208,43 +215,92 @@ section .wave.wave4 {
     height: 100px;
 }
 
-
 /*Estilização dos serviços extras e cards.*/
 .title-secao{
     display: flex;
     justify-content: center;
 }
-
 .servicos-extras{
     display: flex !important;
     justify-content: center !important;
 }
-
 .cards-itens{
     margin-top: 15px;
     display: flex;
     justify-content: center;
 }
-
 .card-1, .card-2, .card-3, .card-4, .card-5, .card-6 {
     width: 180px !important;
     height: 260px !important;
     margin-right: 30px !important;
 }
-
 .container .totalizador{
     width: 500px;
     margin-top: 0;
     display: flex;
     justify-content: center;
 }
-
 .btn-conc-reserva {
     color: aliceblue;
     background-color: #7f7740;
 }
-
 /*Estilização rodape.*/
 #rodape{
     height: 100px;
 }
+
+/*Responsividade*/
+@media screen and (max-width : 900px) {
+    
+    #secaoSobreNos{
+        height: auto;
+    }
+
+    #secaoInfraestrutura{
+        height: auto;
+    }
+
+    #secaoContatos{
+        height: auto;
+    }
+
+    #secaoFeedbacks {
+        height: auto;
+    }
+
+    #secaoCalendario{
+        height: auto;
+    }
+
+    #secaoReserva {
+        height: auto;
+    }
+} 
+
+@media screen and (max-width : 600px) {
+    
+    #secaoSobreNos{
+        height: auto;
+    }
+
+    #secaoInfraestrutura{
+        height: auto;
+    }
+
+    #secaoContatos{
+        height: auto;
+    }
+
+    #secaoFeedbacks {
+        height: auto;
+    }
+
+    #secaoCalendario{
+        height: auto;
+    }
+
+    #secaoReserva {
+        height: auto;
+    }
+} 
+
