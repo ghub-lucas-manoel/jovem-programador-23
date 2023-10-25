@@ -208,12 +208,29 @@
                 <p class="text-color">Insira seu feedback no formulário abaixo:</p>
 
                 <div class="card p-3">
-                    <form>
+                    <form class="needs-validation" novalidate>
                         <div class="form-group">
                             <input type="text" id="feedback-author" class="form-control mb-2"
-                                placeholder="Digite seu nome">
+                                placeholder="Digite seu nome" required>
+                            <div class="invalid-feedback">
+                                Nome é obrigatório
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" id="feedback-email" class="form-control mb-2"
+                                placeholder="Digite seu Email" required>
+                            <div class="invalid-feedback">
+                                Email é obrigatório
+                            </div>
+                        </div>
+
+                        <div class="needs-validation">
                             <input id="feedback-content" type="text" class="form-control mb-3"
-                                placeholder="Digite o seu Feedback">
+                                placeholder="Digite o seu Feedback" required>
+                            <div class="invalid-feedback">
+                                Feedback é obrigatório
+                            </div>
                         </div>
 
                         <button id="send-feedback-btn" class="btn btn-success" type="button">Enviar</button>
@@ -235,8 +252,7 @@
                     <p>Modal body text goes here.</p>
                 </div>
                 <div id="modal-footer" class="modal-footer">
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Continuar</button>
                 </div>
             </div>
         </div>
