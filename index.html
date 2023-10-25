@@ -1,110 +1,410 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+   
     <link rel="stylesheet" href="style.css">
+
     <link rel="stylesheet" href="bootstrap-4.6.2-dist/css/bootstrap.min.css">
-    <script src="bootstrap-4.6.2-dist/js/bootstrap.min.js"></script>
-    <script src="index.js"></script>
+   
+
+    <link rel="stylesheet" href="style.css">
     <title>Casarão Eventos Lages</title>
 
-    
-   
+
+
 </head>
+
 <body>
-<<<<<<< HEAD
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Casarão Eventos Lages</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item mx-3">
-                        <a class="nav-link" href="#" onclick="navegar('inicio')">Início</a>
-                    </li>
-                    <li class="nav-item mx-3">
-                        <a class="nav-link" href="#" onclick="navegar('servicos')">Serviços</a>
-                    </li>
-                    <li class="nav-item mx-3">
-                        <a class="nav-link" href="#" onclick="navegar('contato')">Contato</a>
-                    </li>
-                    <li class="nav-item mx-3">
-                        <a class="nav-link" href="#" onclick="navegar('calendario')">Calendário</a>
-                    </li>
-                </ul>
+    <header class="text-center header">
+        <nav class="navbar navbar-expand-lg  ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="./img/logo-cazarao-removebg-preview.png" alt=""></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="#sobreNos">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#infraestrutura">Infraestrutura</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contatos">Contatos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#calendarioEventos">Calendario</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#reserva">Reserva</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href=""> </a>
+                        </li>
+                    </ul>
+                    <form class="d-flex mr-5" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="button-header btn-outline btn-success" type="submit">Pesquisar</button>
+                    </form>
+                </div>
+
             </div>
         </nav>
-    </header>
-
-    <main>
-        <section id="conteudo">
-            <div id="pagina-inicio">
-                <h1>Bem-vindo ao Casarão Eventos Lages</h1>
-                <p>Aqui, realizamos os eventos dos seus sonhos.</p>
-                <p>Entre em contato para reservas e informações:</p>
-                <p>Telefone: (49) 99102-2222</p>
-                <p>Email: casaraoeventos@gmail.com</p>
-            </div>
-            <div id="pagina-servicos" style="display: none;">
-                <h1>Serviços</h1>
-                <p>Conteúdo da Página Serviços.</p>
-            </div>
-            <div id="pagina-contato" style="display: none;">
-                <h1>Contato</h1>
-                <p>Conteúdo da Página Contato.</p>
-            </div>
-            <div id="pagina-calendario" style="display: none;">
-                <h1>Calendário</h1>
-                <p>Conteúdo da Página Calendário.</p>
-            </div>
+        <section class="waves-banner">
+            <img class="img-banner" src="./img/img-casarão-original-removebg-preview.png">
+            <div class="wave wave1"></div>
+            <div class="wave wave2"></div>
+            <div class="wave wave3"></div>
+            <div class="wave wave4"></div>
         </section>
-    </main>
+    </header>
+    <section id="secaoSobreNos" class="text-center container section1">
+        <div class="container">
+            <div class="row">
+                <div class="form-group col-12 text-center mt-5">
+                    <h1 class="mb-5" id="sobreNos">Sobre Nós</h1>
+                </div>
+                <div>
+                    <p class="text-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde optio quasi
+                        suscipit? Velit dicta hic repellendus tempora, similique nihil quos eligendi quaerat,
+                        consequatur unde dolorum ipsa dignissimos ipsam provident architecto.</p>
+                </div>
+    </section>
+    <section id="secaoInfraestrutura" class="text-center container">
+        <div class="container">
+            <div class="col-12 text-center mb-3">
+                <h1 id="infraestrutura">Infraestrutura</h1>
+            </div>
+            <div class="row">
+                <div class="col-6 text-center mt-3 p-5 infra-class">
+                    <p class="text-color mb-5">Nossa infraestrutura é composta por:</h3>
+                    <p class="text-color">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut aspernatur harum
+                        suscipit iure
+                        incidunt
+                        in
+                        dolore minus enim cumque amet atque voluptate officia cum eveniet blanditiis praesentium, quod
+                        sed
+                        animi? Lorem ipsum, dolor sit amet consectetur adipisicing elit. eaque?</p>
+                </div>
+                <div class="col-6 p-5">
 
-    <footer class="bg-dark">
-        <small>@2023  Casarão Eventos Lages. Todos os direitos reservados.</small>
+                    <div id="carouselExampleIndicatorsOne" class="carousel slide">
+
+                        <!-- inicio indicadores carrosel-->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicatorsOne" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicatorsOne" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicatorsOne" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+
+                        <!-- inicio slide carrosel -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="img-carrossel-one"
+                                    src="./img/265407349_938121693778900_6572007911469673084_n.jpg" alt="0">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-carrossel-one"
+                                    src="./img/327884979_879882899930291_6290438103843089833_n.jpg" alt="1">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-carrossel-one" src="./img/eventos.jpg" alt="2">
+                            </div>
+                        </div>
+                        <!-- Botões carrossel -->
+                        <button class="carousel-control-prev" type="button"
+                            data-bs-target="#carouselExampleIndicatorsOne" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button"
+                            data-bs-target="#carouselExampleIndicatorsOne" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden"></span>
+                        </button>
+                    </div>
+
+                </div>
+    </section>
+    <section id="secaoContatos" class="text-center container mt-5">
+        <h1 id="contatos">Contatos</h1>
+        <div class="row">
+            <div class="col-4 imagem-celular">
+                <img src="./img/2451-1024x666-removebg-preview.png" class="h-100">
+            </div>
+            <div class="col-8 mt-5 icones-contato">
+                <div class="form-group mt-5">
+                    <p class="text-color">Clique nos ícones abaixo e acesse nossas redes
+                        <br> sociais para entrar em contato conosco.
+                    </p>
+                    <p class="text-color">Contate-nos com apenas um clique!</p>
+                    <div class="col-12 mt-5 d-flex justify-content-center"> <!-- Adicionando a classe d-flex -->
+                        <img src="./img/facebook.png" class="contatos-link mx-3" alt="Facebook">
+                        <img src="./img/twitter.png" class="contatos-link mx-3" alt="Twitter">
+                        <img src="./img/instagram.png" class="contatos-link mx-3" alt="Instagram">
+                        <img src="./img/linkedin.png" class="contatos-link mx-3" alt="LinkedIn">
+                        <img src="./img/gmail.png" class="contatos-link mx-3" alt="Email">
+                        <img src="./img/whatsapp.png" class="contatos-link mx-3" alt="WhatsApp">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="secaoCalendario" class="text-center container">
+        <h1 id="calendarioEventos">Calendario de Eventos</h1>
+    </section>
+
+    <section id="feedbacks">
+        <div class="container">
+            <h1 class="mb-5 font-weight-bold text-light text-center">Clientes satisfeitos</h1>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="text-center">
+                        <img height="150px" width="150px" src="https://tm.ibxk.com.br/2021/08/02/02131237893185.jpg"
+                            class="rounded-circle mb-4" alt="Homem de Ferro">
+                        <h3 class="text-white">Homem de Ferro</h3>
+                        <p class="text-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quos
+                            minus veritatis eius quaerat. Tempore quibusdam porro optio minima reiciendis unde culpa
+                            neque magni, numquam fuga dignissimos quae voluptas eveniet.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="text-center">
+                        <img height="150px" width="150px" src="./img/Thanos.jpeg" class="rounded-circle mb-4"
+                            alt="Thanos">
+                        <h3 class="text-white">Thanos</h3>
+                        <p class="text-color">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam sunt
+                            labore pariatur excepturi, quidem eius rerum consequuntur tenetur asperiores eligendi porro
+                            explicabo dignissimos vel minima facilis praesentium voluptatum quas consectetur?</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="text-center">
+                        <img height="150px" width="150px"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTer8d6-D1lRPoJ7KJ8jCcUldzUPXZwpw_7Mw&usqp=CAU"
+                            class="rounded-circle mb-4" alt="Capitão America">
+                        <h3 class="text-light">Capitão America</h3>
+                        <p class="text-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+                            unde libero velit, vel illum consectetur eligendi quisquam nisi tempora, natus numquam qui
+                            corporis dolore cumque iusto, fugit blanditiis corrupti odit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="send-feedback" class="container p-5 mb-5">
+            <h1 class="font-weight-bold text-light text-center mb-5">Deixe seu feedback</h2>
+                <p class="text-color mb-3">Assim, podemos melhorar nossa infraestrutura para melhor lhes atender!</p>
+                <form action="" class="needs-validation" novalidate>
+                    <div class="form-group col-12">
+                        <input id="inputFeedback" type="text" class="form-control mb-3 input-feedback" 
+                        placeholder="Digite seu Feedback:" required>
+                        <div class="invalid-feedback">Preencha este campo  Corretamente</div>
+                    </div>
+                    <div class="form-group col-12">
+                        <input id="inputNome" type="text" class="form-control mb-3 input-feedback"
+                            placeholder="Digite seu nome completo:" required>
+                            <div class="invalid-feedback">Preencha este campo  Corretamente</div>
+                        </div>
+                    <div class="form-group col-12">
+                        <input id="inputEmail" type="email" class="form-control mb-3 input-feedback" 
+                        placeholder="Digite seu email:" required>
+                        <div class="invalid-feedback">Preencha este campo  Corretamente</div>
+                    </div>
+                    <div class="form-group col-12">
+                        <input id="inputTelefone" type="tel" class="form-control mb-3 input-feedback" 
+                        placeholder="Digite seu telefone:" required>
+                        <div class="invalid-feedback">Preencha este campo  Corretamente</div>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn button-header col-8" id="botaoEnviarFeedback" 
+                             type="button">Enviar meus dados</button>
+                    </div>
+                </form>
+        </div>
+        </div>
+    </section>
+
+    <section id="secaoReserva" class="text-center container mb-5">
+
+        <div class="row">
+            <div class="col-12 text-center mb-3">
+                <h1 id="reserva">Reserva</h1>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Nome:</span>
+                <input type="text" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-default" required>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text">CPF</span>
+                <input type="text" class="form-control" placeholder="xxx.xxx.xxx-xx" aria-label="Username" required>
+                <span class="input-group-text">Data:</span>
+                <input type="date" class="form-control" placeholder="Server" aria-label="Server" required>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text">Celular 01:</span>
+                <input type="text" class="form-control" placeholder="(xx) x xxxx-xxxx" aria-label="Username" required>
+                <span class="input-group-text">Celular 02:</span>
+                <input type="number" class="form-control" placeholder="(xx) x xxxx-xxxx" aria-label="Server" required>
+            </div>
+        </div>
+
+        <div class="servicos-extras">
+            <span class="text-color">
+                Serviços Extras:
+            </span>
+        </div>
+        <div class="cards-itens">
+            <div class="text-center card-1">
+                <div class="card">
+                    <img src="./img/images (1).jfif " class="card-img-top imgs-card" alt="">
+                    <div class="card-body ml-0 mr-0">
+                        <h5 class="card-title">Segurança</h5>
+                        <p class="card-text">R$XX,XX</p>
+                        <a href="#" class="btn button-card">Adicionar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center card-2">
+                <div class="card">
+                    <img src="./img/images.jfif" class="card-img-top imgs-card" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Iluminação</h5>
+                        <p class="card-text">R$XX,XX</p>
+                        <a href="#" class="btn  button-card">Adicionar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center card-3">
+                <div class="card">
+                    <img src="./img/decoração-de-mesa-de-aniversário-simples-com-balões-e-flores-pinterest-p-a0084.jpg"
+                        class="card-img-top imgs-card" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Decoração</h5>
+                        <p class="card-text">R$XX,XX</p>
+                        <a href="#" class="btn  button-card">Adicionar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center card-4">
+                <div class="card">
+                    <img src="./img/2.jpeg" class="card-img-top imgs-card" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Bebidas</h5>
+                        <p class="card-text">R$XX,XX</p>
+                        <a href="#" class="btn  button-card">Adicionar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center card-5">
+                <div class="card">
+                    <img src="./img/1-animacao-infantil.jpg" class="card-img-top imgs-card" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Animação</h5>
+                        <p class="card-text">R$XX,XX</p>
+                        <a href="#" class="btn  button-card">Adicionar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center card-6">
+                <div class="card">
+                    <img src="./img/cropped-Ensaio.jpg" class="card-img-top imgs-card" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Musicos</h5>
+                        <p class="card-text">R$XX,XX</p>
+                        <a href="#" class="btn  button-card">Adicionar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="total-servicos-extras">
+            <div class="container totalizador">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="input-group mt-5 text-center col-12">
+                            <span class="input-group-text">Total:</span>
+                            <span class="input-group-text">R$0.00</span>
+                            <button class="btn btn-conc-reserva">Concluir Reserva</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="rodape">
+        <div class="container text-center mt-5">
+            <small class="text-color">@2023 Group Three Software Work. Todos os direitos Reservados</small>
+        </div>
     </footer>
-   
 
-    
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="index.js"></script>
-=======
-    
-    <div id="menu">
-        <button class="active" data-pagina="inicio" onclick="navegar('inicio')">Início</button>
-        <button data-pagina="servicos" onclick="navegar('servicos')">Serviços</button>
-        <button data-pagina="contato" onclick="navegar('contato')">Contato</button>
-        <button data-pagina="calendario" onclick="navegar('calendario')">Calendário</button>
-    </div>
-
-    
-    <div id="conteudo">
-        <h1>Casarão Eventos Lages</h1>
-        <div id="pagina-inicio">
-            <p>Seja bem-vindo ao Casarão Eventos Lages. Aqui, realizamos os eventos dos seus sonhos.</p>
-            <p>Entre em contato para reservas e informações:</p>
-            <p>Telefone: (49) 99102-2222</p>
-            <p>Email: casaraoeventos@gmail.com</p>
-        </div>
-        <div id="pagina-servicos" style="display: none;">
-            <h1>Serviços</h1>
-            <p>Conteúdo da Página Serviços.</p>
-        </div>
-        <div id="pagina-contato" style="display: none;">
-            <h1>Contato</h1>
-            <p>Conteúdo da Página Contato.</p>
-        </div>
-        <div id="pagina-calendario" style="display: none;">
-            <h1>Calendário</h1>
-            <p>Conteúdo da Página Calendário.</p>
+    <div id="modalFeedback" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div id="modalHeader" class="modal-header">
+                    <h5 class="modal-header">Confirmação de Envio de Dados</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div id="modalBody" class="modal-body">
+                    <p class="modal-body">Seus dados foram enviados com sucesso. A equipe responsável fará o contato
+                        assim que possível.</p>
+                </div>
+                <div id="modalFooter" class="modal-footer">
+                    <button type="button" class="btn btn-success "
+                        data-bs-dismiss="modal">Confirmar</button>
+                </div>
+            </div>
         </div>
     </div>
 
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
     
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("yBzrqJrglJlzgHsmO");
+        })();
+    </script>
+
+<script src="index.js"></script>
+
 </body>
+
 </html>
->>>>>>> 034873d50fea9b11fe142d462b2036a07977737b
