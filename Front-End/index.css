@@ -351,27 +351,31 @@ section .wave.wave4 {
 /*Responsividade*/
 @media screen and (max-width : 900px) {
 
-    #secaoSobreNos {
+    .secao-sobre-nos {
         height: auto;
     }
 
-    #secaoInfraestrutura {
+    .secao-infraestrutura {
         height: auto;
     }
 
-    #secaoContatos {
+    .secao-contatos {
         height: auto;
     }
 
-    #secaoFeedbacks {
+    .secao-feedbacks {
         height: auto;
     }
 
-    #secaoCalendario {
+    .secao-calendario {
         height: auto;
     }
 
-    #secaoReserva {
+    .secao-reserva {
+        height: auto;
+    }
+
+    .secao-rodape {
         height: auto;
     }
 }
