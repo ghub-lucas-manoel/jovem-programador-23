@@ -240,36 +240,34 @@
                 </div>
                 <h2 class="text-color mb-3">Nos envie o seu feedback:</h2>
                 <p class="text-color mb-3">Assim, podemos melhorar nossa infraestrutura para melhor lhes atender!</p>
-                <form action="" class="needs-validation" novalidate>
+                <form id="formFeedback" action="" class="needs-validation" novalidate>
                     <div class="form-group col-12">
-                        <input id="inputFeedback" type="text" class="form-control mb-3 input-feedback"
+                        <input id="inputFeedback" type="text" class="form-control mt-3 input-feedback"
                             placeholder="Digite seu Feedback:" required>
                     </div>
                     <div class="form-group col-12">
-                        <input id="inputNome" type="text" class="form-control mb-3 input-feedback"
+                        <input id="inputNome" type="text" class="form-control mt-3 input-feedback"
                             placeholder="Digite seu nome completo:" required>
                         <div class="invalid-feedback">
-                        Preencha este campo corretamente!
+                            Preencha este campo corretamente!
                         </div>
                     </div>
                     <div class="form-group col-12">
-                        <input id="inputEmail" type="email" class="form-control mb-3 input-feedback"
+                        <input id="inputEmail" type="email" class="form-control mt-3 input-feedback"
                             placeholder="Digite seu email:" required>
                         <div class="invalid-feedback">
-                        Preencha este campo corretamente!
+                            Preencha este campo corretamente!
                         </div>
                     </div>
                     <div class="form-group col-12">
-                        <input id="inputTelefone" type="tel" class="form-control input-feedback was-validated"
+                        <input id="inputTelefone" type="tel" class="form-control mt-3 input-feedback was-validated"
                             placeholder="Digite seu telefone:" required>
                         <div class="invalid-feedback">
-                        Preencha este campo corretamente!
+                            Preencha este campo corretamente!
                         </div>
                     </div>
-                    <div class="form-group">
-                        <button class="btn button-header mt-3 col-12" id="botaoEnviarFeedback" data-bs-toggle="modal"
-                            data-bs-target="#modalFeedback" type="button">Enviar</button>
-                    </div>
+                    <button class="btn button-header mt-3" id="botaoEnviarFeedback" data-bs-toggle="modal"
+                        data-bs-target="#modalFeedback" type="button">Enviar</button>
                 </form>
             </div>
         </div>

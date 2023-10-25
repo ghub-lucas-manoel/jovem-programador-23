@@ -222,16 +222,20 @@ section .wave.wave4 {
 
 /*Estilização seção Feedbacks*/
 #secaoFeedbacks {
-    height: 1440px;
+    height: 1480px;
 }
 #inputFeedback {
     height: 80px;
 }
 #botaoEnviarFeedback {
-    width: 350px!important;
     height: 40px;
     padding: 2px;
-
+    margin: auto;
+}
+#formFeedback{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /*Estilização Calendario de eventos*/
