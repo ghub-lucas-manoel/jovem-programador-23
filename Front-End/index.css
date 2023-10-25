@@ -96,7 +96,7 @@ a:hover {
 /*Estilização das ondas em transição*/
 #secaoWaves {
     width: 100%;
-    height: 710px;
+    height: 850px;
     overflow: hidden;
 }
 
@@ -305,7 +305,7 @@ section .wave.wave4 {
     width: 62px;
     height: 62px;
     bottom: 40px;
-    right: 40px;
+    right: 25px;
     border-radius: 50px;
     text-align: center;
     font-size: 25px;
@@ -322,7 +322,7 @@ section .wave.wave4 {
     width: 62px!important;
     height: 62px!important;
     bottom: 115px;
-    right: 40px;
+    right: 25px;
     border-radius: 50px;
     text-align: center;
     font-size: 35px;
