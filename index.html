@@ -191,15 +191,27 @@
                 <br>
                 <div class="card-deck">
                     <div class="card p-3">
-                        <form action="">
+                        <form action="" class="needs-validation" novalidate>
                             <div class="form-group">
-                                <input id="inputNome" type="text" class="form-control" placeholder="Digite o seu nome completo">
+                                <input id="inputNome" type="text" class="form-control"
+                                    placeholder="Digite o seu nome completo" required>
+                                <div class="invalid-feedback">
+                                    Preencha este campo corretamente.
+                                </div>
                             </div>
                             <div class="form-group">
-                                <input id="inputEmail" type="text" class="form-control" placeholder="Digite o seu email">
+                                <input id="inputEmail" type="email" class="form-control"
+                                    placeholder="Digite o seu email" required>
+                                <div class="invalid-feedback">
+                                    Preencha este campo corretamente.
+                                </div>
                             </div>
                             <div class="form-group">
-                                <input id="inputTelefone" type="text" class="form-control" placeholder="Digite o seu telefone">
+                                <input id="inputTelefone" type="tel" class="form-control was-validated"
+                                    placeholder="Digite o seu telefone" required>
+                                <div class="invalid-feedback">
+                                    Preencha este campo corretamente.
+                                </div>
                             </div>
                             <button id="botaoEnviarDados" class="btn btn-success" type="button">Enviar meus
                                 dados</button>
@@ -213,6 +225,28 @@
         </footer>
     </main>
 
+    <!-- Modais -->
+    <div id="modalInscricao" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div id="modalHeader" class="modal-header">
+                    <h5>Título do Modal</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div id="modalBody" class="modal-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ratione, veniam, enim est sunt ad
+                        repellat consequatur animi nobis quo autem soluta quod facilis, eaque illum totam optio aperiam
+                        voluptatum!</p>
+                </div>
+                <div id="modalFooter" class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Continuar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -220,8 +254,10 @@
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
+
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
     </script>
+
     <script type="text/javascript">
         (function () {
             emailjs.init("8wruW_5N3r_qzFEIt");
