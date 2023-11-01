@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../../../node-modules/bootstrap/css/bootstrap.min.css">
     <title>Moda Ativa</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
@@ -14,7 +14,7 @@
             <div id="menu" class="navbar-nav col-lg-2">
                 <i id="burguer" class="material-icons" onclick="mostrarMenu()">menu</i>
             </div>
-            <a href="index.html" id="link-logo" class="col-lg-3 d-none d-md-flex"><img src="moda-ativa-logo.png" alt="logoModaAtiva" id="modaAtivaLogo" class="ml-1"></a>
+            <a href="../home/index.html" id="link-logo" class="col-lg-3 d-none d-md-flex"><img src="../../assets/img/logo/moda-ativa-logo.png" alt="logoModaAtiva" id="modaAtivaLogo" class="ml-1"></a>
             <form id="pesquisa" class="form-inline d-none d-sm-flex text-center col-4 col-md-5 col-lg-4">
                 <div class="form-group my-auto" id="barraDePesquisa">
                     <input type="text" id="pesquisarPalavra" placeholder="Faça sua pesquisa" class="form-control m-0">
@@ -22,40 +22,40 @@
                             class="material-icons">search</i></button>
                 </div>
             </form>
-            <a href="index.html" id="link-logo" class="col-sm-4 d-flex d-md-none w-auto mx-sm-2"><img src="moda-ativa-logo.png" alt="logoModaAtiva" id="modaAtivaLogo" class="ml-1"></a>
+            <a href="../home/index.html" id="link-logo" class="col-sm-4 d-flex d-md-none w-auto mx-sm-2"><img src="../../assets/img/logo/moda-ativa-logo.png" alt="logoModaAtiva" id="modaAtivaLogo" class="ml-1"></a>
             <div id="div-fantasma" class="col-lg-2 pr-2"></div>
             
-            <a href="cadastro.html" id="link-perfil" class="col-lg-1 col-md-1 float-right align-content-end"><img
+            <a href="../cadastro/cadastro.html" id="link-perfil" class="col-lg-1 col-md-1 float-right align-content-end"><img
                     src="https://th.bing.com/th/id/R.f29406735baf0861647a78ae9c4bf5af?rik=GKTBhov2iZge9Q&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_206976.png&ehk=gCH45Zmryw3yqyqG%2fhd8WDQ53zwYfmC8K9OIkNHP%2fNU%3d&risl=&pid=ImgRaw&r=0"
                     class="float-right" alt="fotoDePerfil" id="fotoPerfil"></a>
         </nav>
     </header>
     <menu id="menuOculto">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="kids.html">Kids</a></li>
-            <li><a href="sugestoes.html">Sugestões</a></li>
-            <li><a href="tbconosco.html">Trabalhe Conosco</a></li>
-            <li><a href="sac.html">SAC</a></li>
-            <li><a href="cadastro.html">Cadastro</a></li>
-            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="../home/index.html">Home</a></li>
+            <li><a href="../kids/kids.html">Kids</a></li>
+            <li><a href="../tbconosco/tbconosco.html">Trabalhe Conosco</a></li>
+            <li><a href="../sac/sac.html">SAC</a></li>
+            <li><a href="../cadastro/cadastro.html">Cadastro</a></li>
+            <li><a href="../feedback/feedback.html">Feedback</a></li>
         </ul>
     </menu>
-    <div class = "fundo h-auto">
+    <div class ="fundo h-auto" style="min-height: 80%;">
         <main id = "conteudoPrincipal" class="h-auto">
             <section>
-                <h1>Sugestões</h1>
-                <p class="p-3 text-justify" style="text-indent: 50px;">Estamos sempre dispostos a melhorar. Por isso disponibilizamos essa página para que nossos 
-                    clientes enviem sugestões para a Moda Ativa melhorar, seu FeedBack é essencial para que a 
+                <h1>SAC</h1>
+                <p class="p-3 text-justify" style="text-indent: 50px;">Através dessa página esclarecemos dúvidas e recebemos sugestões dos clientes, além de 
+                também receber suas reclamações para que possamos resolver o problema, assumindo total responsabilidade.</p>
+                <p class="p-3 text-justify" style="text-indent: 50px;">Estamos sempre dispostos a melhorar, sua avaliação é essencial para que a 
                     qualidade de nosso atendimento melhore sempre!</p>
                 <form action="" class="my-4 needs-validation" novalidate>
                     <div class="form-group">
-                        <input id="inputSugestao" type="text" class="form-control mx-auto my-4" placeholder="Digite sua Sugestão" style="max-width: 600px;" required>
+                        <input id="inputSugestao" type="text" class="form-control mx-auto my-4" placeholder="Digite sua Sugestão/Dúvida/Reclamação" style="max-width: 600px;" required>
                         <div class="invalid-feedback">
                             Preencha este campo corretamente.
                         </div>
                     </div>
-                    <div class="w-100 text-center py-5"><button id="botaoEnviarSugestao" class="btn btn-success w-auto" type="button">Envie sua Sugestão</button></div>
+                    <div class="w-100 text-center py-5"><button id="botaoEnviarSugestao" class="btn btn-success w-auto" type="button">Enviar</button></div>
                 </form>
             </section>
         </main>
@@ -98,7 +98,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="../../../node-modules/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
     </script>
@@ -107,6 +107,6 @@
           emailjs.init("Supi9bIx1QekrzUfN");
        })();
     </script>
-    <script src="index.js"></script>
+    <script src="../index.js"></script>
 </body>
 </html>
