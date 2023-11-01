@@ -1,0 +1,116 @@
+body {
+    background-color: #F8F8FF;
+}
+
+.navegacao-index{
+    font-size: 20px;
+}
+
+#Jovem{
+    color: white;
+    font-size: 20px;
+    margin-left: 62.8px;
+}
+
+#Programador{
+    color: rgba(255, 162, 0, 0.903);
+    font-size: 20px;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+
+}
+
+.calculator button {
+    width: 100px;
+    height: 100px;
+    font-size: 30px;
+    color: #FFFFFF;
+    background-color: #1E90FF;
+    margin: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.rounded-display {
+    border-radius: 10px;
+    width: 430px!important;
+    font-size: 25px!important;
+    border: 1px solid #6b6b6b!important;
+    height: 50px!important;
+}
+
+.btn {
+    border-color: #cbcbcb;
+    border: none!important;
+}
+
+.btn:hover{
+    background-color: #A9A9A9 !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)!important;
+}
+
+
+.btn-AC {
+    width: 100px;
+    height: 100px;
+    font-size: 30px;
+    margin: 5px;
+    background-color: #B22222!important;
+    color: #ffffff !important;
+}
+
+.btn-numbers {
+    width: 100px;
+    height: 100px;
+    font-size: 30px;
+    margin: 5px;
+    background-color: #b9b9b993 !important;
+    color: #000000 !important;
+}
+
+.btn-igual {
+    width: 100px;
+    height: 100px;
+    font-size: 30px;
+    margin: 5px;
+    background-color: #DAA520 !important;
+    color: #ffffff !important;
+}
+
+
+#conteudo-adicional{
+    background-color: #1E90FF;
+    padding-top: 15px; 
+    width: 100vw;  
+    margin-bottom: 0%;
+    color: aliceblue;
+}
+
+
+.btn-tutorial {
+    width: 60px !important;
+    background-color: #6b6b6b !important;
+    height: 50px !important;
+    color: #cbcbcb !important;
+}
+
+#botaoHome {
+    position: fixed;
+    width: 110px;
+    height: 60px;
+    bottom: 100px;
+    right: 100px;
+    background-color: #007bf7;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 22px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+    padding: 12px;
+    text-decoration: none;
+}
+

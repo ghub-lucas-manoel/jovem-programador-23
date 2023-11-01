@@ -1,0 +1,295 @@
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: #007bf7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.background-login {
+    background-color: #46a2ffa9;
+    width: 800px;
+    display: flex;
+    height: 375px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px -3px rgba(0, 0, 0, 0.5) !important;
+
+}
+
+.l-jota {
+    color: rgb(0, 39, 74);
+}
+
+.l-pe {
+    color: #fdc200;
+}
+
+.login-tela {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+    height: 300px;
+    padding: 40px;
+}
+
+.title-log {
+    color: aliceblue;
+    font-size: 50px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+    text-shadow: 0.1px 0.1px rgba(0, 0, 0, 0.5) !important;
+}
+
+.text-log {
+    width: 450;
+    color: aliceblue;
+    font-size: 22px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.input-log {
+    height: 35px;
+    width: 325px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: none;
+    box-shadow: 5px 5px 15px -3px rgba(0, 0, 0, 0.5) !important;
+    margin-bottom: 5px;
+}
+
+.div-inputs {
+    margin-bottom: 5px;
+}
+
+.div-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.link-log {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.link-log:hover {
+    color: rgb(1, 87, 163);
+}
+
+.button-log {
+    height: 50px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    border: none;
+    border-radius: 10px;
+    color: aliceblue;
+    background-color: #004080;
+    font-size: 18px;
+    box-shadow: 5px 5px 15px -3px rgba(0, 0, 0, 0.5) !important;
+
+}
+
+.button-log:hover {
+    color: rgb(7, 139, 255);
+    background-color: #bbcbff;
+
+}
+
+.div-buttons {
+    display: flex;
+    align-items: center;
+
+}
+
+.button-voltar {
+    height: 50px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    border: none;
+    border-radius: 10px;
+    color: rgb(7, 139, 255);
+    background-color: #ffffff;
+    font-size: 18px;
+    box-shadow: 5px 5px 15px -3px rgba(0, 0, 0, 0.5) !important;
+
+}
+
+.button-voltar:hover {
+    color: aliceblue;
+    background-color: #0053a6bc;
+}
+
+.img-banner {
+    width: 400px;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    border-radius: 20px;
+}
+
+@media screen and (max-width : 1000px) {
+
+    .img-login {
+        visibility: hidden;
+        display: none;
+    }
+
+    .background-login {
+        width: 400px;
+        height: 440px;
+        padding-right: 50px;
+    }
+
+    .login-tela {
+        width: 400px;
+        height: 300px;
+        padding: 40px;
+
+    }
+
+    .title-log {
+        margin-top: 50px;
+        font-size: 45px;
+    }
+
+    .text-log {
+        width: 365px;
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .div-buttons {
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .button-log {
+        width: 170px;
+        height: 50px;
+    }
+
+    .button-voltar {
+        width: 170px;
+        height: 50px;
+    }
+
+    .div-links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .link-log {
+        font-size: 22px;
+    }
+
+    .div-inputs {
+        width: 370px;
+        height: 120px;
+    }
+
+    .input-log {
+        width: 360px;
+        height: 40px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        border: none;
+        box-shadow: 5px 5px 15px -3px rgba(0, 0, 0, 0.5) !important;
+    }
+
+}
+
+@media screen and (max-width : 450px) {
+
+    .img-login {
+        visibility: hidden;
+        display: none;
+    }
+
+    .background-login {
+        width: 300px;
+        height: 430px;
+    }
+
+    .login-tela {
+        width: 280px;
+        height: 300px;
+        padding: 40px;
+
+    }
+
+    .title-log {
+        margin-top: 50px;
+        font-size: 45px;
+    }
+
+    .text-log {
+        width: 270px;
+        font-size: 22px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .div-buttons {
+        left: auto;
+        right: auto;
+
+    }
+
+    .button-log {
+        width: 130px;
+        margin-right: 10px;
+    }
+
+    .button-voltar {
+        width: 130px;
+    }
+
+    .div-links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .link-log {
+        font-size: 18px;
+    }
+
+    .div-inputs {
+        width: 225px;
+        height: 120px;
+    }
+
+    .input-log {
+        width: 260px;
+        height: 40px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        border: none;
+        box-shadow: 5px 5px 15px -3px rgba(0, 0, 0, 0.5) !important;
+    }
+
+}

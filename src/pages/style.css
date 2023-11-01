@@ -1,0 +1,555 @@
+/*Estilizações*/
+html,
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Estilização da barra de navegação*/
+#cabecalho {
+    color: white;
+    white-space: nowrap;
+}
+
+/*Estilização da logo da barra de navegação*/
+#Jovem {
+    color: white;
+    font-size: 20px;
+}
+
+#Programador {
+    color: rgba(255, 162, 0, 0.903);
+    font-size: 20px;
+}
+
+/*Estilização da apresentacao*/
+#apresentacao {
+    background: url('../assets/img/img-banner/wepik-export-20231101000434Lg9o.jpeg') no-repeat;
+    background-position: 75% 25%;
+    width: 100%;
+    background-size: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+
+    #conteudoApresentacao {
+        display: flex;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.266);
+        padding: 50px;
+        margin-right: 160px;
+        width: 600px;
+    }
+}
+
+/*Estilização da inscrição*/
+#inscricao {
+    height: 800px;
+    background-image: url(../assets/img/imgs-body/Captura_de_tela_2023-10-23_200831-transformed.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-inscricao{
+    margin-top: 20px;
+}
+
+/*Estilização do footer*/
+footer {
+    color: rgba(0, 0, 0, 0.722);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    margin-top: auto;
+
+}
+
+.dropdown-item{
+    color: #FFF;
+}
+
+.imgs-feedback {
+    height: 150px !important;
+    width: 150px !important;
+}
+
+/*Estilização do botão que leva ao topo instantaneamente.*/
+#botaoHome {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #007bf7;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+    padding: px;
+}
+
+.card-img-top {
+    width: 100%;
+    border-radius: 18px 18px 18px 0;
+    height: 182px;
+}
+
+.card-deck {
+    display: flex;
+    justify-content: center;
+}
+
+.card-infos {
+    background: #ffffff !important;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    width: 350px;
+
+}
+
+/* card do brasil + card informativo*/
+#sobreNos {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 450px;
+    margin-top: -100px
+}
+
+.img-banner img {
+    position: absolute;
+    width: 650px;
+    top: 10px;
+    bottom: 10px;
+}
+
+.card {
+    border-radius: 20px !important;
+    padding: 20px 20px !important;
+    font-size: 20px !important;
+    box-shadow: 10px 10px 20px 3px rgba(0, 0, 0, 0.5) !important;
+    border: none !important;
+    background-color: #ffffffc0;
+
+}
+
+.card-case {
+    width: 430px !important;
+    font-size: 14px !important;
+    bottom: -350px !important;
+}
+
+.card-case-name {
+    position: absolute !important;
+    font-size: 12px !important;
+    color: var(--color-secondary) !important;
+    right: 35px !important;
+    bottom: 15px !important;
+    color: #007bf7 !important;
+}
+
+
+
+
+@media screen and (max-width : 759px) {
+    body{
+        overflow-x: hidden;
+    }
+    /*responsividade, parte da apresentação*/
+    #apresentacao {
+        height: 6.2%;
+        width: 100%;
+    }
+
+    .text-apresentacao {
+        font-size: 20px;
+    }
+
+    .text-apresentacao-2 {
+        font-size: 16px;
+    }
+
+    .conteudoApresentacao {
+        width: 120px !important;
+        padding: 0px;
+    }
+
+    /*responsividade, parte do brasil*/
+
+    #sobreNos {
+        height: 450px;
+    }
+
+    .img-banner img {
+        position: absolute;
+        width: 350px;
+        top: 50px;
+        right: auto;
+        left: 25%;
+    }
+
+    .card {
+        border-radius: 20px !important;
+        padding: 15px 20px 35px 20px !important;
+        font-size: 20px !important;
+        box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.3) !important;
+        border: none !important;
+    }
+
+    .title-card {
+        font-size: 15px;
+    }
+
+    .card-case {
+        width: 250px !important;
+        font-size: 13px !important;
+        position: absolute !important;
+        left: 8% !important;
+        bottom: -360px !important;
+    }
+
+    .card-case-name {
+        position: absolute !important;
+        font-size: 12px !important;
+        color: var(--color-secondary) !important;
+        right: 30px !important;
+        bottom: 6px !important;
+    }
+
+    /*responsividade, parte dos cards*/
+    .card-img-top {
+        width: 100%;
+        border-radius: 18px 18px 18px 0;
+        height: 182px;
+    }
+
+    .card-deck {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-infos {
+        background: #FFFFFF !important;
+        margin-left: 15px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        border-radius: 20px;
+        width: 350px;
+
+    }
+
+    /*responsividade da inscrição*/
+    #inscricao {
+        height: 800px;
+        background-image: url(../assets/img/imgs-body/Captura_de_tela_2023-10-23_200831-transformed.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .card-inscricao {
+        width: 400px;
+        margin-top: 20px;
+    }
+
+}
+
+@media screen and (max-width : 547px) {
+
+
+    body{
+        overflow-x: hidden;
+    }
+
+    /*responsividade, parte da apresentação*/
+    #apresentacao {
+        height: 6.2%;
+        width: 100%;
+    }
+
+    .text-apresentacao {
+        font-size: 20px;
+    }
+
+    .text-apresentacao-2 {
+        font-size: 16px;
+    }
+
+    .conteudoApresentacao {
+        width: 120px !important;
+        padding: 0px;
+    }
+
+    /*responsividade, parte do brasil*/
+
+    #sobreNos {
+        height: 450px;
+    }
+
+    #body-text{
+        display: none;
+    }
+
+
+    .img-banner img {
+        position: absolute;
+        width: 350px;
+        top: 50px;
+        right: auto;
+        left: 25%;
+    }
+
+    .card {
+        border-radius: 20px !important;
+        padding: 15px 20px 35px 20px !important;
+        font-size: 20px !important;
+        box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.3) !important;
+        border: none !important;
+        height: 80px;
+    }
+
+    .title-card {
+        font-size: 15px;
+    }
+
+    .card-case {
+        width: 280px !important;
+        font-size: 13px !important;
+        position: absolute !important;
+        left: 8% !important;
+        bottom: -320px !important;
+    }
+
+    .card-case-name {
+        position: absolute !important;
+        font-size: 12px !important;
+        color: var(--color-secondary) !important;
+        right: 60px !important;
+        bottom: 15px !important;
+        color: #007bf7 !important;
+    }
+
+    /*responsividade, parte dos cards*/
+    .card-img-top {
+        width: 100%;
+        border-radius: 18px 18px 18px 0;
+        height: 182px;
+    }
+
+    .card-deck {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-infos {
+        background: #FFFFFF !important;
+        margin-left: 15px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        border-radius: 20px;
+        width: 350px;
+
+    }
+
+    /*responsividade da inscrição*/
+    #inscricao {
+        height: 800px;
+        background-image: url(../assets/img/imgs-body/Captura_de_tela_2023-10-23_200831-transformed.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .card-inscricao {
+        width: 400px;
+        height: 330px;
+        margin-top: 20px;
+        background-color: #ffffff6a;
+    }
+
+}
+
+@media screen and (max-width : 333px) {
+
+    body{
+        overflow-x: hidden;
+    }
+
+    /*responsividade, parte da apresentação*/
+    #apresentacao {
+        height: 5.5%;
+        width: 140%;
+        margin-left: -30px;
+    
+    }
+
+    .botao-banner{
+        width: 140px;
+        height: 30px;
+        padding: 2px;
+        font-size: 12px;
+    }
+
+    .text-apresentacao {
+        font-size: 12px;
+        width: 270px;
+    }
+
+    .text-apresentacao-2 {
+        font-size: 11px;
+        margin-bottom: -5px;
+        width: 270px;
+    }
+
+    .conteudoApresentacao {
+        width: 100px !important;
+        padding: 0px;
+        height: 180px;
+    }
+
+    /*responsividade, parte do brasil*/
+
+    #sobreNos {
+        height: 400px;
+    }
+
+    .img-banner img {
+        position: absolute;
+        width: 280px; /*somente em 333 fica legal*/
+        top: 50px;
+        right: auto;
+        left: 0%;
+    }
+
+    .card {
+        border-radius: 20px !important;
+        padding: 15px 20px 0px 20px !important;
+        font-size: 20px !important;
+        box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.3) !important;
+        border: none !important;
+        height: 70px;
+    }
+
+    .title-card {
+        font-size: 14px;
+        bottom: 0px;
+        margin-bottom: 0;
+    }
+
+    .card-case {
+        width: 280px !important;
+        font-size: 11px !important;
+        position: absolute !important;
+        left: 0% !important;
+        bottom: -280px !important;
+    }
+
+    #body-text{
+        display: none;
+    }
+
+    .card-case-name {
+        position: absolute !important;
+        font-size: 12px !important;
+        color: var(--color-secondary) !important;
+        right: 30px !important;
+        color: #007bf7 !important;
+        bottom: 10px !important;
+    }
+
+    #carrossel {
+    height: 250px;
+    }
+
+    .img-carrossel {
+        width: 100%;
+    }
+
+    /*responsividade, parte dos cards*/
+    .card-img-top {
+        width: 100%;
+        border-radius: 18px 18px 18px 0;
+        height: 140px;
+    }
+
+    .card-deck {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-infos {
+        background: #FFFFFF !important;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        border-radius: 20px;
+        width: 200px;
+        font-size: 12px;
+    }
+
+    .card-header {
+        font-size: 16px;
+    }
+
+    .img-feedbacks{
+        width: 100px;
+        height: 100px;
+    }
+
+    .text-feedback {
+        font-size: 18px;
+        width: 280px;
+    }
+
+    .text-feedback-2{
+        font-size: 14px;
+    }
+
+    /*responsividade da inscrição*/
+    #inscricao {
+        height: 900px;
+        background-image: url(../assets/img/imgs-body/Captura_de_tela_2023-10-23_200831-transformed.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .card-inscricao {
+        width: 300px;
+        height: 320px;
+        margin-top: 20px;
+        background-color: rgba(250, 235, 215, 0.196);
+    }
+
+    .text-inscricao{
+        font-size: 20px;
+    }
+
+    .text-inscricao-2{
+        font-size: 18px;
+    }
+
+    .invalid-feedback{
+        font-size: 14px;
+    }
+
+    #botaoHome{
+        width: 50px;
+        height: 50px;
+        padding: 0px;
+        margin: 0;
+        right: 10px;
+        bottom: 10px;
+        background-color: #007cf7cb;
+       }
+
+}
