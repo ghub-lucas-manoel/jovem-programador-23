@@ -11,9 +11,6 @@
         header {
             margin-top: -30px;
         }
-        #falsa-checkbox {
-            margin-top: 25px;
-        }
         .nav-menu .menu-simbolo {
             margin-top: 25px;
         }
@@ -24,11 +21,11 @@
         <nav class="nav-menu navbar-expand-lg navbar-light bg-light">
             <input type="checkbox" id="falsa-checkbox">
 
-            <div class="menu-simbolo container">
+            <label for="falsa-checkbox" class="menu-simbolo margin-top-25px container">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </label>
             <ul class="list-group">
                 <li id="cor-menu"></li>
                 <li class="listrado list-group-item"><a href="sobre-nos.html"target="_self">SOBRE NÓS</a></li>
@@ -70,15 +67,24 @@
                 </h3>
                 <div class="card-deck">
                     <div class="card p-3">
-                        <form action="">
+                        <form action="" class="needs-validation" novalidate>
                             <div class="form-group">
-                                <input id="nome-usuario" type="text" class="form-control" placeholder="Digite o seu nome completo">
+                                <input id="nome-usuario" type="text" class="form-control" placeholder="Digite o seu nome completo" required>
+                                <div class="invalid-feedback">
+                                    Preencha este campo corretamente.
+                                </div>
                             </div>
                             <div class="form-group">
-                                <input id="email-usuario" type="text" class="form-control" placeholder="Digite o seu email">
+                                <input id="email-usuario" type="email" class="form-control" placeholder="Digite o seu email" required>
+                                <div class="invalid-feedback">
+                                    Preencha este campo corretamente.
+                                </div>
                             </div>
                             <div class="form-group">
-                                <input id="telefone-usuario" type="text" class="form-control" placeholder="Digite o seu telefone">
+                                <input id="telefone-usuario" type="tel" class="form-control" placeholder="Digite o seu telefone" required>
+                                <div class="invalid-feedback">
+                                    Preencha este campo corretamente.
+                                </div>
                             </div>
                             <a id="botaoEnviarDados" class="btn btn-info" type="button">Enviar meus dados</a>
                         </form>
@@ -87,6 +93,28 @@
             </div>
         </section>
     </main>
+
+    <div id="modalReportErro" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div id="modalHeader" class="modal-header">
+                    <h5>Título do Modal</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div id="modalBody" class="modal-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, 
+                        atque quod, omnis in modi tenetur sequi possimus eaque at similique 
+                        aspernatur odio ab eum quia iusto libero? Deserunt, ipsa alias.</p>
+                </div>
+                <div id="modalFooter" class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Continuar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <footer>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

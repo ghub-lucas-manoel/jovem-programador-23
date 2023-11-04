@@ -11,7 +11,7 @@
 
 :root {
     --cor-titulo-zago-1: #fff;
-    --cor-titulo-zag--2: #FF3131;
+    --cor-titulo-zag--2: red;/*#FF3131;*/
     --cor-header: #4270b4;
     --cor-fundo-site: #201F1F;
     --cor-section-pesquisa: #353434;
@@ -144,6 +144,10 @@ div#div-usuario img:hover
     margin-top: 25px;
 }
 
+.menu-simbolo:hover {
+    cursor: pointer;
+}
+
 .nav-menu .menu-simbolo {
     position: absolute;
     z-index: 999;
@@ -162,15 +166,7 @@ div#div-usuario img:hover
 }
 
 #falsa-checkbox {
-    position: absolute;
-    z-index: 1000;
-    width: 35px;
-    height: 35px;
-    opacity: 0;
-}
-
-#falsa-checkbox:hover {
-    cursor: pointer;
+    display: none;
 }
 
 input#falsa-checkbox:checked ~ .menu-simbolo span:nth-child(1) {
@@ -662,7 +658,7 @@ div.div-produto {
     width: 25%;
 }
 
-h3.nome-produto {
+h2.nome-produto {
     color: var(--cor-titulo-zago-1);
     font-size: 22px;
 }
