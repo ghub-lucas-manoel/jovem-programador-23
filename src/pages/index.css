@@ -90,6 +90,7 @@ menu {
     display: none;
     margin-top: 0px;
     position: absolute;
+    margin-left: 40px;
 }
 ul {
     list-style-type: none;
@@ -184,6 +185,11 @@ footer {
     align-items: center;
 }
 
+#loginIcon {
+    height: 150px;
+    display: block;
+}
+
 @media screen and (max-width : 1250px) {
     #carrossel {
         height: auto;
@@ -239,6 +245,17 @@ footer {
         display: none;
     }
     #feedback img {
+        display: none;
+    }
+}
+
+@media screen and (max-height:830px) {
+    #loginIcon {
+        height: 100px;
+    }
+}
+@media screen and (max-height:750px) {
+    #loginIcon {
         display: none;
     }
 }

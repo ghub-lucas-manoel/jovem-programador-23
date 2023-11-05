@@ -8,7 +8,7 @@
     <title>Moda Ativa</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
+<body style="min-height: 530px;">
     <header class="pl-0 pr-lg-5 col-12">
         <nav class="navbar navbar-expand-lg p-0 col-12 align-content-between">
             <div id="menu" class="navbar-nav col-lg-2">
@@ -41,23 +41,31 @@
             <li><a href="../feedback/feedback.html">Feedback</a></li>
         </ul>
     </menu>
-    <div class ="fundo h-auto" style="min-height: 80%;">
-        <main id = "conteudoPrincipal" class="h-auto">
-            <section>
-                <h1>SAC</h1>
-                <p class="p-3 text-justify" style="text-indent: 50px;">Através dessa página esclarecemos dúvidas e recebemos sugestões dos clientes, além de 
-                também receber suas reclamações para que possamos resolver o problema, assumindo total responsabilidade.</p>
-                <p class="p-3 text-justify" style="text-indent: 50px;">Estamos sempre dispostos a melhorar, sua avaliação é essencial para que a 
-                    qualidade de nosso atendimento melhore sempre!</p>
-                <form action="" class="my-4 needs-validation" novalidate>
-                    <div class="form-group">
-                        <input id="inputSugestao" type="text" class="form-control mx-auto my-4" placeholder="Digite sua Sugestão/Dúvida/Reclamação" style="max-width: 600px;" required>
-                        <div class="invalid-feedback">
-                            Preencha este campo corretamente.
+    <div class = "fundo" style="min-height: 450px;">
+        <main id = "conteudoPrincipal" class="my-0" style="max-width: 800px; min-height: 300px;">
+            <section class="h-100">
+                <div style="height: 90%;">
+                    <h1>Entrar</h1>
+                    <img id="loginIcon" class="mx-auto py-3" src="https://th.bing.com/th/id/R.f29406735baf0861647a78ae9c4bf5af?rik=GKTBhov2iZge9Q&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_206976.png&ehk=gCH45Zmryw3yqyqG%2fhd8WDQ53zwYfmC8K9OIkNHP%2fNU%3d&risl=&pid=ImgRaw&r=0" alt="perfilSimbolo">
+                    <form action="" class="my-4 needs-validation" novalidate>
+                        <div class="form-group">
+                            <input id="inputEmail" type="email" class="form-control mx-auto my-4" placeholder="Digite o seu email" style="max-width: 600px;" required>
+                            <div class="invalid-feedback">
+                                Preencha este campo corretamente.
+                            </div>
                         </div>
-                    </div>
-                    <div class="w-100 text-center py-5"><button id="botaoEnviarSugestao" class="btn btn-success w-auto" type="button">Enviar</button></div>
-                </form>
+                        <div class="form-group">
+                            <input id="inputSenha" type="password" class="form-control mx-auto my-4" placeholder="Digite a sua senha" style="max-width: 600px;" required>
+                            <div class="invalid-feedback">
+                                Preencha este campo corretamente.
+                            </div>
+                        </div>
+                        <div class="w-100 text-center py-3"><button id="botaoEnviarDados" class="btn btn-success w-auto" type="button">Entrar</button></div>
+                    </form>
+                </div>
+                <div class="d-flex" style="height: 10%;">
+                    <a class="align-self-end w-100 text-right" href="../cadastro/cadastro.html">Não possuo uma Conta</a>
+                </div>
             </section>
         </main>
     </div>

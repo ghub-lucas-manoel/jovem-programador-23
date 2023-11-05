@@ -8,7 +8,7 @@
     <title>Moda Ativa</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
+<body style="min-height: 760px;">
     <header class="pl-0 pr-lg-5 col-12">
         <nav class="navbar navbar-expand-lg p-0 col-12 align-content-between">
             <div id="menu" class="navbar-nav col-lg-2">
@@ -25,13 +25,14 @@
             <a href="../home/index.html" id="link-logo" class="col-sm-4 d-flex d-md-none w-auto mx-sm-2"><img src="../../assets/img/logo/moda-ativa-logo.png" alt="logoModaAtiva" id="modaAtivaLogo" class="ml-1"></a>
             <div id="div-fantasma" class="col-lg-2 pr-2"></div>
             
-            <a href="../cadastro/cadastro.html" id="link-perfil" class="col-lg-1 col-md-1 float-right align-content-end"><img
+            <a href="../login/login.html" id="link-perfil" class="col-lg-1 col-md-1 float-right align-content-end"><img
                     src="https://th.bing.com/th/id/R.f29406735baf0861647a78ae9c4bf5af?rik=GKTBhov2iZge9Q&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_206976.png&ehk=gCH45Zmryw3yqyqG%2fhd8WDQ53zwYfmC8K9OIkNHP%2fNU%3d&risl=&pid=ImgRaw&r=0"
                     class="float-right" alt="fotoDePerfil" id="fotoPerfil"></a>
         </nav>
     </header>
     <menu id="menuOculto">
-        <ul>
+        <ul class="list-group fixed">
+            <li><a href="../login/login.html">Entrar</a></li>
             <li><a href="../home/index.html">Home</a></li>
             <li><a href="../kids/kids.html">Kids</a></li>
             <li><a href="../tbconosco/tbconosco.html">Trabalhe Conosco</a></li>
@@ -40,11 +41,11 @@
             <li><a href="../feedback/feedback.html">Feedback</a></li>
         </ul>
     </menu>
-    <div class = "fundo">
-        <main id = "conteudoPrincipal" style="max-width: 800px;">
-            <section>
-                <h1>Cadastro</h1>
-                <form action="" class="my-4 needs-validation" novalidate>
+    <div class = "fundo" style="min-height: 720px;">
+        <main id = "conteudoPrincipal" style="max-width: 800px; min-height: 520px;">
+            <section style="height: 90%;">
+                <h1 class="mb-5">Cadastro</h1>
+                <form action="" class="mt-5 mb-3 needs-validation" novalidate>
                     <div class="form-group">
                         <input id="inputNome" type="text" class="form-control mx-auto my-4" placeholder="Digite o seu nome completo" style="max-width: 600px;" required>
                         <div class="invalid-feedback">
@@ -65,6 +66,9 @@
                     </div>
                     <div class="w-100 text-center py-5"><button id="botaoEnviarDados" class="btn btn-success w-auto" type="button">Enviar meus dados</button></div>
                 </form>
+                <div class="d-flex" style="height: 10%;">
+                    <a class="align-self-end w-100 text-right" href="../login/login.html">Já possuo uma Conta</a>
+                </div>
             </section>
         </main>
     </div>
