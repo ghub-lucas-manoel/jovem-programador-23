@@ -153,6 +153,7 @@ div#div-usuario img:hover
     z-index: 999;
     width: 35px;
     height: 35px;
+    margin-top: 0px;
 }
 
 .nav-menu .menu-simbolo span {
@@ -549,20 +550,32 @@ div#login p {
     margin-bottom: 0;
 }
 
-div#login button {
+div#login a {
     width: 300px;
     margin: 0 auto;
     border-radius: 10px;
     color: var(--cor-titulo-zago-1);
     padding: 5px 0px;
+    border-right: 1px solid rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(0, 0, 0);
 }
 
-button#facebook {
+a#facebook {
     background-color: #395692;
 }
 
-button#google {
+a#google {
     background-color: #E94235;
+}
+
+a#google:hover {
+    background-color: #af3229;
+    text-decoration: none;
+}
+
+a#facebook:hover {
+    background-color: #25385f;
+    text-decoration: none;
 }
 
 footer.footer-pesquisa {
@@ -692,6 +705,10 @@ a.botao-produto:hover {
     width: 95%;
 }
 
+.bd-radius {
+    border-radius: 15px;
+}
+
 @media (max-width: 900px) {
     main {
         width: 80%;
@@ -799,7 +816,7 @@ a.botao-produto:hover {
 
 }
 
-@media (max-height: 600px)
+@media (max-width: 600px)
 {
     body {
         overflow-y: visible;

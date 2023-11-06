@@ -8,8 +8,15 @@
     <link rel="stylesheet" href="../style.css">
     <link rel="shortcut icon" href="../imagens/zago-planner.ico" type="image/x-icon">
     <style>
-        .nav-menu .menu-simbolo {
-            margin-top: 0px;
+        @media (max-width: 992px)
+        {
+            body.body {
+                overflow-y: visible;
+            }
+
+            main {
+                height: auto;
+            }
         }
     </style>
 </head>
@@ -59,26 +66,30 @@
             <div class="container">
                 <link rel="stylesheet" href="../css/bootstrap.min.css">
                 <h2 class="mt-5 mb-5 text-center">PROJETOS EDITADOS RECENTEMENTE</h2>
-                <div class="row">
-                    <div class="col-12 col-sm-4">
+                <div class="row justify-content-around">
+                    <div class="col-11 col-lg-3 border mx-auto my-3 py-3 bd-radius">
                         <div class="text-center">
                             <img height="150px" width="150px" class="rounded-circle mb-2" src="../imagens/banheiro.jpg" alt="Banheiro Reformado">
                             <h3>Banheiro Reformado</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, sint odio! Quia, consequuntur. Consectetur ullam, iusto enim accusamus similique ab facilis. Dolorum dolorem quas expedita eligendi sapiente accusantium quaerat laboriosam!</p>
+                            <br>
+                            <a href="" class="btn btn-info col-6" type="button">Copiar Projeto</a>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-4">
+                    <div class="col-11 col-lg-3 border mx-auto my-3 py-3 bd-radius">
                         <div class="text-center">
                             <img height="150px" width="150px" class="rounded-circle mb-2" src="../imagens/quarto.jpg" alt="Quarto dos Sonhos">
                             <h3>Quarto dos Sonhos</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum distinctio eligendi dignissimos necessitatibus id asperiores odio veniam porro aliquam qui ipsum nobis perferendis ducimus quidem, cum quas recusandae molestias fuga?</p>
+                            <a href="" class="btn btn-info col-6" type="button">Copiar Projeto</a>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-4">
+                    <div class="col-11 col-lg-3 border mx-auto my-3 py-3 bd-radius">
                         <div class="text-center">
                             <img height="150px" width="150px" class="rounded-circle mb-2" src="../imagens/cozinha.jpg" alt="Cozinha Perfeita">
                             <h3>Cozinha Perfeita</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptate minus corrupti quis, quo cupiditate incidunt itaque illum dolore deserunt inventore maxime obcaecati exercitationem eos fuga deleniti ratione autem perferendis.</p>
+                            <a href="" class="btn btn-info col-6" type="button">Copiar Projeto</a>
                         </div>
                     </div>
                 </div>
