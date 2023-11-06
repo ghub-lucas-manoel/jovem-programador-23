@@ -1,0 +1,87 @@
+:root{
+    --dark: #0B0C12;
+    --light: #F5F7FA;
+    --header-height: 100px;
+    --footer-height: 100px;
+    --primary: #F2A20C;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    background: var(--light);
+    height: 100vh;
+}
+
+header {
+    width: 100%;
+    background: var(--dark);
+    height: var(--header-height);
+}
+
+.button-header {
+    height: 40px;
+    width: 280px;
+    border: none;
+    background-color: var(--dark);
+    color: var(--light);
+    cursor: pointer;
+    border: 1px solid #CED3D9;
+    transition: 0.5s;
+}
+
+.button-header:hover {
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+
+h1 {
+    color: var(--dark);
+    font-weight: bold;
+}
+
+h2 {
+    color: #242833;
+}
+
+.text-color {
+    color: #474D59;
+}
+
+/*Estilização barra de navegação.*/
+.navegacao-index {
+    font-size: 30px;
+}
+
+a {
+    font-size: 16px;
+    margin-left: 20px;
+    color: #CED3D9;
+    text-decoration: none;
+    transition: 0.4s;
+}
+a:hover {
+    color: var(--primary);
+}
+
+
+.banner-animation {
+    position: relative;
+    margin-bottom: 4%;
+}
+.header .img-banner {
+    width: 100%;
+    height: auto;
+}
+
+
+
+footer{
+    background:var(--dark);
+    color: #C0C5CC;
+    /* position: absolute; */
+    /* bottom: 0; */
+    width: 100%;
+    height: var(--footer-height);
+}
