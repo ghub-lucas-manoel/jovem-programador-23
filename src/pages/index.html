@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zago Planner - Meus Projetos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body style="padding-top: 75px;">
+    <nav class="navbar navbar-expand-lg bg-primary navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Zago Planner</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Menu de navegação -->
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Página Inicial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login/login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Manual/manual.html">Manual do Usuário</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Criar-projeto/criarprojeto.html">Criar Projeto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="produtoszago/produtoszago.html">Produtos Zago</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Parcerias/parceria.html">Parceria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="suporte/suporte.html">Suporte</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobrenos/sobrenos.html">Sobre Nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="meusProjetos/meusProjetos.html">Meus Projetos</a>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Conteúdo da página -->
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <section id="content" class="page-content text-center">
+                    <h2 class="mb-4">Meus Projetos</h2>
+                    <p class="lead">Aqui você pode visualizar e gerenciar seus projetos.</p>
+                </section>
+                <section class="search-container mt-4">
+                    <input type="text" id="projectSearchInput" class="form-control" placeholder="Pesquisar projetos">
+                    <button id="projectSearchButton" class="btn btn-primary mt-2">Buscar</button>
+                </section>
+                <section id="projectSearchResults" class="mt-4">
+                    <!-- Os resultados da pesquisa de projetos serão exibidos aqui -->
+                </section>
+
+                <!-- Carrossel de produtos -->
+                <div class="container text-center">
+                    <section id="productCarousel" class="carousel slide mt-5" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../assets/img/cozinha2.jpg" class="d-block w-100" alt="Cozinha">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2 class="font-weight-bold">Projete seus ambientes com Zago Planner</h2>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../assets/img/Toneira-banheiro.jpg" class="d-block w-100" alt="Produto 2">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3 class="font-weight-bold">Veja como ficara o visual do seu banheiro com os
+                                        produtos
+                                        que você deseja adquirir na Zago materiais e construção.</h3>
+
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../assets/img/cozinha.avif" class="d-block w-100" alt="Produto 3">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3 class="font-weight-bold">Veja como ficara o visual da sua cozinha com os
+                                        produtos
+                                        que você deseja adquirir na Zago materiais e construção.</h3>
+
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#productCarousel" role="button" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </a>
+                        <a class="carousel-control-next" href="#productCarousel" role="button" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Próximo</span>
+                        </a>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <section id="Projetos">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center center-vertically">
+                    <h2 class="mt-5 mb-5 font-weight-bold">CONFIRA OS ULTIMOS PROJETOS CRIADO COM ZAGO PLANNER</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="text-center">
+                        <img height="150px" width="150px" src="../assets/img/PJBANHEIRO.jpeg"
+                            class="rounded-circle mb-2" alt="Projeto 1">
+                        <h3>Projeto 1</h3>
+                        <p>Banheiro projetado com novo box, pia e vaso da
+                            Zago materiais e construção.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="text-center">
+                        <img height="150px" width="150px" src="../assets/img/cozinhaplanejada.jpeg"
+                            class="rounded-circle mb-2" alt="Projeto 2">
+                        <h3>Projeto 2</h3>
+                        <p>Cozinha projetada com novos lustres e janelas
+                            modernas da Zago materiais e construção.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="text-center">
+                        <img height="150px" width="150px" src="../assets/img/Banheiro2.jpg" class="rounded-circle mb-2"
+                            alt="Projeto 3">
+                        <h3>Projeto 3</h3>
+                        <p>Banheiro moderno projetado com os azulejos,
+                            pia, vaso e janela adquiridos na Zago materiais e construção.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2023 Zago Planner</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="../../node-modules/bootstrap/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>

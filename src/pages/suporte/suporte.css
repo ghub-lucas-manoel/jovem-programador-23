@@ -1,0 +1,75 @@
+
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar.fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+
+footer {
+        margin-top: auto;
+}}
+
+h2 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+
+
+/* Conteúdo principal da página */
+#content {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 600px; /* Largura máxima desejada para centralizar o conteúdo */
+    margin-bottom: 60px; /* Espaçamento entre o conteúdo e o rodapé */
+}
+
+/* Formulário de suporte */
+#supportForm {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 600px; /* Largura máxima desejada para centralizar o formulário */
+}
+
+/* Rodapé fixo na parte inferior da página */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #343a40; /* Cor de fundo do rodapé */
+    color: #fff; /* Cor do texto do rodapé */
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilize o botão de enviar */
+#botaoEnviarDados {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Estilize os campos do formulário */
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
