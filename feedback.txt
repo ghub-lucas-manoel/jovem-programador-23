@@ -1,0 +1,101 @@
+Guilherme, parabéns por ter chegado até aqui no curso. Quero deixar claro que o feedback que eu vou deixar abaixo não tem a intenção de te colocar para baixo ou te fazer desmotivar ou desistir do curso. Faço questão de apontar os lugares de mehoria em erros do código e decisões que tu tomou na aplicação justamente porque eu acredito no teu potencial e capacidade de melhorar.
+Eu percebi no decorrer das aulas que tu tem um pouco de dificuldade com essa parte de programação mais direta, tanto no HTML quanto no CSS e no JS. Não sei dizer se isso é em decorrência do teu contato anterior com a falta de programação, mas é importante que você dê uma refinada nesse quesito para conseguir um crescimento mais sólido de carreira como programador.
+Recomendo que você pegue alguns cursos de HTML + CSS + JS mesmo, sem imergir no uso de frameworks no momento, pra acostumar tua mente a implementar boas práticas mais básicas de programação web e conseguir identificar com mais facilidade algum erro que estiver no código.
+Tenho certeza que melhorando as tuas habilidades de programação e investindo nos teus pontos fortes, você pode se tornar um analista incrível.
+Conseguindo melhorar esses pontos mais básicos da programação, eu creio que tu vai ter tudo pra voar na carreira como programador, porque é notório que você tem uma visão de negócios muito boa. Você consegue falar bem e se comunicar com os colegas sem problemas, além de uma facilidade de visualizar a aplicação do ponto de vista do cliente. Essas são habilidades muito fortes caso você queira investir na área de análise de sistemas.
+É importante deixar claro que os pontos de melhoria não estão levando em conta que os erros e ajustes estão ali necessariamente por vontade sua. Pode ser que em alguns pontos, você já tenha noção do que eu deixei anotado, mas não conseguiu implementar o jeito certo/mais adequeado. De qualquer maneira, preciso deixar esses ajustes documentados pra te ajudar e reforçar onde e como melhorar.
+1. Interface:
+Pelo o que eu percebi, você explorou uma paleta de cores partindo do vermelho. Sendo assim, é interessante que você procure explorar mais essas cores dentre as seções. Não é necessário que você abandone o branco, mas pode alternar entre as cores da paleta - claro, procurando evitar contrastes fortes demais ou cores muito gritantes tanto pro background quanto para as fontes. A mesma lógica vale para o rodapé.
+Também em decorrência da paleta de cores, acho compreensível que os botões de ação estejam na cor vermelha. Ainda sim, quero deixar um ponto de atenção para que você só use essa cor para botões de ação se de fato a aplicação trabalha em tons de vermelho (ex. site do Flamengo). Caso contrário, utilizar essa cor para botões que exijam atenção redobrada do usuário (ex. fechar algum modal importante).
+As imagens podem ser adaptadas pra ocupar um espaço menor de tela para que o usuário consiga aproveitar melhor o espaço de tela com as informações disponíveis, diminuindo também o esfoço de scrollar a tela.
+Sobre o nav, os botões não estão congruentes dentre as telas (botões no index estão maiores que nas demais telas, em algumas telas - não todas - alguns botões estão desabilitados, outros não funcionam dependendo da tela).
+O rodapé não está posicionado ao final da página (tem um espaço em branco depois dele), e não está ocupando 100% de largura da tela.
+1.1. Tela inicial:
+O conteúdo da seção de apresentação pode utilizar uma fonte de maior destaque, para atrair uma atenção maior do usuário e também facilitar a sua leitura.
+Sobre o carrossel, as imagens estão com tamanhos diferentes, causando uma quebra no fluxo de passagem dos slides. Cortar as imagens para que todas fiquem na mesma direção pode ser a melhor abordagem aqui. As legendas também não estão muito fáceis de ler, você pode trabalhar um fundo com opacidade para facilitar a leitura, tomando cuidado com legendas que não sejam brancas.
+O footer está dentro do formulário de feedback, e é interessante que ela ocupe 100% da largura da tela.
+1.2. Ativa Kids:
+Não está implementada.
+1.3. Trabalhe conosco:
+Interessante dar mais destaque para a primeira seção, trabalhando o tamanho das fontes e posicionamento/alinhamento.
+A imagem está ocupando muito espaço de altura da tela, ela pode ser utilizada com fundo da primeira seção, como um banner ou ao lado esquerdo do formulário, por exemplo.
+1.4. SAC:
+O botão da tela do Ativa SkateShop não está disponível.
+A distribuição geral dos elementos ficou bem legal, com um trabalho legal da paleta de cores essa tela ia ficar ainda mais legal e harmoniosa.
+1.5. Ativa SkateShop
+Os botões Início, SAC e Login estão quebrados.
+Assim como na tela anterior, a distribuição dos elementos tá bem bacana, com o trabalho da paleta a tela consegue ficar 100%.
+1.6. Login
+O espaçamento do título "Faça o Login" pode ser melhor trabalhado para não ficar tão em cima do nav.
+A seção de Primavera Verão poderia ficar ao lado do formulário de login, como um espaço que exibe o moviento/campanha atual da loja (no seu exemplo, a campanha atual é a Primavera Verão).
+
+2. HTML:
+1.1. Tela inicial:
+Dentro da tag head, a partir da linha3, a declaração do aquivo de css do Bootstrap está duplicada, e na linha 9 existe uma declaração do arquivo de js do Bootstrap, que deve estar na parte de baixo do arquivo, ao final do escopo da tag <body>;
+Algumas tags não estão abertas/fechadas (na verdade os pares de algumas tags estão escritos, mas estão com o escopo incorreto):
+* Tag <div>, na linha 24;
+* Tag </ul>, na linha 47;
+* Tag </div>, na linha 48;
+* Tag </nav>, na linha 49;
+* Tag <div>, na linha 76;
+* Tag </div>, na linha 117;
+* Tag <div>, na linha 121;
+* Tag <div>, na linha 122;
+* Tag <div>, na linha 172;
+* Tag <div>, na linha 179;
+* Tag <div>, na linha 180;
+* Tag <form>, na linha 181;
+Na linha 168, a div está vazia.
+Na parte de baixo do arquivo, as declarações do Popper.js,jQuery e Bootstrap estão duplicadas. 
+Os scripts js estão fora do escopo do body. Eles devem estar dentro de body, no final do escopo.
+1.2. Trabalhe Conosco:
+Dentro da tag head, a partir da linha 3, a declaração do aquivo de css do Bootstrap está duplicada, e na linha 9 existe uma declaração do arquivo de js do Bootstrap, que deve estar na parte de baixo do arquivo, ao final do escopo da tag <body>, assim como o arquivo index.js, que está na linha 10;
+Algumas tags não estão abertas/fechadas:
+* Tag </form>, na linha 92;
+Na linha 98, a div está vazia;
+Você está com uma tag footer (linha 102) dentro de outra tag footer (linha 96), o que pode trazer problemas semânticos pra página.
+A relação de scripts está fora do escopo da tag body;
+A declaração do arquivo do jQuery está duplicada, e a linha 112 está incompleta.
+1.3. SAC:
+O código pode ser melhor identado;
+Dentro da tag head, a partir da linha 3, a declaração do aquivo de css do Bootstrap está duplicada, e na linha 9 existe uma declaração do arquivo de js do Bootstrap, que deve estar na parte de baixo do arquivo, ao final do escopo da tag <body>, assim como o arquivo index.js, que está na linha 10;
+Na linha 79, a div está vazia.
+Você está com uma tag footer (linha 83) dentro de outra tag footer (linha 77), o que pode trazer problemas semânticos pra página.
+Na parte de baixo do arquivo, as declarações do Popper.js,jQuery e Bootstrap estão duplicadas. 
+Os scripts js estão fora do escopo do body. Eles devem estar dentro de body, no final do escopo.
+1.4. Ativa SkateShop:
+O código pode ser melhor identado;
+Dentro da tag head, a partir da linha 4, a declaração do aquivo de css do Bootstrap está duplicada, e na linha 9 existe uma declaração do arquivo de js do Bootstrap, que deve estar na parte de baixo do arquivo, ao final do escopo da tag <body>, assim como o arquivo index.js, que está na linha 10;
+Algumas tags não estão abertas/fechadas:
+* Tag <div>, na linha 25;
+* Tag </ul>, na linha 58;
+* Tag </div>, na linha 59;
+* Tag </nav>, na linha 60;
+Nas linhas 62 e 88, a div está vazia.
+Os ícones que você declarou dentro da div da linha 72 não estão aparecendo. Isso acontece porque para que eles apareçam, é necessário que o pacote deles esteja "instalado" no projeto. Dá uma olhada em https://icons.getbootstrap.com/ e https://www.treinaweb.com.br/blog/como-instalar-e-utilizar-o-bootstrap-via-npm;
+Você está com uma tag footer (linha 92) dentro de outra tag footer (linha 86), o que pode trazer problemas semânticos pra página.
+Na parte de baixo do arquivo, as declarações do Popper.js,jQuery e Bootstrap estão duplicadas. 
+Os scripts js estão fora do escopo do body. Eles devem estar dentro de body, no final do escopo.
+1.5. Login
+Dentro da tag head, a partir da linha 3, a declaração do aquivo de css do Bootstrap está duplicada, e na linha 9 existe uma declaração do arquivo de js do Bootstrap, que deve estar na parte de baixo do arquivo, ao final do escopo da tag <body>, assim como o arquivo index.js, que está na linha 10;
+Na linha 81, a div está vazia.
+Você está com uma tag footer (linha 85) dentro de outra tag footer (linha 79), o que pode trazer problemas semânticos pra página.
+Na parte de baixo do arquivo, as declarações do Popper.js,jQuery e Bootstrap estão duplicadas. 
+Os scripts js estão fora do escopo do body. Eles devem estar dentro de body, no final do escopo.
+
+3. CSS:
+Evita utilizar valores absolutos (ex. 500px) para dimensionar elementes, a não ser que faça sentido que ele tenha o mesmo tamanho independente das definições da janela/tamanho de tela do dispositivo. Dá preferência pra valores relativos (ex. 50%, 5rem, 1.8em);
+Quanto maior vai ficando o arquivo, mais difícil fica pra dar manutenção nele. No caso do CSS, você pode utilizar mais de um arquivo por página, referenciando ele certinho no HTML. Tu pode utilizar dessa tática pra separar formatação de elementos chave de uma página em arquivos diferentes se o arquivo css principal da página estiver ficando muito grande.
+Todas as págians estão usando o mesmo código CSS, mas cada página tem seu próprio arquivo. Nesse caso, você pode utilizar um único arquivo (ex. style.css), e referenciar esse mesmo arquivo no HTML de todas as páginas que utilizarem essa estilização.
+Os códigos está com erro nas linhas:
+* 104 (aqui é em decorrência de um código HTML no meio do CSS);
+* 110 (faltou o ; após o 100% de "height: 100%");
+* 122 (esse } não está sendo aberto em lugar algum,tu po apagar ele).
+
+4. JS:
+Em decorrência dos problemas apontados na parte do HTML, o console do Inspect de todas as páginas da aplicação estão apontando erro de arquivos .js não encontrados;
+De forma semelhante ao CSS, como todas as páginas .js têm o mesmo código, tu pode utilizar o código em um arquivo só e referenciar ele no HTML de todas as páginas que utilizarem aquele código. Inclusive, aqui temos um ponto adicional, porque nenhuma página está utilizando o código, mesmo que o arquivo tenha sido referenciado no HTML.
+1.1. Index:
+O botão de Enviar não está fazendo o envio do feedback porque o código responsável por isso não foi implementado corretamente:
+* A declaração do evento de click, na linha 1, está referenciando um elemnto HTML que não existe na página (#botaoEnviarDados). Para que o botão Enviar de fato rode o código, é necessário que o evento referencie o botão corretamente (adicionar um id ao botão no HTML + referenciar esse id no js).
+
