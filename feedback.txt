@@ -1,0 +1,49 @@
+Parabéns pela tua evolução durante o curso Makciel, é muito legal ver você melhorando durante as aulas. Sobre o que você apresentou nessa unidade de front end, eu recomendo que você faça alguns cursos/tutoriais adicionais de front end web pra se acostumar mais com as estruutras de HTML/CSS/JS.
+Eu digo isso porque eu considero você bem promissor trabalhando com front-end, ou mesmo no back end eu imagino você mandando bem, então caso tua vontade seja trabalhar com front, deixo a minha recomendação.
+Mais uma vez, parabéns pelas entregas e o esforço que você tem aplicado.
+
+1. Estrutura dos arquivos
+Você está com dois arquivos index.html, index.css e index.js (um na raiz do projeto, e outro dentro da pasta pages). Por via de organização, você precisa manter dos arquivos que eu listei, apenas aqueles que estão dentro de pages.
+De forma semelhantes, as pastas css, img e js estão duplicadas.
+Sempre que você precisar criar arquivos ou pastas que usem mais de um nome, você pode utilizar o traço (-) ou a primeira letra do nome seguinte maiúscula para facilitar o reconhecimento do arquivo (ex. "novo-arquivo.html" ou "novoArquivo.html").
+
+2. HTML
+As navs que você declarou estão com uma tag div sem fechamento (</div>) no código.
+2.1. Index
+As declarações do jQuery e do popper.js estão duplicadas, com as duplicatas dentro da tag head. É uma boa prática manter todas as declarações de arquivos js no html ao final da tag body, exatamente como você fez na linha 164.
+Você declarou o arquivo de js do bootstrap duas vezes. Como estamos trabalhando com o Bootstrap 4, é importante que você remova a declaração da linha 163.
+2.2. Suporte
+O caminho do arquivo de js do bootstrap está incorreto (é necessário mais um "../") e não existe nenhum arquivo "index.js" dentro da pasta suporte, gerando erro na paǵina.
+
+3. CSS
+As páginas Criar Projeto, Login, Manual, Meus Projetos, Parcerias, PRodutos Zago e Sobre Nós estão utilizando o mesmo conteúdo de CSS. Nesse caso, você pode ter um arquivo com o código referido e referenciar esse mesmo arquivo nos html de todas essas páginas.
+Ainda sobre o CSS das paǵinas acima, a tag footer está declarada três vezes, inclusive uma delas está dentro de .navbar.fixed-top. É importante declarar todas as propriedades dentro de apenas um par de chaves.
+3.1. Index
+A chave da linha 9 não está fechada no lugar adequado (entre as linhas 14 e 16). Existe um fecha chave a mais na última linha, mas isso faz com que todas as propriedades dependam da .navbar.fixed-top.
+O footer está declarado duas vezes, você pode colocar todas as propriedades dentre de apenas um par de chaves.
+3.2. Suporte
+A tag footer está declarada duas vezes, inclusive uma delas está dentro de .navbar.fixed-top. É importante declarar todas as propriedades dentro de apenas um par de chaves.
+
+4. JS
+As páginas Index, Criar Projeto, Manual, Parceria, Produtos Zago e Sobre Nós utilizam o mesmo escopo de cógido. Você pode utilizar a mesma abordagem que eu expliquei em CSS.
+4.1. Login
+Você está com dois blocos de códigos que estão programados para serem executados no mesmo evento (DOMContentLoaded). Nesse caso, apenas uma declaração "document.addEventListener" é necessária (ex. linha 1). Como os dois blocos de código fazem coisas diferentes, você pode criar duas funções, cada uma responsável por um bloco de código, e executar as duas funções dento do evento de DOMContentLoaded.
+
+5. Estruturas das páginas
+Cuidado com questões de português, como acentuação ("ficara" no carrossel do index)
+5.1. Index
+O título da página, barra de pesquisa e carrossel podem ficar melhor centralizados.
+Você pode usar um esquema de cores azuis (sem nada muito chamativo) para facilitar a separação visual das seçoẽs.
+5.2. Login
+Os botões podem estar em tom de azul para ficarem condizentes com o resto do jogo de cores da aplicação.
+5.3. Manual do Usuário
+O conteúdo pode estar envolvido em alguma caixa visual (ex. card) para que ele não fique tão solto na página.
+5.4. Criar Projeto
+Como o link na nav já indica uma ação - Criar Projeto, você não precisa criar uma página só para ter um botão que faça a mesma ação. Nessa página, você pode simular algum formulário com informações que você imagina que o usuário vai precisar inserir na hora de abrir um projeto novo (ex. nome do projeto, descrição, upload de imagem).
+5.5. Produtos Zago
+Semelhante a página anterior, não é necessário uma página para fazer a mesma coisa que apenas o link do nav - "Produtos Zago" - pode realizar.
+O botão "Veja Nossos Produtos" dá erro pois tenta acessar um arquivo que não existe no projeto. Aqui você poderia ter colocado o link da página da Zago, já que é justamente isso o que o botão faz.
+5.6. Parceria
+Conforme combinamos em sala, aqui eu esperava que você tivesse programado o conteúdo da página, mesmo que simulado (igual você com os projetos da tela inicial).
+5.7. Suporte
+O botão Enviar não está fazendo nada ao ser clicado. Isse se dá porque o arquivo "suporte.js" não está referenciado no html.
