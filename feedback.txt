@@ -2,6 +2,8 @@ Parabéns pela tua evolução durante o curso Makciel, é muito legal ver você 
 Eu digo isso porque eu considero você bem promissor trabalhando com front-end, ou mesmo no back end eu imagino você mandando bem, então caso tua vontade seja trabalhar com front, deixo a minha recomendação.
 Mais uma vez, parabéns pelas entregas e o esforço que você tem aplicado.
 
+Vou deixar abaixo alguns pontos de melhoria/erros que eu percebi na tua aplicação/projeto:
+
 1. Estrutura dos arquivos
 Você está com dois arquivos index.html, index.css e index.js (um na raiz do projeto, e outro dentro da pasta pages). Por via de organização, você precisa manter dos arquivos que eu listei, apenas aqueles que estão dentro de pages.
 De forma semelhantes, as pastas css, img e js estão duplicadas.
