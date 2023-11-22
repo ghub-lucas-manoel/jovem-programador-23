@@ -1,0 +1,43 @@
+Gabriel, parabéns pelo desempenho que você mostrou durante o curso. Percebo de ti um interesse legal em querer aprender mais de programação e tentar aprender conceitos novos, mesmo aqueles não vistos em sala.
+Recomendo que você faça uns cursos de criação de página pra agregar ao teu portifólio, e procure aprender novas tecnologias pra evoluir o teu nível de conhecimento e poder concorrer a vagas melhores.
+Tenho certeza de que você vai ser um programador excepcional. Tua visão para uma abordagem mais mobile first é muito boa, recomendo que você se especialize nessa área.
+Abaixo vou deixar alguns erros/pontos de melhoria que eu identifiquei no teu projeto:
+
+1. Estrutura
+A organização das pastas não está seguindo o que a gente trabalhou em sala (pastas node-modules, src).
+Mesmo que você tenha diferentes páginas que não utilizem outros arquivos JS e CSS, recomendo que você crie as pastas de cada página para facilitar a questão de escalonamento do projeto e manutenção.
+
+2. HTML
+Nos teus arquivos, as referências dos arquivos js estão dentro da tag footer. Elas podem se manter ao final da tag body, mas fora do footer - mais precisamente após ele, para que o código fique mais bem organizado.
+Em alguins dos arquivos, tem um pouco de código CSS dentro do HTML. Por mais que seja pouco, é interessante que esse código tenha seu próprio arquivo.
+2.1. Index
+A declaração do seu arquivo personalizado de CSS está antes da declaração do CSS do Bootstrap. Isso pode fazer com que algumas estilizações não sejam aplicadas na página.
+O nome de alguns ids (ex. container1, container2) pode ser algo mais claro/específico sobre o que o elemento representa, por via de fácil entendimento do código.
+
+3. CSS
+Eu vi que dentro do style.css, você usou estilizações específicas dentro de um único arquivo. Nesse caso, você pode partir pra abordagem de criar um arquivo "global.css", onde você declara os estilos padrão de todas as páginas, e outros arquivos .css para páginas específicas/partes específicas. Assim, fica mais fácil de dar manutenção no código do css.
+
+4. JS
+Evita deixar código comentado dentro dos arquivos, pois cada linha de código é processamento a mais pro navegado, fora que isso pode confundir outros programadores que estejam dando manutenção no teu código.
+
+5. Aplicação
+Eu vi que você utilizou um esquema de spans pra fazer o ícone de sanduíche. Na página Index, ele ficou encostando em cima, não ficou centralizado na div. Você também pode pesquisar por ícones para utilizar um ícone de sanduíche, e utilizar o recurso de collapsing da navbar do Bootstrap para controlar a animação e espaçamento dos itens do menu.
+Como você não declarou o arquivo do jQuery, o console aponta erro na rotina de envio de dados do formulário por email. Rotina essa inclusive que não é utilizada na página por não existir nela nenhum botão com o id indicado no código js.
+Senti falta de um botão "index", "home", ou "início" no menu. Por mais que o Zago Planner na nav volte pro início, essa ação pode não ser intuitiva para alguns usuários, e eles se encontrem perdidos caso precisem voltar para a tela inicial.
+5.1. Sobre nós
+Gostei que você tenha utilizado o lorem pra simular um conteúdo, mas eu senti falta do passo seguinte, que é a estilização desse conteúdo em tela, para ficar mais agradável a leitura para o usuário. Vou deixar um exemplo do que eu tô querendo dizer: https://quiron.digital/sobre-a-quiron/
+5.2. Manual do usuário
+Semelhante ao feedback anterior, aqui eu gostaria de ter visto como seria a aparência dessa tela com todas as informações, mesmo que seja um CTA pra um botão que faça o download do manual.
+5.2. Parcerias
+Mesma ideia dos feedbacks anteriores.
+5.3. Suporte
+A tela me diz para reportar o bug para a equipe, mas em lugar algum existe um campo para inserção do comportamento do bug.
+5.4. Criar projeto
+Mesma ideia dos feedbacks 5.1, 5.2 e 5.3. Aqui especificamente, você poderia ter implementado um formulário com as informações que julgasse necessárias para que o usuário iniciasse com o projeto dele.
+5.5 Meus projetos
+Aqui é um exemplo positivo do que eu disse nos feedbacks anteriores. 
+O scroll só fica disponível em algumas resoluções, impedindo o usuário de ler o conteúdo completo e acessar os botões de editar dependendo da resolução.
+5.6. Outros projetos
+Mesmo caso do feedback 5.5.
+5.7. Produtos Zago
+Mesmo caso dos feedbacks 5.5 e 5.6. 
