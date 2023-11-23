@@ -1,0 +1,11 @@
+Matheus, eu fico bem feliz com a evolução que você tem demonstrado durante o curso. Teu tempo de aprendizagem é bom, use isso bem ao teu favor para conseguir mais conhecimento na área.
+Recomendo que tu faça uns tutoriais/mini cursos de criação de projetos de páginas para agregar ao teu portifío para ir pegando a construção de estilos e layouts diferentes e agregando conhecimento.
+Se mantém firme nos estudos que eu tenho certeza que é questão de tempo até você conseguir um espaço bom no mercado.
+
+1. Estrutura
+Senti falta da estrutura que a gente trabalhou em aula, com src e pastas para cada página, exceto a index. Mesmo que seu projeto atualmente não utilize arquivos adicionais ao html (ex. feedback), fazer a organização por pastas ajuda com o escalonamento do projeto e manutenção.
+
+2. Aplicação
+Você pode dar uma trabalhada melhorno esquema de cores para dar uma separação visual de seções(ex. uns tons de laranja, sem nada muito gritante).
+Conforme eu conversei com vocês nas últimas aulas, eu esperava ver uma implementação visual das demais telas, pra gente visualizar o que foi planejado nos viewports funcionando em código, mesmo que com dados fictícios.
+Sem uma implementação maior das páginas, eu não consigo passar um feedback melhor das páginas.
