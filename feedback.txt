@@ -1,0 +1,40 @@
+Micael, foi bem legal acompanhar a tua evolução e a tua habilidade programando. Legal também que você procurou praticar os elementos que vimos em aula e também tentou aplicar elementos extra.
+Você tem um entendimento legal de regras de negócio e UX, recomendo que você dê uma estudada em padrões de projeto e layouts para se especializar nesses conteúdos.
+Tenho certeza de que voce vai ser um ótimo programador, seja front ou back end.
+
+1. HTML
+Dentro da tag head, o arquivo personalizado de css nas páginas foi declarado antes do css do bootstrap. Isso pode levar a problemas onde algumas estilizações podem não ser aplicadas. É recomendado que você referencie os arquivos personalizados de css depois do arquivo de bootstrap.
+1.1. Index
+Os arquivos de js não estão referenciados ao final da tag body. Por questão de organização, é importante que esses scripts estejam declarados ao final de body.
+1.2. Feedback
+A tag div da linha 63 não está sendo fechada no código.
+1.3. Kids
+Os arquivos de js não estão referenciados ao final da tag body.
+Cuidado com os erros de digitação ("Persolnalize" nas linhas 61 e 62).
+1.4. Login
+Em algumas linhas (ex. 11, 47) você implementou uma estilização para o body. Mesmo que sejam algumas linhas apenas, pode ser interessante criar um arquivo CSS para essa página, o que pode facilitar o processo de escalonamento e eventual manutenção.
+1.5. Cadastro
+Mesmo feedback de 1.4.
+1.6. Trabalhe conoscmo
+Mesmo feedback de 1.4.
+Os arquivos de js não estão referenciados ao final da tag body.
+
+2. CSS
+O único arquivo de css presente no projeto já está ficando bem grande. Se existirem estilizações que são usadas especificamente em uma página, é interessante fazer a separação em arquivos diferentes.
+
+3. JS
+Dentro do index.js, você adicionou eventos de click para os botões botaoEnviarComentario, botaoEnviarDados e botaoEnviarSugestao. Como são botões presentes em telas específicas, você pode separar essas funções em arquivos diferentes, correspondentes a cada tela, por uma questão de organização e facilidade na manutenção.
+
+4. Aplicação
+Algumas telas estão mostrando erro no console em decorrência do arquivo index.js ter sido declarado antes do arquivo do jQuery.
+Como você trabalhou com as cores preto e rosa, é interessante que você utilize uma dessas cores para os botões de confirmação (ex. Entrar, Enviar).
+4.1. Index
+No carrossel, a frase "Seja quem você quer ser" está em preto, o que dificulta a leitura da frase com a imagem de fundo.
+4.2. Login
+As mensagens de feedback "Preencha este campo corretamente" não estão alinhadas com os respectivos inputs.
+4.3. Trabalhe conosco
+Senti falta de um formulário onde o usuário interesado possa colocar seus dados.
+4.4. SAC
+Você poderia ter usado uma textarea ao invés de um input para que o usuário tivesse mais espaço para passar seu feedback. Um input dá a ideia de que você tem pouco espaço para inserir texto.
+4.5. Feedback
+Assim como na tela anterior, é importante que a área do feedback seja maior para dar mais liberdade para o usuário.
