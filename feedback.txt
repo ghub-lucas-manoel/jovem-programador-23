@@ -1,6 +1,8 @@
 Micael, foi bem legal acompanhar a tua evolução e a tua habilidade programando. Legal também que você procurou praticar os elementos que vimos em aula e também tentou aplicar elementos extra.
 Você tem um entendimento legal de regras de negócio e UX, recomendo que você dê uma estudada em padrões de projeto e layouts para se especializar nesses conteúdos.
 Tenho certeza de que voce vai ser um ótimo programador, seja front ou back end.
+Abaixo vou deixar alguns erros/sugestões de melhoria que eu notei no teu projeto:
+
 
 1. HTML
 Dentro da tag head, o arquivo personalizado de css nas páginas foi declarado antes do css do bootstrap. Isso pode levar a problemas onde algumas estilizações podem não ser aplicadas. É recomendado que você referencie os arquivos personalizados de css depois do arquivo de bootstrap.
