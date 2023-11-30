@@ -1,0 +1,26 @@
+Natan, não sei se você já tá trabalhando na área, mas dá de perceber que o teu nível de conhecimento de programação já tá bem bacana. A forma como você organizou o código e os arquivos foi muito boa, facilita muito a vida de outros programadores que vão trabalhar nesse código.
+Caso o seu plano seja se especializar com o front end, a minha recomendação de estudo é em algo mais voltado para layout, UI e UX de fato. Com o conhecimento que você já tem, eu tenho certeza que você vai conseguir aprender bem fácil conceitos novos e agregar muito ao teu currículo e portifólio.
+Foi muito bacana acompanhar teu desempenho no curso, parabéns pelas tuas entregas.
+
+1. HTML
+Recomendo que, para os arquivos das demais páginas fora o index, você utiliza o nome da página como nome do arquivo, para facilitar a identificação de cada arquivo nos momentos de manutenção do código.
+No head do html da página de Contatos, você declarou o css da página antes do arquivo global, é importante deixar o arquivo global declarado antes do local.
+
+2. CSS
+O conteúdo dos arquivos style.css são os mesmos, inclusive com a mesma estilização sendo declarada no index.css. Nesse caso, você pode partir para passar essa estilização para o global.css, poupando tamanho do repositório e processamento de arquivos no carregamento da tela.
+
+3. Aplicação
+A responsividade do nav está com alguns problemas, como espaçamento dos links dependendo da resolução da tela e o menu sanduíche de quando o menu está colapsado não está funcionando ao ser clicado.
+3.1. index
+O rodapé não está fixado ao final da página, ele está preso no meio dela.
+Os elementos dispostos abaixo do banner do Cazarão podem ser melhor centralizados.
+3.2. Sobre nós
+Aqui você podia ter trabalhado um layout que agregasse mais na indentidade visual do Cazarão, como adição de imagens ao texto descritivo, envolver esse texto visualmente em alguma div com uma formatação de css, deixando semelhante a um card.
+3.3. Infraestrutura
+A imagem que você anexou não está carregando, mas aqui dá de puxar um exemplo bom sobre o que eu me referi no 3.2.
+3.4. Contatos
+Para uma melhor distribuição dos elementos, é importante deixar o título em cima (a gente facilita a leitura do usuário deixando a dispoição dos textos com um layout mais vertical).
+3.5. Calendário de Eventos
+Aqui eu esperava que você simulasse um calendário de fato, com fotos e textos fictícios, só pra que a gente tivesse uma visualização do layout dessa tela.
+3.6. Reserva
+As imagens dessa tela também não estão carregando. Poderia haver um espaçamento entre os cards dos serviços extras, justamente para dar uma cara de card de fato.
