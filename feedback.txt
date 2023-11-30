@@ -1,0 +1,23 @@
+Tiago, parabéns pelo teu desempenho durante o curso. Você tem uma cabeça muito boa para a programação, principalmente em relação a análise do que precisa ser feito na aplicação e também em alguns aspectos de layout. Consigo ver você se dando muito bem trabalhando como analista de sistemas também.
+Eu vi que o último commit que você deu nesse projeto foi no dia 25 de outubro. Então não sei se você chegou a programar mais coisas nele, mas como era esse o conteúdo disponível no GitHub, foi ele que eu levei em consideração para a minha avaliação.
+Para o lado de programação, eu recomendo que você faça alguns cursos de criação de páginas, tanto para agregar ao seu portifólio, quanto para fixar alguns conceitos de layout mesmo, para que você possa aplicar nos teus projetos pessoais, assim como dar sugestões no teu trabalho.
+Espero que logo você consiga se estabelecaer como programador - isso se já não estiver trabalhando na área, você manda muito bem e pode alcançar ainda mais.
+Abaixo eu deixo alguns erros/pontos de melhoria que eu identifiquei no código:
+
+1. Estrutura
+A disposição dos arquivos não está seguindo o que foi mostrado em aula (pastas node-modules e src).
+
+2. HTML
+Dentro da tag head, você declarou o style.css e o css do bootstrap duas vezes. 
+As divs das linhas 73, 74, 85 e 89 não estão fechando.
+Na linha 240 tem um </div> perdido.
+O arquivo de js do bootstrap está declarado duas vezes. Recomendo apagar a declaração da linha 379 para manter o projeto rodando com bootstrap 4.
+
+3. Aplicação
+O esquema de cores poderia ser melhor trabalhado para a separação visual das seções, com algo voltado no preto, branco e talvez um tom de laranja ou dourado (mas nada gritante para facilitar a leitura e reconhecimento dos elementos internos).
+Não é possível visualizar o botão do menu sanduíche quando a a navbar é colapsada.
+Ainda sobre a navbar, o form de pesquisa acaba saindo um pouco da tela dependendo da resolução.
+A seção de Calendário de eventos está vazia. Você podia ter trabalhado um layout, mesmo que com textos e imagens fictícios, para visualzarmos como essa seção ficaria na página.
+Algumas das imagens dos clientes satisfeitos estão distorcidas.
+O espaço entre a seção dos clientes satisfeitos e a de feedback pode ser um pouco maior, estão muito próximas.
+
