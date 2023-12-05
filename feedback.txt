@@ -1,0 +1,13 @@
+Parabéns Cristofer, fico  muito feliz de ter acompanhado um pouco da tua evolução durante o curso. Dá de ver que você tem um entendimento legal de programação, e é muito aplicado também.
+Recomendo que você pegue alguns cursos de criação de página para agregar no teu portifólio, e busque alguns conteúdos de padrões de projetos e boas práticas de programação para refinar ainda mais as tuas habilidades.
+Espero que logo tu consiga um trabalho bacana com programação - se já não conseguiu.
+
+1. HTML
+1.1. Index
+Dentro da tag head, o css do bootstrap foi declarado duas vezes.
+Na linha 38, a tag div não está sendo fechada em lugar algum.
+1.2. Calculadora
+Na linha 21, a tag ul não está sendo fechada em lugar algum.
+Na linha 32, a tag main não está sendo fechada em lugar algum.
+Na linha 33, a tag section não está sendo fechada em lugar algum.
+A declaração do js do bootstrap está triplicada, e a declaração do css do bootstrap precisa ir para dentro da tag head.
